@@ -2,32 +2,31 @@
 
 import { useState } from "react";
 
-const FINAL_TEXT = "Pranav Karthik";
 const CHARACTERS = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789/\\{}[]<>*";
 
 function getRandomChar() {
 	return CHARACTERS[Math.floor(Math.random() * CHARACTERS.length)];
 }
 
-export default function NameAnimation() {
-	const [displayText, setDisplayText] = useState(FINAL_TEXT);
+export default function NameAnimation({ text = "Pranav Karthik" }: { text?: string }) {
+	const [displayText, setDisplayText] = useState(text);
 	const [charStyles, setCharStyles] = useState<string[]>([]);
 	const [isAnimating, setIsAnimating] = useState(false);
 
 	const shuffleText = () => {
 		let iterations = 0;
-		const maxIterations = FINAL_TEXT.length * 3 + 15;
+		const maxIterations = text.length * 3 + 15;
 
 		const interval = setInterval(() => {
 			let newText = "";
 			const newStyles: string[] = [];
 
-			for (let i = 0; i < FINAL_TEXT.length; i++) {
+			for (let i = 0; i < text.length; i++) {
 				const isSettled = i < (iterations - 5) / 3;
 				const isWarm = Math.random() < 0.18;
 
 				if (isSettled) {
-					newText += FINAL_TEXT[i];
+					newText += text[i];
 					newStyles.push("");
 				} else {
 					newText += getRandomChar();
@@ -41,7 +40,7 @@ export default function NameAnimation() {
 
 			if (iterations > maxIterations) {
 				clearInterval(interval);
-				setDisplayText(FINAL_TEXT);
+				setDisplayText(text);
 				setCharStyles([]);
 				setIsAnimating(false);
 			}
@@ -62,7 +61,7 @@ export default function NameAnimation() {
 				onMouseEnter={handleMouseEnter}
 				onFocus={handleMouseEnter}
 				tabIndex={0}
-				aria-label={FINAL_TEXT}
+				aria-label={text}
 			>
 				<span className="absolute -inset-x-1 bottom-1 h-2 origin-left scale-x-0 bg-[hsl(var(--accent)/0.18)] transition-transform duration-300 ease-out group-hover:scale-x-100" />
 				{displayText.split("").map((char, i) => (

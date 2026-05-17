@@ -34,6 +34,28 @@ const RESUME = {
 		{
 			icon: (
 				<svg
+					aria-label="Apple logomark"
+					role="img"
+					viewBox="0 0 24 24"
+					style={{ width: "auto", overflow: "visible" }}
+				>
+					<path
+						d="M17.56 12.02c-.03-2.78 2.27-4.12 2.37-4.18-1.29-1.89-3.3-2.15-4.01-2.18-1.71-.17-3.34 1.01-4.2 1.01-.87 0-2.21-.99-3.63-.96-1.87.03-3.59 1.09-4.55 2.77-1.94 3.36-.5 8.34 1.39 11.07.92 1.33 2.02 2.83 3.46 2.77 1.39-.06 1.91-.9 3.59-.9 1.68 0 2.15.9 3.62.87 1.49-.03 2.44-1.36 3.35-2.7 1.06-1.55 1.49-3.05 1.52-3.13-.03-.01-2.88-1.1-2.91-4.44ZM14.8 3.86c.76-.92 1.27-2.2 1.13-3.47-1.09.04-2.42.73-3.2 1.64-.7.81-1.31 2.11-1.15 3.35 1.22.09 2.46-.62 3.22-1.52Z"
+						fill="currentColor"
+					/>
+				</svg>
+			),
+			company: "Apple",
+			role: "Swift Student Challenge Winner",
+			description: "",
+			start_date: "2022-01-01",
+			end_date: "2024-12-31",
+			location: "Remote",
+			company_website: "https://developer.apple.com/swift-student-challenge/",
+		},
+		{
+			icon: (
+				<svg
 					aria-label="Google logomark"
 					height="64"
 					role="img"

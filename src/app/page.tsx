@@ -95,42 +95,47 @@ export default function Home() {
 	const [firstProject, secondProject, ...restProjects] = featuredProjects;
 	const google = RESUME.experience.find((experience) => experience.company === "Google");
 	const vercel = RESUME.experience.find((experience) => experience.company === "Vercel");
+	const apple = RESUME.experience.find((experience) => experience.company === "Apple");
 
 	return (
 		<main className="mx-auto max-w-4xl py-10 sm:py-14">
 			<section>
-				<div className="flex items-start gap-4">
-					<Image
-						src={RESUME.avatar_path}
-						alt="Pranav Karthik"
-						width={72}
-						height={72}
-						className="mt-1 size-14 rounded-full object-cover grayscale sm:size-16"
-						priority
-					/>
+				<div className="space-y-5 text-lg leading-8 tracking-[-0.025em] text-muted-foreground sm:text-xl sm:leading-9">
 					<div>
-						<h1 className="text-3xl font-semibold leading-tight tracking-[-0.045em] sm:text-[2.45rem]">
-							<NameAnimation />
-						</h1>
-						<p className="mt-1 text-lg font-medium tracking-[-0.025em] text-muted-foreground sm:text-xl">
-							Software engineer building tools for people and agents.
-						</p>
+						Hi, I&apos;m{" "}
+							<span className="inline-photo-card" aria-hidden="true">
+							<span className="inline-photo-thumb">
+								<Image
+									src="/pranav-inline.jpg"
+									alt=""
+									width={96}
+									height={96}
+									className="h-full w-full object-cover"
+								/>
+							</span>
+							<span className="inline-photo-preview">
+								<Image
+									src="/pranav-inline.jpg"
+									alt=""
+									width={240}
+									height={240}
+									className="h-full w-full object-cover"
+								/>
+							</span>
+						</span>
+						<span className="font-semibold text-foreground">
+							<NameAnimation text="Pranav Karthik" />
+						</span>
+						, a software engineer building intuitive experiences for the web, mobile, and agents.
 					</div>
-				</div>
-
-				<div className="mt-9 space-y-6 text-xl leading-9 tracking-[-0.03em] text-muted-foreground sm:text-[1.55rem] sm:leading-10">
 					<div>
-						I study Computer Science at{" "}
+						I'm currently researching browser agents for HCI at{" "}
 						<CompanyLogo
 							icon={RESUME.education.icon}
 							company="UBC"
 							companyWebsite="https://www.ubc.ca"
-						/>{" "}
-						and build product-minded software across web, mobile, developer
-						tools, and agent interfaces.
-					</div>
-					<div>
-						I&apos;ve done engineering at{" "}
+						/>{" "} 
+						and I&apos;ve previously done engineering at{" "}
 						{vercel ? (
 							<CompanyLogo
 								icon={vercel.icon}
@@ -149,21 +154,48 @@ export default function Home() {
 							/>
 						) : (
 							"Google"
-						)}
-						, working on developer tools, production marketplace surfaces, and
-						interfaces that need to be fast, legible, and useful.
-					</div>
+							)}
+							, working on iOS/web infrastructure at scale.
+						</div>
+						<div>
+							I&apos;m also a 3x{" "}
+							{apple ? (
+								<CompanyLogo
+									icon={apple.icon}
+									company="Apple Swift Student Challenge"
+									companyWebsite={apple.company_website}
+								/>
+							) : (
+								"Apple Swift Student Challenge"
+							)}{" "}
+							winner, including one Distinguished award.
+						</div>
 					<div>
 						Outside code, I&apos;m usually{" "}
-						<Interest kind="pc">tinkering with PCs and electronics</Interest>
+						<Interest kind="pc">tinkering on electronics</Interest>
 						,{" "}
-						<Interest kind="f1">following F1</Interest>
+						<Interest kind="f1">watching F1</Interest>
 						,{" "}
 						<Interest kind="chess">playing chess</Interest>
 						, or getting lost in{" "}
 						<Interest kind="games">a game</Interest>
 						.
 					</div>
+				</div>
+				<div className="mt-7 flex flex-wrap items-center gap-2 text-sm text-muted-foreground">
+					<span className="mr-1">you can find me at</span>
+					<a className="contact-pill" href="https://linkedin.com/in/pranav-karthik" target="_blank" rel="noopener noreferrer">
+						linkedin
+					</a>
+					<a className="contact-pill" href="https://x.com/pranavkarthik__" target="_blank" rel="noopener noreferrer">
+						x
+					</a>
+					<a className="contact-pill" href="mailto:me@pranavkarthik.com">
+						email
+					</a>
+					<a className="contact-pill" href="https://github.com/pranavkarthik10" target="_blank" rel="noopener noreferrer">
+						github
+					</a>
 				</div>
 			</section>
 

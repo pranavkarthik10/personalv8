@@ -40,7 +40,10 @@ export default function RootLayout({
 					data-website-id="49a2368b-f573-4184-9dbe-26af0c1b2fdd"
 				/>
 				<div className="site-shell min-h-screen">
-					<header className="mx-auto flex w-full max-w-5xl justify-end px-5 py-5 sm:px-8">
+					<header className="mx-auto flex w-full max-w-5xl items-center justify-between px-5 py-5 sm:px-8">
+						<Link href="/" className="text-sm text-foreground/90 transition hover:text-foreground">
+							pranav karthik
+						</Link>
 						<nav className="flex items-center gap-4 text-xs text-muted-foreground sm:gap-5">
 							<Link href="/projects" className="nav-link">
 								projects
@@ -48,15 +51,12 @@ export default function RootLayout({
 							<Link href="/blog" className="nav-link">
 								writing
 							</Link>
-							<Link href="/cv" className="nav-link">
-								cv
+							<Link href="/press" className="nav-link">
+								press
 							</Link>
-							<a className="nav-link" href="https://github.com/pranavkarthik10" target="_blank" rel="noopener noreferrer">
-								github
-							</a>
-							<a className="nav-link" href="mailto:me@pranavkarthik.com">
-								email
-							</a>
+							<Link href="/stack" className="nav-link">
+								stack
+							</Link>
 						</nav>
 					</header>
 					<div className="mx-auto w-full max-w-5xl px-5 pb-10 sm:px-8">

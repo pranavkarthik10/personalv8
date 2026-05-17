@@ -1,0 +1,146 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - link "pk" [ref=e4] [cursor=pointer]:
+        - /url: /
+      - navigation [ref=e5]:
+        - link "projects" [ref=e6] [cursor=pointer]:
+          - /url: /projects
+        - link "writing" [ref=e7] [cursor=pointer]:
+          - /url: /blog
+        - link "stack" [ref=e8] [cursor=pointer]:
+          - /url: /stack
+        - link "press" [ref=e9] [cursor=pointer]:
+          - /url: /press
+    - main [ref=e11]:
+      - generic [ref=e12]:
+        - paragraph [ref=e13]: Selected build log
+        - generic [ref=e14]:
+          - heading "Projects" [level=1] [ref=e15]
+          - paragraph [ref=e16]: A mixed index of personal tools, hackathon experiments, and work-shaped software. The useful stuff and the weird stuff live together here.
+      - generic [ref=e17]:
+        - complementary [ref=e18]:
+          - generic [ref=e19]:
+            - paragraph [ref=e20]: personal
+            - paragraph [ref=e21]: 4 projects
+          - generic [ref=e22]:
+            - paragraph [ref=e23]: work-ish
+            - paragraph [ref=e24]: 2 projects
+          - link "more on GitHub" [ref=e26] [cursor=pointer]:
+            - /url: https://github.com/pranavkarthik10
+        - generic [ref=e27]:
+          - link "pdfp screenshot personal / 2026 pdfp Fast PDF compression CLI with an interactive terminal UI, quality presets, and batch processing. TypeScript Node.js Ghostscript CLI" [ref=e28] [cursor=pointer]:
+            - /url: /projects/pdfp
+            - generic [ref=e29]:
+              - img "pdfp screenshot" [ref=e31]
+              - generic [ref=e33]:
+                - paragraph [ref=e34]: personal / 2026
+                - heading "pdfp" [level=3] [ref=e35]
+              - paragraph [ref=e36]: Fast PDF compression CLI with an interactive terminal UI, quality presets, and batch processing.
+              - generic [ref=e37]:
+                - generic [ref=e38]: TypeScript
+                - generic [ref=e39]: Node.js
+                - generic [ref=e40]: Ghostscript
+                - generic [ref=e41]: CLI
+              - button "View on GitHub" [ref=e44]:
+                - img [ref=e45]
+          - link "LazyCal screenshot personal / 2026 LazyCal A beautiful terminal Google Calendar client with day/week/month views, keyboard-first navigation, and optional Google Calendar sync. TypeScript OpenTUI Google Calendar API OAuth 2.0" [ref=e48] [cursor=pointer]:
+            - /url: /projects/lazycal
+            - generic [ref=e49]:
+              - img "LazyCal screenshot" [ref=e51]
+              - generic [ref=e53]:
+                - paragraph [ref=e54]: personal / 2026
+                - heading "LazyCal" [level=3] [ref=e55]
+              - paragraph [ref=e56]: A beautiful terminal Google Calendar client with day/week/month views, keyboard-first navigation, and optional Google Calendar sync.
+              - generic [ref=e57]:
+                - generic [ref=e58]: TypeScript
+                - generic [ref=e59]: OpenTUI
+                - generic [ref=e60]: Google Calendar API
+                - generic [ref=e61]: OAuth 2.0
+              - generic [ref=e63]:
+                - button "View on GitHub" [ref=e64]:
+                  - img [ref=e65]
+                - button "Visit" [ref=e68]:
+                  - img [ref=e69]
+          - link "GrokHunt screenshot work / 2025 GrokHunt AI-powered recruiting platform that autonomously searches for talented developers using Grok's reasoning engine. xAI Hackathon Next.js Python FastAPI Grok API +1" [ref=e73] [cursor=pointer]:
+            - /url: /projects/grokhunt
+            - generic [ref=e74]:
+              - img "GrokHunt screenshot" [ref=e76]
+              - generic [ref=e78]:
+                - paragraph [ref=e79]: work / 2025
+                - heading "GrokHunt" [level=3] [ref=e80]
+              - paragraph [ref=e81]: AI-powered recruiting platform that autonomously searches for talented developers using Grok's reasoning engine.
+              - paragraph [ref=e82]: xAI Hackathon
+              - generic [ref=e83]:
+                - generic [ref=e84]: Next.js
+                - generic [ref=e85]: Python
+                - generic [ref=e86]: FastAPI
+                - generic [ref=e87]: Grok API
+                - generic [ref=e88]: "+1"
+              - button "Visit" [ref=e91]:
+                - img [ref=e92]
+          - link "Interconnected screenshot personal / 2024 Interconnected Interactive Swift application introducing graph theory algorithms with custom physics simulation and drag-and-drop graph playground. Distinguished Winner - Apple Swift Student Challenge SwiftUI CoreGraphics Combine" [ref=e96] [cursor=pointer]:
+            - /url: /projects/interconnected
+            - generic [ref=e97]:
+              - img "Interconnected screenshot" [ref=e99]
+              - generic [ref=e101]:
+                - paragraph [ref=e102]: personal / 2024
+                - heading "Interconnected" [level=3] [ref=e103]
+              - paragraph [ref=e104]: Interactive Swift application introducing graph theory algorithms with custom physics simulation and drag-and-drop graph playground.
+              - paragraph [ref=e105]: Distinguished Winner - Apple Swift Student Challenge
+              - generic [ref=e106]:
+                - generic [ref=e107]: SwiftUI
+                - generic [ref=e108]: CoreGraphics
+                - generic [ref=e109]: Combine
+          - link "TravoAI screenshot work / 2023 TravoAI Full-stack web application for AI-generated travel plans with streaming responses and modern React UI. StormHacks React.js Node.js OpenAI API Express +1" [ref=e110] [cursor=pointer]:
+            - /url: /projects/travoai
+            - generic [ref=e111]:
+              - img "TravoAI screenshot" [ref=e113]
+              - generic [ref=e115]:
+                - paragraph [ref=e116]: work / 2023
+                - heading "TravoAI" [level=3] [ref=e117]
+              - paragraph [ref=e118]: Full-stack web application for AI-generated travel plans with streaming responses and modern React UI.
+              - paragraph [ref=e119]: StormHacks
+              - generic [ref=e120]:
+                - generic [ref=e121]: React.js
+                - generic [ref=e122]: Node.js
+                - generic [ref=e123]: OpenAI API
+                - generic [ref=e124]: Express
+                - generic [ref=e125]: "+1"
+              - generic [ref=e127]:
+                - button "View on GitHub" [ref=e128]:
+                  - img [ref=e129]
+                - button "Visit" [ref=e132]:
+                  - img [ref=e133]
+          - link "Trackr screenshot personal / 2019 Trackr iOS app for assignment management with tens of thousands of App Store downloads and Siri integration. UIKit CoreData SiriKit Swift" [ref=e137] [cursor=pointer]:
+            - /url: /projects/trackr
+            - generic [ref=e138]:
+              - img "Trackr screenshot" [ref=e140]
+              - generic [ref=e142]:
+                - paragraph [ref=e143]: personal / 2019
+                - heading "Trackr" [level=3] [ref=e144]
+              - paragraph [ref=e145]: iOS app for assignment management with tens of thousands of App Store downloads and Siri integration.
+              - generic [ref=e146]:
+                - generic [ref=e147]: UIKit
+                - generic [ref=e148]: CoreData
+                - generic [ref=e149]: SiriKit
+                - generic [ref=e150]: Swift
+              - generic [ref=e152]:
+                - button "View on GitHub" [ref=e153]:
+                  - img [ref=e154]
+                - button "Visit" [ref=e157]:
+                  - img [ref=e158]
+    - contentinfo [ref=e162]:
+      - generic [ref=e163]:
+        - paragraph [ref=e164]: Pranav Karthik
+        - paragraph [ref=e165]: built in Vancouver, version eight
+      - generic [ref=e166]:
+        - link "x" [ref=e167] [cursor=pointer]:
+          - /url: https://x.com/pranavkarthik__
+        - link "linkedin" [ref=e168] [cursor=pointer]:
+          - /url: https://linkedin.com/in/pranav-karthik
+        - link "github" [ref=e169] [cursor=pointer]:
+          - /url: https://github.com/pranavkarthik10
+  - button "Open Next.js Dev Tools" [ref=e175] [cursor=pointer]:
+    - img [ref=e176]
+  - alert [ref=e179]

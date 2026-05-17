@@ -1,0 +1,47 @@
+[     879ms] [LOG] %c
+▲
+
+    ________   _ __ _          ____           __
+   /  _/ __/  (_) /( )_____   / __/___ ______/ /_
+   / // /_   / / __/// ___/  / /_/ __ `/ ___/ __/
+ _/ // __/  / / /_  (__  )  / __/ /_/ (__  ) /_
+/___/_/    /_/\__/ /____/  /_/  \__,_/____/\__/
+    _ __ _                         _    __                    __
+   (_) /( )_____   ____  ____     | |  / /__  _____________  / /
+  / / __/// ___/  / __ \/ __ \    | | / / _ \/ ___/ ___/ _ \/ /
+ / / /_  (__  )  / /_/ / / / /    | |/ /  __/ /  / /__/  __/ /
+/_/\__/ /____/   \____/_/ /_/     |___/\___/_/   \___/\___/_/
+  
+
+Hello!
+
+- Open Source https://vercel.com/oss
+- Careers https://vercel.com/careers
+- Status https://vercel-status.com
+
+ font-family: "Geist Mono", monospace; white-space: pre; line-height: 1; @ https://vercel.com/vc-ap-vercel-marketing/_next/static/immutable/chunks/40_wkoo486rnl.js:78
+[    1254ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://vercel.com/api/jwt:0
+[    1619ms] [WARNING] Deprecated API for given entry type. @ https://vercel.com/vc-ap-vercel-marketing/_next/static/immutable/chunks/1s-f2pdno4p9t.js:18
+[    2055ms] [ERROR] Access to fetch at 'https://ai-sdk.dev/' (redirected from 'https://vercel.com/ai-sdk?_rsc=_4TNqLEhm56cPZcu') from origin 'https://vercel.com' has been blocked by CORS policy: Response to preflight request doesn't pass access control check: No 'Access-Control-Allow-Origin' header is present on the requested resource. @ https://vercel.com/changelog/vercel-ts:0
+[    2055ms] [ERROR] Failed to load resource: net::ERR_FAILED @ https://ai-sdk.dev/:0
+[    5464ms] [WARNING] The resource https://vercel.com/vc-ap-vercel-marketing/_next/static/immutable/chunks/28-4gbg83ma45.css was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://vercel.com/changelog/vercel-ts:0
+[    5464ms] [WARNING] The resource https://vercel.com/vc-ap-vercel-marketing/_next/static/immutable/chunks/29cyt9z4z7a4z.css was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://vercel.com/changelog/vercel-ts:0
+[    5464ms] [WARNING] The resource https://vercel.com/vc-ap-vercel-marketing/_next/static/immutable/chunks/0daj0r9tp_ynx.css was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://vercel.com/changelog/vercel-ts:0
+[    5464ms] [WARNING] The resource https://vercel.com/vc-ap-vercel-marketing/_next/static/immutable/chunks/0g2go0qk2o1yq.css was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://vercel.com/changelog/vercel-ts:0
+[    5464ms] [WARNING] The resource https://vercel.com/vc-ap-vercel-marketing/_next/static/immutable/chunks/126jjsspi9ohu.css was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://vercel.com/changelog/vercel-ts:0
+[    5464ms] [WARNING] The resource https://vercel.com/vc-ap-vercel-marketing/_next/static/immutable/chunks/3pkl_l28grjzi.css was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://vercel.com/changelog/vercel-ts:0
+[    5464ms] [WARNING] The resource https://vercel.com/vc-ap-vercel-marketing/_next/static/immutable/chunks/1ubug4x-it6w9.css was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://vercel.com/changelog/vercel-ts:0
+[    5464ms] [WARNING] The resource https://vercel.com/vc-ap-vercel-marketing/_next/static/immutable/chunks/0tpq3jj-kza_f.css was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://vercel.com/changelog/vercel-ts:0
+[    5464ms] [WARNING] The resource https://vercel.com/vc-ap-vercel-marketing/_next/static/immutable/chunks/2rkroezqbepf5.css was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://vercel.com/changelog/vercel-ts:0
+[    5464ms] [WARNING] The resource https://vercel.com/vc-ap-vercel-marketing/_next/static/immutable/chunks/2mlggpwq3fncg.css was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://vercel.com/changelog/vercel-ts:0
+[    5464ms] [WARNING] The resource https://vercel.com/vc-ap-vercel-marketing/_next/static/immutable/chunks/1ywsc4s9dv8qv.css was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://vercel.com/changelog/vercel-ts:0
+[    5464ms] [WARNING] The resource https://vercel.com/vc-ap-vercel-marketing/_next/static/immutable/chunks/1dpkq06qn0olb.css was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://vercel.com/changelog/vercel-ts:0
+[    5464ms] [WARNING] The resource https://vercel.com/vc-ap-vercel-marketing/_next/static/immutable/chunks/1d8fl1xuwszjh.css was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://vercel.com/changelog/vercel-ts:0
+[    5464ms] [WARNING] The resource https://vercel.com/vc-ap-vercel-marketing/_next/static/immutable/chunks/2r0gdzsfvppy4.css was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://vercel.com/changelog/vercel-ts:0
+[    5464ms] [WARNING] The resource https://vercel.com/vc-ap-vercel-marketing/_next/static/immutable/chunks/2bth6v7mdypmo.css was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://vercel.com/changelog/vercel-ts:0
+[    5464ms] [WARNING] The resource https://vercel.com/vc-ap-vercel-marketing/_next/static/immutable/chunks/3go6x9-m9rxv4.css was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://vercel.com/changelog/vercel-ts:0
+[    5464ms] [WARNING] The resource https://vercel.com/vc-ap-vercel-marketing/_next/static/immutable/chunks/3q-cil37aaytx.css was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://vercel.com/changelog/vercel-ts:0
+[    5464ms] [WARNING] The resource https://vercel.com/vc-ap-vercel-marketing/_next/static/immutable/chunks/3s8zb7ruf0--9.css was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://vercel.com/changelog/vercel-ts:0
+[    5464ms] [WARNING] The resource https://vercel.com/vc-ap-vercel-marketing/_next/static/immutable/chunks/2zd3_ztfs8vsh.css was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://vercel.com/changelog/vercel-ts:0
+[    5464ms] [WARNING] The resource https://vercel.com/vc-ap-vercel-marketing/_next/static/immutable/chunks/1isz_4378tbwf.css was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://vercel.com/changelog/vercel-ts:0
+[    5465ms] [WARNING] The resource https://vercel.com/vc-ap-vercel-marketing/_next/static/immutable/chunks/1v3_-me-k_cg9.css was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://vercel.com/changelog/vercel-ts:0

@@ -1,0 +1,139 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - link "pranav karthik" [ref=e4] [cursor=pointer]:
+        - /url: /
+      - navigation [ref=e5]:
+        - link "projects" [ref=e6] [cursor=pointer]:
+          - /url: /projects
+        - link "writing" [ref=e7] [cursor=pointer]:
+          - /url: /blog
+        - link "stack" [ref=e8] [cursor=pointer]:
+          - /url: /stack
+        - link "cv" [ref=e9] [cursor=pointer]:
+          - /url: /cv
+        - link "press" [ref=e10] [cursor=pointer]:
+          - /url: /press
+    - main [ref=e12]:
+      - generic [ref=e13]:
+        - generic [ref=e14]:
+          - heading "hey, I'm Pranav Karthik" [level=1] [ref=e15]:
+            - generic [ref=e16]:
+              - text: hey, I'm
+              - generic "Pranav Karthik" [ref=e17] [cursor=pointer]:
+                - generic [ref=e18]: P
+                - generic [ref=e19]: r
+                - generic [ref=e20]: a
+                - generic [ref=e21]: "n"
+                - generic [ref=e22]: a
+                - generic [ref=e23]: v
+                - generic [ref=e24]: K
+                - generic [ref=e25]: a
+                - generic [ref=e26]: r
+                - generic [ref=e27]: t
+                - generic [ref=e28]: h
+                - generic [ref=e29]: i
+                - generic [ref=e30]: k
+          - paragraph [ref=e31]: Fourth year Computer Science student at UBC, passionate about building agentic experiences on the web, mobile, and spatial interfaces.
+        - generic [ref=e32]:
+          - generic [ref=e33]:
+            - generic [ref=e34]: ◆
+            - generic [ref=e35]: Engineering Intern
+            - link "Vercel logomark Vercel" [ref=e36] [cursor=pointer]:
+              - /url: https://vercel.com
+              - img "Vercel logomark" [ref=e39]
+              - heading "Vercel" [level=3] [ref=e41]
+          - generic [ref=e42]:
+            - generic [ref=e43]: ◆
+            - generic [ref=e44]: Engineering Intern
+            - link "Google logomark Google" [ref=e45] [cursor=pointer]:
+              - /url: https://google.com
+              - img "Google logomark" [ref=e48]
+              - heading "Google" [level=3] [ref=e53]
+          - generic [ref=e54]:
+            - generic [ref=e55]: ◆
+            - generic [ref=e56]: CS
+            - link "UBC logo UBC" [ref=e57] [cursor=pointer]:
+              - /url: https://www.ubc.ca
+              - img "UBC logo" [ref=e60]
+              - heading "UBC" [level=3] [ref=e61]
+      - generic [ref=e62]:
+        - generic [ref=e63]:
+          - heading "Projects" [level=2] [ref=e64]
+          - link "view all" [ref=e65] [cursor=pointer]:
+            - /url: /projects
+        - generic [ref=e66]:
+          - link "pdfp screenshot pdfp personal Fast PDF compression CLI with an interactive terminal UI, quality presets, and batch processing. 2026 / TypeScript / Node.js / Ghostscript" [ref=e67] [cursor=pointer]:
+            - /url: /projects/pdfp
+            - img "pdfp screenshot" [ref=e69]
+            - generic [ref=e70]:
+              - generic [ref=e71]:
+                - heading "pdfp" [level=3] [ref=e72]
+                - generic [ref=e73]: personal
+              - paragraph [ref=e74]: Fast PDF compression CLI with an interactive terminal UI, quality presets, and batch processing.
+              - paragraph [ref=e75]: 2026 / TypeScript / Node.js / Ghostscript
+          - link "LazyCal screenshot LazyCal personal A beautiful terminal Google Calendar client with day/week/month views, keyboard-first navigation, and optional Google Calendar sync. 2026 / TypeScript / OpenTUI / Google Calendar API" [ref=e76] [cursor=pointer]:
+            - /url: /projects/lazycal
+            - img "LazyCal screenshot" [ref=e78]
+            - generic [ref=e79]:
+              - generic [ref=e80]:
+                - heading "LazyCal" [level=3] [ref=e81]
+                - generic [ref=e82]: personal
+              - paragraph [ref=e83]: A beautiful terminal Google Calendar client with day/week/month views, keyboard-first navigation, and optional Google Calendar sync.
+              - paragraph [ref=e84]: 2026 / TypeScript / OpenTUI / Google Calendar API
+          - link "GrokHunt screenshot GrokHunt work AI-powered recruiting platform that autonomously searches for talented developers using Grok's reasoning engine. 2025 / Next.js / Python / FastAPI" [ref=e85] [cursor=pointer]:
+            - /url: /projects/grokhunt
+            - img "GrokHunt screenshot" [ref=e87]
+            - generic [ref=e88]:
+              - generic [ref=e89]:
+                - heading "GrokHunt" [level=3] [ref=e90]
+                - generic [ref=e91]: work
+              - paragraph [ref=e92]: AI-powered recruiting platform that autonomously searches for talented developers using Grok's reasoning engine.
+              - paragraph [ref=e93]: 2025 / Next.js / Python / FastAPI
+          - link "Interconnected screenshot Interconnected personal Interactive Swift application introducing graph theory algorithms with custom physics simulation and drag-and-drop graph playground. 2024 / SwiftUI / CoreGraphics / Combine" [ref=e94] [cursor=pointer]:
+            - /url: /projects/interconnected
+            - img "Interconnected screenshot" [ref=e96]
+            - generic [ref=e97]:
+              - generic [ref=e98]:
+                - heading "Interconnected" [level=3] [ref=e99]
+                - generic [ref=e100]: personal
+              - paragraph [ref=e101]: Interactive Swift application introducing graph theory algorithms with custom physics simulation and drag-and-drop graph playground.
+              - paragraph [ref=e102]: 2024 / SwiftUI / CoreGraphics / Combine
+          - link "TravoAI screenshot TravoAI work Full-stack web application for AI-generated travel plans with streaming responses and modern React UI. 2023 / React.js / Node.js / OpenAI API" [ref=e103] [cursor=pointer]:
+            - /url: /projects/travoai
+            - img "TravoAI screenshot" [ref=e105]
+            - generic [ref=e106]:
+              - generic [ref=e107]:
+                - heading "TravoAI" [level=3] [ref=e108]
+                - generic [ref=e109]: work
+              - paragraph [ref=e110]: Full-stack web application for AI-generated travel plans with streaming responses and modern React UI.
+              - paragraph [ref=e111]: 2023 / React.js / Node.js / OpenAI API
+          - link "Trackr screenshot Trackr personal iOS app for assignment management with tens of thousands of App Store downloads and Siri integration. 2019 / UIKit / CoreData / SiriKit" [ref=e112] [cursor=pointer]:
+            - /url: /projects/trackr
+            - img "Trackr screenshot" [ref=e114]
+            - generic [ref=e115]:
+              - generic [ref=e116]:
+                - heading "Trackr" [level=3] [ref=e117]
+                - generic [ref=e118]: personal
+              - paragraph [ref=e119]: iOS app for assignment management with tens of thousands of App Store downloads and Siri integration.
+              - paragraph [ref=e120]: 2019 / UIKit / CoreData / SiriKit
+      - generic [ref=e121]:
+        - heading "what i've been building" [level=2] [ref=e122]
+        - list [ref=e123]:
+          - listitem [ref=e124]: ↳ terminal-first tools for calendars and PDF compression
+          - listitem [ref=e125]: ↳ agentic recruiting workflows and travel planning products
+          - listitem [ref=e126]: ↳ iOS apps, Swift learning tools, and small interface experiments
+    - contentinfo [ref=e127]:
+      - generic [ref=e128]:
+        - paragraph [ref=e129]: Pranav Karthik
+        - paragraph [ref=e130]: v8
+      - generic [ref=e131]:
+        - link "x" [ref=e132] [cursor=pointer]:
+          - /url: https://x.com/pranavkarthik__
+        - link "linkedin" [ref=e133] [cursor=pointer]:
+          - /url: https://linkedin.com/in/pranav-karthik
+        - link "github" [ref=e134] [cursor=pointer]:
+          - /url: https://github.com/pranavkarthik10
+  - button "Open Next.js Dev Tools" [ref=e140] [cursor=pointer]:
+    - img [ref=e141]
+  - alert [ref=e144]

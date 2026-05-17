@@ -1,0 +1,41 @@
+---
+title: "LLM Personality"
+publishedAt: "2025-12-28"
+summary: "The missing piece in frontier models today."
+---
+
+Often when interacting with frontier LLMs, a pattern I've noticed is how off their personalities still are. This feels like the last big roadblock before having general purpose AI assistants or more broadly, a sense of "AGI" to the general public.
+
+This is based on my interactions with Gemini 3 Pro, GPT-5, 5.1, 5.2, and Opus 4.5, all of which are amazing models in their deductive capabilities, tool calling, and general knowledge. But the way they convey that information is often lacking.
+
+I'm not sure if this is an issue with post-train or the system prompt. I'm sure there are workarounds such as user-defined system prompts or just instructing the model to behave in a certain way in conversation. But for a general user, like myself, I want these models to just be better as an overall experience.
+
+The problems are broadly their alignment, their depth of response, and the lack of general personalization towards the user.
+
+### Alignment
+
+This whole year, the concept of Claude being overly positive and saying "You're absolutely right!" has been a meme but it abstracts the general sycophancy and yes-men nature of the models. Arguably this is a sign of EQ but models can many times pick up on what the user prefers when discussing various topics and tends to align heavily towards it, many times arguing for it.
+
+Gemini 3 Pro acts as if it's this "brutally honest" assistant but that feels a bit too forced, and it still exhibits the aligning with what the user wants to hear a lot too.
+
+With Opus 4.5 it doesn't matter as much since people tend to focus on the code output rather than conversational ability.
+
+I feel like this goes beyond being a truthful and neutral assistant. Instead of just agreeing to my choice I want it to provide me with an accurate analysis of the other side. I want the model to tell me if I'm wrong more.
+
+### Depth of response
+
+Models being overly verbose, using AI slop syntax such as em-dashes, and going on for too long has been a thing since the onset of ChatGPT. But asking a model to reply in a single sentence is far too abrupt. And the system prompts to make it seem like "a friend" via a text-messaging format, seem too forced. There needs to be a balance that we haven't found yet.
+
+Moreover, there needs to be more intelligent depth into the user's query. Like if they're just asking a minor follow-up question, there's no need to create a table, a list, and a whole markdown formatted essay in response.
+
+Preferably this is on a per query / per message basis. Some messages and requests *do* need a whole report. Many don't.
+
+### General personalization
+
+Unfortunately, memory still hasn't been solved yet, nor has context. Having tool calls to save things to memory or retrieve them doesn't mean the model knows what to save and what to use. It still doesn't feel natural or encompassing. 
+
+Context is worse, many times runs out far too quick. In general, context shouldn't have to be something managed by the user. Nor should they have to create a new chat when context runs out. 
+
+These facets break the flow of the personality, and make interactions more robotic.
+
+In conclusion I feel like this last piece of the puzzle is what's necessary to make interacting with models not just useful, but more pleasant. As mentioned there are many ways to get them to behave differently today if you so choose. But the default out of the box experience needs to be better.

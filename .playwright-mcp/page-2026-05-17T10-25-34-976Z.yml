@@ -1,0 +1,159 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e6] [cursor=pointer]:
+    - button "Open Next.js Dev Tools" [ref=e7]:
+      - img [ref=e8]
+    - generic [ref=e11]:
+      - button "Open issues overlay" [ref=e12]:
+        - generic [ref=e13]:
+          - generic [ref=e14]: "4"
+          - generic [ref=e15]: "5"
+        - generic [ref=e16]:
+          - text: Issue
+          - generic [ref=e17]: s
+      - button "Collapse issues badge" [ref=e18]:
+        - img [ref=e19]
+  - generic [ref=e21]:
+    - banner [ref=e22]:
+      - link "pranav karthik" [ref=e23] [cursor=pointer]:
+        - /url: /
+      - navigation [ref=e24]:
+        - link "projects" [ref=e25] [cursor=pointer]:
+          - /url: /projects
+        - link "writing" [ref=e26] [cursor=pointer]:
+          - /url: /blog
+        - link "stack" [ref=e27] [cursor=pointer]:
+          - /url: /stack
+        - link "cv" [ref=e28] [cursor=pointer]:
+          - /url: /cv
+        - link "press" [ref=e29] [cursor=pointer]:
+          - /url: /press
+        - link "x" [ref=e30] [cursor=pointer]:
+          - /url: https://x.com/pranavkarthik__
+        - link "github" [ref=e31] [cursor=pointer]:
+          - /url: https://github.com/pranavkarthik10
+        - link "email" [ref=e32] [cursor=pointer]:
+          - /url: mailto:me@pranavkarthik.com
+    - main [ref=e34]:
+      - generic [ref=e35]:
+        - generic [ref=e36]:
+          - img "Pranav Karthik" [ref=e37]
+          - generic [ref=e38]:
+            - heading "Pranav Karthik" [level=1] [ref=e39]:
+              - generic "Pranav Karthik" [ref=e41] [cursor=pointer]:
+                - generic [ref=e42]: P
+                - generic [ref=e43]: r
+                - generic [ref=e44]: a
+                - generic [ref=e45]: "n"
+                - generic [ref=e46]: a
+                - generic [ref=e47]: v
+                - generic [ref=e48]: K
+                - generic [ref=e49]: a
+                - generic [ref=e50]: r
+                - generic [ref=e51]: t
+                - generic [ref=e52]: h
+                - generic [ref=e53]: i
+                - generic [ref=e54]: k
+            - paragraph [ref=e55]: Software engineer building agentic products and interfaces.
+        - generic [ref=e56]:
+          - paragraph [ref=e57]:
+            - text: I'm a software engineer studying Computer Science at
+            - link "UBC logo UBC" [ref=e58] [cursor=pointer]:
+              - /url: https://www.ubc.ca
+              - img "UBC logo" [ref=e61]
+              - heading "UBC" [level=3] [ref=e62]
+            - text: ", focused on building polished tools across web, mobile, and AI workflows."
+          - paragraph [ref=e63]:
+            - text: Previously, I did engineering at
+            - link "Vercel logomark Vercel" [ref=e64] [cursor=pointer]:
+              - /url: https://vercel.com
+              - img "Vercel logomark" [ref=e67]
+              - heading "Vercel" [level=3] [ref=e69]
+            - text: and
+            - link "Google logomark Google" [ref=e70] [cursor=pointer]:
+              - /url: https://google.com
+              - img "Google logomark" [ref=e73]
+              - heading "Google" [level=3] [ref=e78]
+            - text: . I like fast prototypes, quiet details, and software that feels alive without getting in the way.
+      - generic [ref=e79]:
+        - generic [ref=e80]:
+          - heading "Projects" [level=2] [ref=e81]
+          - link "view all" [ref=e82] [cursor=pointer]:
+            - /url: /projects
+        - generic [ref=e83]:
+          - link "GrokHunt screenshot GrokHunt work AI-powered recruiting platform that autonomously searches for talented developers using Grok's reasoning engine. 2025 / Next.js / Python / FastAPI / Grok API" [ref=e84] [cursor=pointer]:
+            - /url: /projects/grokhunt
+            - img "GrokHunt screenshot" [ref=e86]
+            - generic [ref=e87]:
+              - generic [ref=e88]:
+                - heading "GrokHunt" [level=3] [ref=e89]
+                - generic [ref=e90]: work
+              - paragraph [ref=e91]: AI-powered recruiting platform that autonomously searches for talented developers using Grok's reasoning engine.
+              - paragraph [ref=e92]: 2025 / Next.js / Python / FastAPI / Grok API
+          - link "LazyCal screenshot LazyCal personal A beautiful terminal Google Calendar client with day/week/month views, keyboard-first navigation, and optional Google Calendar sync. 2026 / TypeScript / OpenTUI / Google Calendar API / OAuth 2.0" [ref=e93] [cursor=pointer]:
+            - /url: /projects/lazycal
+            - img "LazyCal screenshot" [ref=e95]
+            - generic [ref=e96]:
+              - generic [ref=e97]:
+                - heading "LazyCal" [level=3] [ref=e98]
+                - generic [ref=e99]: personal
+              - paragraph [ref=e100]: A beautiful terminal Google Calendar client with day/week/month views, keyboard-first navigation, and optional Google Calendar sync.
+              - paragraph [ref=e101]: 2026 / TypeScript / OpenTUI / Google Calendar API / OAuth 2.0
+        - generic [ref=e102]:
+          - link "pdfp screenshot pdfp personal Fast PDF compression CLI with an interactive terminal UI, quality presets, and batch processing. 2026 / TypeScript / Node.js / Ghostscript" [ref=e103] [cursor=pointer]:
+            - /url: /projects/pdfp
+            - img "pdfp screenshot" [ref=e105]
+            - generic [ref=e106]:
+              - generic [ref=e107]:
+                - heading "pdfp" [level=3] [ref=e108]
+                - generic [ref=e109]: personal
+              - paragraph [ref=e110]: Fast PDF compression CLI with an interactive terminal UI, quality presets, and batch processing.
+              - paragraph [ref=e111]: 2026 / TypeScript / Node.js / Ghostscript
+          - link "Interconnected screenshot Interconnected personal Interactive Swift application introducing graph theory algorithms with custom physics simulation and drag-and-drop graph playground. 2024 / SwiftUI / CoreGraphics / Combine" [ref=e112] [cursor=pointer]:
+            - /url: /projects/interconnected
+            - img "Interconnected screenshot" [ref=e114]
+            - generic [ref=e115]:
+              - generic [ref=e116]:
+                - heading "Interconnected" [level=3] [ref=e117]
+                - generic [ref=e118]: personal
+              - paragraph [ref=e119]: Interactive Swift application introducing graph theory algorithms with custom physics simulation and drag-and-drop graph playground.
+              - paragraph [ref=e120]: 2024 / SwiftUI / CoreGraphics / Combine
+          - link "TravoAI screenshot TravoAI work Full-stack web application for AI-generated travel plans with streaming responses and modern React UI. 2023 / React.js / Node.js / OpenAI API" [ref=e121] [cursor=pointer]:
+            - /url: /projects/travoai
+            - img "TravoAI screenshot" [ref=e123]
+            - generic [ref=e124]:
+              - generic [ref=e125]:
+                - heading "TravoAI" [level=3] [ref=e126]
+                - generic [ref=e127]: work
+              - paragraph [ref=e128]: Full-stack web application for AI-generated travel plans with streaming responses and modern React UI.
+              - paragraph [ref=e129]: 2023 / React.js / Node.js / OpenAI API
+          - link "Trackr screenshot Trackr personal iOS app for assignment management with tens of thousands of App Store downloads and Siri integration. 2019 / UIKit / CoreData / SiriKit" [ref=e130] [cursor=pointer]:
+            - /url: /projects/trackr
+            - img "Trackr screenshot" [ref=e132]
+            - generic [ref=e133]:
+              - generic [ref=e134]:
+                - heading "Trackr" [level=3] [ref=e135]
+                - generic [ref=e136]: personal
+              - paragraph [ref=e137]: iOS app for assignment management with tens of thousands of App Store downloads and Siri integration.
+              - paragraph [ref=e138]: 2019 / UIKit / CoreData / SiriKit
+    - contentinfo [ref=e139]:
+      - generic [ref=e141]:
+        - generic [ref=e142]: signed by,
+        - generic "Pranav Karthik signature" [ref=e143]:
+          - img [ref=e145]
+          - img [ref=e148]
+          - img [ref=e151]
+          - img [ref=e154]
+          - img [ref=e157]
+          - img [ref=e160]
+          - img [ref=e163]
+          - img [ref=e166]
+          - img [ref=e169]
+          - img [ref=e172]
+          - img [ref=e175]
+          - img [ref=e178]
+          - img [ref=e181]
+      - generic "Vancouver time 03:25:34 AM" [ref=e184]:
+        - generic [ref=e186]: vancouver
+        - generic [ref=e187]: 03:25:34
+        - generic [ref=e188]: AM
+  - alert [ref=e189]

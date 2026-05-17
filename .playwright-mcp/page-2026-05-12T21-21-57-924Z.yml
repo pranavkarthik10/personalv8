@@ -1,0 +1,162 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - link "pranav karthik" [ref=e4] [cursor=pointer]:
+        - /url: /
+      - navigation [ref=e5]:
+        - link "projects" [ref=e6] [cursor=pointer]:
+          - /url: /projects
+        - link "writing" [ref=e7] [cursor=pointer]:
+          - /url: /blog
+        - link "stack" [ref=e8] [cursor=pointer]:
+          - /url: /stack
+        - link "cv" [ref=e9] [cursor=pointer]:
+          - /url: /cv
+        - link "press" [ref=e10] [cursor=pointer]:
+          - /url: /press
+    - main [ref=e12]:
+      - complementary [ref=e13]:
+        - generic [ref=e14]:
+          - generic [ref=e15]:
+            - heading "hey, I'm Pranav Karthik" [level=1] [ref=e16]:
+              - generic [ref=e17]:
+                - text: hey, I'm
+                - generic "Pranav Karthik" [ref=e18] [cursor=pointer]:
+                  - generic [ref=e19]: P
+                  - generic [ref=e20]: r
+                  - generic [ref=e21]: a
+                  - generic [ref=e22]: "n"
+                  - generic [ref=e23]: a
+                  - generic [ref=e24]: v
+                  - generic [ref=e25]: K
+                  - generic [ref=e26]: a
+                  - generic [ref=e27]: r
+                  - generic [ref=e28]: t
+                  - generic [ref=e29]: h
+                  - generic [ref=e30]: i
+                  - generic [ref=e31]: k
+            - paragraph [ref=e32]: Fourth year Computer Science student at UBC, passionate about building agentic experiences on the web, mobile, and spatial interfaces.
+          - generic [ref=e33]:
+            - generic [ref=e34]:
+              - generic [ref=e35]: ◆
+              - generic [ref=e36]: Engineering Intern
+              - link "Vercel logomark Vercel" [ref=e37] [cursor=pointer]:
+                - /url: https://vercel.com
+                - img "Vercel logomark" [ref=e40]
+                - heading "Vercel" [level=3] [ref=e42]
+            - generic [ref=e43]:
+              - generic [ref=e44]: ◆
+              - generic [ref=e45]: Engineering Intern
+              - link "Google logomark Google" [ref=e46] [cursor=pointer]:
+                - /url: https://google.com
+                - img "Google logomark" [ref=e49]
+                - heading "Google" [level=3] [ref=e54]
+            - generic [ref=e55]:
+              - generic [ref=e56]: ◆
+              - generic [ref=e57]: CS
+              - link "UBC logo UBC" [ref=e58] [cursor=pointer]:
+                - /url: https://www.ubc.ca
+                - img "UBC logo" [ref=e61]
+                - heading "UBC" [level=3] [ref=e62]
+          - generic [ref=e63]:
+            - heading "what i've been building" [level=2] [ref=e64]
+            - list [ref=e65]:
+              - listitem [ref=e66]: ↳ terminal-first tools for calendars and PDF compression
+              - listitem [ref=e67]: ↳ agentic recruiting workflows and travel planning products
+              - listitem [ref=e68]: ↳ iOS apps, Swift learning tools, and interface experiments
+        - generic [ref=e69]:
+          - link "cv" [ref=e70] [cursor=pointer]:
+            - /url: /cv
+          - text: /
+          - link "email" [ref=e71] [cursor=pointer]:
+            - /url: mailto:me@pranavkarthik.com
+      - generic [ref=e72]:
+        - generic [ref=e73]:
+          - heading "Selected projects" [level=2] [ref=e74]
+          - link "view all" [ref=e75] [cursor=pointer]:
+            - /url: /projects
+        - generic [ref=e76]:
+          - link "pdfp screenshot pdfp personal Fast PDF compression CLI with an interactive terminal UI, quality presets, and batch processing. 2026 / TypeScript / Node.js / Ghostscript / CLI" [ref=e77] [cursor=pointer]:
+            - /url: /projects/pdfp
+            - img "pdfp screenshot" [ref=e80]
+            - generic [ref=e81]:
+              - generic [ref=e82]:
+                - generic [ref=e83]:
+                  - heading "pdfp" [level=3] [ref=e84]
+                  - generic [ref=e85]: personal
+                - paragraph [ref=e86]: Fast PDF compression CLI with an interactive terminal UI, quality presets, and batch processing.
+              - paragraph [ref=e87]: 2026 / TypeScript / Node.js / Ghostscript / CLI
+          - link "LazyCal screenshot LazyCal personal A beautiful terminal Google Calendar client with day/week/month views, keyboard-first navigation, and optional Google Calendar sync. 2026 / TypeScript / OpenTUI / Google Calendar API / OAuth 2.0" [ref=e88] [cursor=pointer]:
+            - /url: /projects/lazycal
+            - img "LazyCal screenshot" [ref=e91]
+            - generic [ref=e92]:
+              - generic [ref=e93]:
+                - generic [ref=e94]:
+                  - heading "LazyCal" [level=3] [ref=e95]
+                  - generic [ref=e96]: personal
+                - paragraph [ref=e97]: A beautiful terminal Google Calendar client with day/week/month views, keyboard-first navigation, and optional Google Calendar sync.
+              - paragraph [ref=e98]: 2026 / TypeScript / OpenTUI / Google Calendar API / OAuth 2.0
+          - link "GrokHunt screenshot GrokHunt work AI-powered recruiting platform that autonomously searches for talented developers using Grok's reasoning engine. 2025 / Next.js / Python / FastAPI / Grok API" [ref=e99] [cursor=pointer]:
+            - /url: /projects/grokhunt
+            - img "GrokHunt screenshot" [ref=e102]
+            - generic [ref=e103]:
+              - generic [ref=e104]:
+                - generic [ref=e105]:
+                  - heading "GrokHunt" [level=3] [ref=e106]
+                  - generic [ref=e107]: work
+                - paragraph [ref=e108]: AI-powered recruiting platform that autonomously searches for talented developers using Grok's reasoning engine.
+              - paragraph [ref=e109]: 2025 / Next.js / Python / FastAPI / Grok API
+        - generic [ref=e110]:
+          - link "Interconnected screenshot Interconnected personal Interactive Swift application introducing graph theory algorithms with custom physics simulation and drag-and-drop graph playground. 2024 / SwiftUI / CoreGraphics" [ref=e111] [cursor=pointer]:
+            - /url: /projects/interconnected
+            - img "Interconnected screenshot" [ref=e114]
+            - generic [ref=e115]:
+              - generic [ref=e116]:
+                - heading "Interconnected" [level=3] [ref=e117]
+                - generic [ref=e118]: personal
+              - paragraph [ref=e119]: Interactive Swift application introducing graph theory algorithms with custom physics simulation and drag-and-drop graph playground.
+              - paragraph [ref=e120]: 2024 / SwiftUI / CoreGraphics
+          - link "TravoAI screenshot TravoAI work Full-stack web application for AI-generated travel plans with streaming responses and modern React UI. 2023 / React.js / Node.js" [ref=e121] [cursor=pointer]:
+            - /url: /projects/travoai
+            - img "TravoAI screenshot" [ref=e124]
+            - generic [ref=e125]:
+              - generic [ref=e126]:
+                - heading "TravoAI" [level=3] [ref=e127]
+                - generic [ref=e128]: work
+              - paragraph [ref=e129]: Full-stack web application for AI-generated travel plans with streaming responses and modern React UI.
+              - paragraph [ref=e130]: 2023 / React.js / Node.js
+          - link "Trackr screenshot Trackr personal iOS app for assignment management with tens of thousands of App Store downloads and Siri integration. 2019 / UIKit / CoreData" [ref=e131] [cursor=pointer]:
+            - /url: /projects/trackr
+            - img "Trackr screenshot" [ref=e134]
+            - generic [ref=e135]:
+              - generic [ref=e136]:
+                - heading "Trackr" [level=3] [ref=e137]
+                - generic [ref=e138]: personal
+              - paragraph [ref=e139]: iOS app for assignment management with tens of thousands of App Store downloads and Siri integration.
+              - paragraph [ref=e140]: 2019 / UIKit / CoreData
+        - generic [ref=e141]:
+          - heading "elsewhere" [level=2] [ref=e142]
+          - paragraph [ref=e143]:
+            - text: Find code on
+            - link "GitHub" [ref=e144] [cursor=pointer]:
+              - /url: https://github.com/pranavkarthik10
+            - text: ", notes in"
+            - link "writing" [ref=e145] [cursor=pointer]:
+              - /url: /blog
+            - text: ", and the current setup in"
+            - link "stack" [ref=e146] [cursor=pointer]:
+              - /url: /stack
+            - text: .
+    - contentinfo [ref=e147]:
+      - generic [ref=e148]:
+        - paragraph [ref=e149]: Pranav Karthik
+        - paragraph [ref=e150]: v8
+      - generic [ref=e151]:
+        - link "x" [ref=e152] [cursor=pointer]:
+          - /url: https://x.com/pranavkarthik__
+        - link "linkedin" [ref=e153] [cursor=pointer]:
+          - /url: https://linkedin.com/in/pranav-karthik
+        - link "github" [ref=e154] [cursor=pointer]:
+          - /url: https://github.com/pranavkarthik10
+  - button "Open Next.js Dev Tools" [ref=e160] [cursor=pointer]:
+    - img [ref=e161]

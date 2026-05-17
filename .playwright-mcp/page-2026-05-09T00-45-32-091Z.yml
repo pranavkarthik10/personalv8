@@ -1,0 +1,138 @@
+- generic [ref=e2]:
+  - banner [ref=e3]:
+    - link "pk" [ref=e4] [cursor=pointer]:
+      - /url: /
+    - navigation [ref=e5]:
+      - link "projects" [ref=e6] [cursor=pointer]:
+        - /url: /projects
+      - link "writing" [ref=e7] [cursor=pointer]:
+        - /url: /blog
+      - link "stack" [ref=e8] [cursor=pointer]:
+        - /url: /stack
+      - link "press" [ref=e9] [cursor=pointer]:
+        - /url: /press
+  - main [ref=e11]:
+    - generic [ref=e12]:
+      - generic [ref=e13]:
+        - heading "hey, I'm Pranav Karthik" [level=1] [ref=e14]:
+          - generic [ref=e15]:
+            - text: hey, I'm
+            - generic "Pranav Karthik" [ref=e16] [cursor=pointer]:
+              - generic [ref=e17]: P
+              - generic [ref=e18]: r
+              - generic [ref=e19]: a
+              - generic [ref=e20]: "n"
+              - generic [ref=e21]: a
+              - generic [ref=e22]: v
+        - paragraph [ref=e23]: Fourth year Computer Science student at UBC, passionate about building agentic experiences on the web, mobile, and spatial interfaces.
+      - paragraph [ref=e25]: I make interface-heavy software, developer tools, and small experiments that try to feel unusually alive.
+    - generic [ref=e26]:
+      - generic [ref=e27]:
+        - generic [ref=e28]:
+          - heading "Experience" [level=2] [ref=e29]
+          - generic [ref=e30]:
+            - generic [ref=e31]:
+              - link "Vercel logomark Vercel" [ref=e32] [cursor=pointer]:
+                - /url: https://vercel.com
+                - img "Vercel logomark" [ref=e35]
+                - heading "Vercel" [level=3] [ref=e38]
+              - paragraph [ref=e39]: 25 — 25
+              - paragraph [ref=e40]: Software Engineering Intern
+              - paragraph [ref=e41]: San Francisco
+            - generic [ref=e42]:
+              - link "Google logomark Google" [ref=e43] [cursor=pointer]:
+                - /url: https://google.com
+                - img "Google logomark" [ref=e46]
+                - heading "Google" [level=3] [ref=e52]
+              - paragraph [ref=e53]: 25 — 25
+              - paragraph [ref=e54]: Software Engineering Intern
+              - paragraph [ref=e55]: Seattle
+            - generic [ref=e56]:
+              - link "Google logomark Google" [ref=e57] [cursor=pointer]:
+                - /url: https://google.com
+                - img "Google logomark" [ref=e60]
+                - heading "Google" [level=3] [ref=e66]
+              - paragraph [ref=e67]: 24 — 24
+              - paragraph [ref=e68]: STEP Intern
+              - paragraph [ref=e69]: Waterloo
+            - generic [ref=e70]:
+              - link "DYNE logo DYNE" [ref=e71] [cursor=pointer]:
+                - /url: https://dyneapp.ca
+                - img "DYNE logo" [ref=e74]
+                - heading "DYNE" [level=3] [ref=e76]
+              - paragraph [ref=e77]: 23 — 23
+              - paragraph [ref=e78]: App Development Intern
+              - paragraph [ref=e79]: Vancouver
+        - generic [ref=e80]:
+          - heading "Education" [level=2] [ref=e81]
+          - generic [ref=e82]:
+            - generic [ref=e83]:
+              - img "UBC logo" [ref=e85]
+              - heading "University of British Columbia" [level=3] [ref=e86]
+            - paragraph [ref=e87]: Bachelor of Science, Computer Science
+            - paragraph [ref=e88]: 2022 — 2026
+      - generic [ref=e90]:
+        - generic [ref=e91]:
+          - heading "Projects" [level=2] [ref=e92]
+          - link "view all" [ref=e93] [cursor=pointer]:
+            - /url: /projects
+        - generic [ref=e94]:
+          - link "01 pdfp 2026 Fast PDF compression CLI with an interactive terminal UI, quality presets, and batch processing. TypeScript / Node.js / Ghostscript / CLI" [ref=e95] [cursor=pointer]:
+            - /url: /projects/pdfp
+            - generic [ref=e96]: "01"
+            - generic [ref=e97]:
+              - generic [ref=e98]:
+                - heading "pdfp" [level=3] [ref=e99]
+                - generic [ref=e100]: "2026"
+              - paragraph [ref=e101]: Fast PDF compression CLI with an interactive terminal UI, quality presets, and batch processing.
+              - paragraph [ref=e102]: TypeScript / Node.js / Ghostscript / CLI
+          - link "02 LazyCal 2026 A beautiful terminal Google Calendar client with day/week/month views, keyboard-first navigation, and optional Google Calendar sync. TypeScript / OpenTUI / Google Calendar API / OAuth 2.0" [ref=e103] [cursor=pointer]:
+            - /url: /projects/lazycal
+            - generic [ref=e104]: "02"
+            - generic [ref=e105]:
+              - generic [ref=e106]:
+                - heading "LazyCal" [level=3] [ref=e107]
+                - generic [ref=e108]: "2026"
+              - paragraph [ref=e109]: A beautiful terminal Google Calendar client with day/week/month views, keyboard-first navigation, and optional Google Calendar sync.
+              - paragraph [ref=e110]: TypeScript / OpenTUI / Google Calendar API / OAuth 2.0
+          - link "03 GrokHunt 2025 AI-powered recruiting platform that autonomously searches for talented developers using Grok's reasoning engine. xAI Hackathon Next.js / Python / FastAPI / Grok API" [ref=e111] [cursor=pointer]:
+            - /url: /projects/grokhunt
+            - generic [ref=e112]: "03"
+            - generic [ref=e113]:
+              - generic [ref=e114]:
+                - heading "GrokHunt" [level=3] [ref=e115]
+                - generic [ref=e116]: "2025"
+              - paragraph [ref=e117]: AI-powered recruiting platform that autonomously searches for talented developers using Grok's reasoning engine.
+              - paragraph [ref=e118]: xAI Hackathon
+              - paragraph [ref=e119]: Next.js / Python / FastAPI / Grok API
+          - link "04 Interconnected 2024 Interactive Swift application introducing graph theory algorithms with custom physics simulation and drag-and-drop graph playground. Distinguished Winner - Apple Swift Student Challenge SwiftUI / CoreGraphics / Combine" [ref=e120] [cursor=pointer]:
+            - /url: /projects/interconnected
+            - generic [ref=e121]: "04"
+            - generic [ref=e122]:
+              - generic [ref=e123]:
+                - heading "Interconnected" [level=3] [ref=e124]
+                - generic [ref=e125]: "2024"
+              - paragraph [ref=e126]: Interactive Swift application introducing graph theory algorithms with custom physics simulation and drag-and-drop graph playground.
+              - paragraph [ref=e127]: Distinguished Winner - Apple Swift Student Challenge
+              - paragraph [ref=e128]: SwiftUI / CoreGraphics / Combine
+          - link "05 TravoAI 2023 Full-stack web application for AI-generated travel plans with streaming responses and modern React UI. StormHacks React.js / Node.js / OpenAI API / Express" [ref=e129] [cursor=pointer]:
+            - /url: /projects/travoai
+            - generic [ref=e130]: "05"
+            - generic [ref=e131]:
+              - generic [ref=e132]:
+                - heading "TravoAI" [level=3] [ref=e133]
+                - generic [ref=e134]: "2023"
+              - paragraph [ref=e135]: Full-stack web application for AI-generated travel plans with streaming responses and modern React UI.
+              - paragraph [ref=e136]: StormHacks
+              - paragraph [ref=e137]: React.js / Node.js / OpenAI API / Express
+  - contentinfo [ref=e138]:
+    - generic [ref=e139]:
+      - paragraph [ref=e140]: Pranav Karthik
+      - paragraph [ref=e141]: built in Vancouver, version eight
+    - generic [ref=e142]:
+      - link "x" [ref=e143] [cursor=pointer]:
+        - /url: https://x.com/pranavkarthik__
+      - link "linkedin" [ref=e144] [cursor=pointer]:
+        - /url: https://linkedin.com/in/pranav-karthik
+      - link "github" [ref=e145] [cursor=pointer]:
+        - /url: https://github.com/pranavkarthik10

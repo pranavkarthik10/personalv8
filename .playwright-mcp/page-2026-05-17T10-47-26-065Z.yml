@@ -1,0 +1,158 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - navigation [ref=e4]:
+        - link "projects" [ref=e5] [cursor=pointer]:
+          - /url: /projects
+        - link "writing" [ref=e6] [cursor=pointer]:
+          - /url: /blog
+        - link "cv" [ref=e7] [cursor=pointer]:
+          - /url: /cv
+        - link "github" [ref=e8] [cursor=pointer]:
+          - /url: https://github.com/pranavkarthik10
+        - link "email" [ref=e9] [cursor=pointer]:
+          - /url: mailto:me@pranavkarthik.com
+    - main [ref=e11]:
+      - generic [ref=e12]:
+        - generic [ref=e13]:
+          - img "Pranav Karthik" [ref=e14]
+          - generic [ref=e15]:
+            - heading "Pranav Karthik" [level=1] [ref=e16]:
+              - generic "Pranav Karthik" [ref=e18] [cursor=pointer]:
+                - generic [ref=e19]: P
+                - generic [ref=e20]: r
+                - generic [ref=e21]: a
+                - generic [ref=e22]: "n"
+                - generic [ref=e23]: a
+                - generic [ref=e24]: v
+                - generic [ref=e26]: K
+                - generic [ref=e27]: a
+                - generic [ref=e28]: r
+                - generic [ref=e29]: t
+                - generic [ref=e30]: h
+                - generic [ref=e31]: i
+                - generic [ref=e32]: k
+            - paragraph [ref=e33]: Software engineer building tools for people and agents.
+        - generic [ref=e34]:
+          - generic [ref=e35]:
+            - text: I study Computer Science at
+            - link "UBC logo UBC" [ref=e36] [cursor=pointer]:
+              - /url: https://www.ubc.ca
+              - img "UBC logo" [ref=e38]
+              - generic [ref=e39]: UBC
+            - text: and build product-minded software across web, mobile, developer tools, and agent interfaces.
+          - generic [ref=e40]:
+            - text: I've done engineering at
+            - link "Vercel logomark Vercel" [ref=e41] [cursor=pointer]:
+              - /url: https://vercel.com
+              - img "Vercel logomark" [ref=e43]
+              - generic [ref=e45]: Vercel
+            - text: and
+            - link "Google logomark Google" [ref=e46] [cursor=pointer]:
+              - /url: https://google.com
+              - img "Google logomark" [ref=e48]
+              - generic [ref=e53]: Google
+            - text: ", working on developer tools, production marketplace surfaces, and interfaces that need to be fast, legible, and useful."
+          - generic [ref=e54]:
+            - text: Outside code, I'm usually
+            - generic [ref=e55]:
+              - img "computer" [ref=e57]
+              - generic [ref=e58]: tinkering with PCs and electronics
+            - text: ","
+            - generic [ref=e59]:
+              - img "Formula 1 car" [ref=e61]
+              - generic [ref=e62]: following F1
+            - text: ","
+            - generic [ref=e63]:
+              - img "chess piece" [ref=e65]
+              - generic [ref=e66]: playing chess
+            - text: ","
+            - generic [ref=e67]:
+              - img "game controller" [ref=e69]
+              - generic [ref=e70]: playing games
+            - text: .
+      - generic [ref=e71]:
+        - generic [ref=e72]:
+          - heading "Projects" [level=2] [ref=e73]
+          - link "view all" [ref=e74] [cursor=pointer]:
+            - /url: /projects
+        - generic [ref=e75]:
+          - link "LazyCal screenshot LazyCal A beautiful terminal Google Calendar client with day/week/month views, keyboard-first navigation, and optional Google Calendar sync. 2026 / TypeScript / OpenTUI / Google Calendar API / OAuth 2.0" [ref=e76] [cursor=pointer]:
+            - /url: /projects/lazycal
+            - img "LazyCal screenshot" [ref=e78]
+            - generic [ref=e79]:
+              - heading "LazyCal" [level=3] [ref=e80]
+              - paragraph [ref=e81]: A beautiful terminal Google Calendar client with day/week/month views, keyboard-first navigation, and optional Google Calendar sync.
+              - paragraph [ref=e82]: 2026 / TypeScript / OpenTUI / Google Calendar API / OAuth 2.0
+          - link "vercel.ts screenshot vercel.ts Programmatic project configuration for Vercel projects through a typed TypeScript file. 2025 / TypeScript / Vercel / Developer Tools / Configuration" [ref=e83] [cursor=pointer]:
+            - /url: /projects/vercel-ts
+            - img "vercel.ts screenshot" [ref=e85]
+            - generic [ref=e86]:
+              - heading "vercel.ts" [level=3] [ref=e87]
+              - paragraph [ref=e88]: Programmatic project configuration for Vercel projects through a typed TypeScript file.
+              - paragraph [ref=e89]: 2025 / TypeScript / Vercel / Developer Tools / Configuration
+        - generic [ref=e90]:
+          - link "sim-grab screenshot sim-grab Select context for coding agents from native iOS apps through a live simulator inspector. 2026 / TypeScript / Swift" [ref=e91] [cursor=pointer]:
+            - /url: /projects/sim-grab
+            - img "sim-grab screenshot" [ref=e93]
+            - generic [ref=e94]:
+              - heading "sim-grab" [level=3] [ref=e95]
+              - paragraph [ref=e96]: Select context for coding agents from native iOS apps through a live simulator inspector.
+              - paragraph [ref=e97]: 2026 / TypeScript / Swift
+          - link "GrokHunt screenshot GrokHunt AI-powered recruiting platform that autonomously searches for talented developers using Grok's reasoning engine. 2025 / Next.js / Python" [ref=e98] [cursor=pointer]:
+            - /url: /projects/grokhunt
+            - img "GrokHunt screenshot" [ref=e100]
+            - generic [ref=e101]:
+              - heading "GrokHunt" [level=3] [ref=e102]
+              - paragraph [ref=e103]: AI-powered recruiting platform that autonomously searches for talented developers using Grok's reasoning engine.
+              - paragraph [ref=e104]: 2025 / Next.js / Python
+          - link "Interconnected screenshot Interconnected Interactive Swift application introducing graph theory algorithms with custom physics simulation and drag-and-drop graph playground. 2024 / SwiftUI / CoreGraphics" [ref=e105] [cursor=pointer]:
+            - /url: /projects/interconnected
+            - img "Interconnected screenshot" [ref=e107]
+            - generic [ref=e108]:
+              - heading "Interconnected" [level=3] [ref=e109]
+              - paragraph [ref=e110]: Interactive Swift application introducing graph theory algorithms with custom physics simulation and drag-and-drop graph playground.
+              - paragraph [ref=e111]: 2024 / SwiftUI / CoreGraphics
+          - link "Trackr screenshot Trackr iOS app for assignment management with tens of thousands of App Store downloads and Siri integration. 2019 / UIKit / CoreData" [ref=e112] [cursor=pointer]:
+            - /url: /projects/trackr
+            - img "Trackr screenshot" [ref=e114]
+            - generic [ref=e115]:
+              - heading "Trackr" [level=3] [ref=e116]
+              - paragraph [ref=e117]: iOS app for assignment management with tens of thousands of App Store downloads and Siri integration.
+              - paragraph [ref=e118]: 2019 / UIKit / CoreData
+          - link "Google Workspace Marketplace screenshot Google Workspace Marketplace Featured partner apps experience for the Google Workspace Marketplace homepage. 2024 / Java / HTML" [ref=e119] [cursor=pointer]:
+            - /url: /projects/google-workspace-marketplace
+            - img "Google Workspace Marketplace screenshot" [ref=e121]
+            - generic [ref=e122]:
+              - heading "Google Workspace Marketplace" [level=3] [ref=e123]
+              - paragraph [ref=e124]: Featured partner apps experience for the Google Workspace Marketplace homepage.
+              - paragraph [ref=e125]: 2024 / Java / HTML
+          - link "pdfp screenshot pdfp Fast PDF compression CLI with an interactive terminal UI, quality presets, and batch processing. 2026 / TypeScript / Node.js" [ref=e126] [cursor=pointer]:
+            - /url: /projects/pdfp
+            - img "pdfp screenshot" [ref=e128]
+            - generic [ref=e129]:
+              - heading "pdfp" [level=3] [ref=e130]
+              - paragraph [ref=e131]: Fast PDF compression CLI with an interactive terminal UI, quality presets, and batch processing.
+              - paragraph [ref=e132]: 2026 / TypeScript / Node.js
+    - contentinfo [ref=e133]:
+      - generic "Pranav Karthik signature" [ref=e136]:
+        - img [ref=e138]
+        - img [ref=e141]
+        - img [ref=e144]
+        - img [ref=e147]
+        - img [ref=e150]
+        - img [ref=e153]
+        - img [ref=e156]
+        - img [ref=e159]
+        - img [ref=e162]
+        - img [ref=e165]
+        - img [ref=e168]
+        - img [ref=e171]
+        - img [ref=e174]
+      - generic "Vancouver time 03:47:25 AM" [ref=e177]:
+        - generic [ref=e179]: vancouver
+        - generic [ref=e180]: 03:47:25
+        - generic [ref=e181]: AM
+  - button "Open Next.js Dev Tools" [ref=e187] [cursor=pointer]:
+    - img [ref=e188]
+  - alert [ref=e191]

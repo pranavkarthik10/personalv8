@@ -1,0 +1,23 @@
+---
+title: "The State of Coding Agents"
+publishedAt: "2025-10-31"
+summary: "Thoughts on the current state of coding agents."
+---
+
+Things that still need to be improved in coding agents
+
+- better management of multi folder/repo projects and tasks. Like let's say I'm working on an npm package, a frontend server, and backend server at the same time. I want to be able to manage and oversee everything across these in one ide and in an easily understandable way. Yes, I could technically give a terminal-level agent access to all my files or at least those folders and just let it do everything. But the changes on each project aren't really viewable separately. It's just missing something orchestration wise.
+- integration with CI/CD. For example, I was using Codex and it created a few PRs. Then my Vercel CI/CD says the deployments failed and it has build logs. Instead of having to copy/paste the errors from there into Codex each time, this should be automatic. This is a huge limiting factor with cloud agents. This wouldn't be as big of an issue locally, as it would be able to run/build the project to find errors, or even see the screen to make sure it's working.
+- cloud agents run in sandboxes that have many limiting factors. Bot protection on webpages it tries to access, can't make certain network calls, etc.
+
+Generally it feels like many coding agents are converging at the same thing:
+- Cursor, Claude Code, Codex, Gemini CLI specifically
+- All of them have a web/cloud interface, an agent only interface, cli, ide integration, github PR interface (code review)
+
+
+There are still many benefits to the IDE interface in my opinion.
+- Being able to see diffs
+- Managing more complex git and version control workflows
+- Extensions in some cases (Latex, Jupyter Notebooks, etc)
+- Quick edits, let's say you're fixing a typo, is it worth an LLM call
+

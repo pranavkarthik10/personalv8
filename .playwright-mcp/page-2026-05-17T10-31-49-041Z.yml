@@ -1,0 +1,2068 @@
+- generic [ref=e2]:
+  - banner [ref=e4]:
+    - generic [ref=e5]:
+      - generic [ref=e6]:
+        - button "Main menu" [expanded] [ref=e7] [cursor=pointer]:
+          - img [ref=e8]
+        - link "Google Workspace Marketplace" [ref=e12] [cursor=pointer]:
+          - /url: /marketplace
+          - img [ref=e13]
+      - generic [ref=e14]:
+        - search [ref=e16]:
+          - generic [ref=e22]:
+            - textbox [disabled] [ref=e23]: Search apps
+            - combobox "Search apps" [ref=e24]
+          - button "Search" [ref=e25] [cursor=pointer]:
+            - img [ref=e26]
+        - generic [ref=e34]:
+          - button "Support" [ref=e35] [cursor=pointer]:
+            - generic [ref=e36]: help_outline
+          - tooltip [ref=e37]: Support
+      - generic [ref=e39]:
+        - button "Google apps" [ref=e43] [cursor=pointer]:
+          - img [ref=e44]
+        - link "Sign in" [ref=e47] [cursor=pointer]:
+          - /url: https://accounts.google.com/ServiceLogin?passive=1209600&continue=https://workspace.google.com/marketplace&followup=https://workspace.google.com/marketplace&ec=GAZArwI
+    - navigation [ref=e48]:
+      - navigation [ref=e51]:
+        - generic [ref=e52]:
+          - generic [ref=e53]:
+            - tooltip "Home" [ref=e54]:
+              - link "Home" [ref=e55] [cursor=pointer]:
+                - /url: ./marketplace
+                - generic [ref=e56]: home
+                - generic [ref=e57]: Home
+            - tooltip "Featured partner apps" [ref=e58]:
+              - link "Featured partner apps" [ref=e59] [cursor=pointer]:
+                - /url: ./marketplace/category/featured-partner-apps
+                - generic [ref=e61]: stack_star
+                - generic [ref=e62]: Featured partner apps
+            - tooltip "Recommended for Google Workspace" [ref=e63]:
+              - link "Recommended for Google Workspace" [ref=e64] [cursor=pointer]:
+                - /url: ./marketplace/category/recommended
+                - generic [ref=e65]: workspaces
+                - generic [ref=e66]: Recommended for Google Workspace
+            - generic [ref=e67]:
+              - generic [ref=e68]:
+                - button "Editor's choice" [expanded] [ref=e69] [cursor=pointer]:
+                  - generic [ref=e71]: arrow_right
+                - tooltip "Editor's choice" [ref=e72]:
+                  - generic [ref=e73] [cursor=pointer]:
+                    - generic [ref=e74]: assistant
+                    - generic [ref=e75]: Editor's choice
+              - generic [ref=e76]:
+                - tooltip "Work from everywhere" [ref=e77]:
+                  - link "Work from everywhere" [ref=e78] [cursor=pointer]:
+                    - /url: ./marketplace/category/work-from-everywhere
+                    - generic [ref=e79]: Work from everywhere
+                - tooltip "Business essentials" [ref=e80]:
+                  - link "Business essentials" [ref=e81] [cursor=pointer]:
+                    - /url: ./marketplace/category/business-essentials
+                    - generic [ref=e82]: Business essentials
+                - tooltip "Apps to discover" [ref=e83]:
+                  - link "Apps to discover" [ref=e84] [cursor=pointer]:
+                    - /url: ./marketplace/category/apps-to-discover
+                    - generic [ref=e85]: Apps to discover
+            - tooltip "Built by Google" [ref=e86]:
+              - link "Built by Google" [ref=e87] [cursor=pointer]:
+                - /url: ./marketplace/category/google-apps
+                - generic [ref=e88]: google
+                - generic [ref=e89]: Built by Google
+            - generic [ref=e90]:
+              - generic [ref=e91]:
+                - button "Top charts" [expanded] [ref=e92] [cursor=pointer]:
+                  - generic [ref=e94]: arrow_right
+                - tooltip "Top charts" [ref=e95]:
+                  - generic [ref=e96] [cursor=pointer]:
+                    - generic [ref=e97]: insert_chart_outlined
+                    - generic [ref=e98]: Top charts
+              - generic [ref=e99]:
+                - tooltip "Most popular" [ref=e100]:
+                  - link "Most popular" [ref=e101] [cursor=pointer]:
+                    - /url: ./marketplace/category/popular-apps
+                    - generic [ref=e102]: Most popular
+                - tooltip "Top rated" [ref=e103]:
+                  - link "Top rated" [ref=e104] [cursor=pointer]:
+                    - /url: ./marketplace/category/top-rated
+                    - generic [ref=e105]: Top rated
+            - generic [ref=e108]:
+              - button "Categories" [ref=e109] [cursor=pointer]:
+                - generic [ref=e111]: arrow_right
+              - tooltip "Categories" [ref=e112]:
+                - generic [ref=e113] [cursor=pointer]:
+                  - generic [ref=e114]: category
+                  - generic [ref=e115]: Categories
+          - tooltip "Admin managed" [ref=e117]:
+            - link "Admin managed" [ref=e118] [cursor=pointer]:
+              - /url: ./marketplace/category/enterprise-apps
+              - generic [ref=e119]: tenancy
+              - generic [ref=e120]: Admin managed
+  - generic [ref=e124]:
+    - generic [ref=e127] [cursor=pointer]:
+      - generic [ref=e128]:
+        - generic [ref=e129]: Featured partner apps
+        - generic [ref=e130]: Connect your business apps with Google Workspace.
+        - button "See all" [ref=e133]:
+          - generic [ref=e136]: See all
+      - generic [ref=e137]:
+        - generic [ref=e138]:
+          - link "App Icon LumApps for Google Chat™" [ref=e141]:
+            - /url: ./marketplace/app/lumapps_for_google_chat/337581475857?flow_type=74
+            - img "App Icon" [ref=e142]
+            - generic [ref=e143]: LumApps for Google Chat™
+          - link "App Icon HubSpot app for Google Meet™" [ref=e146]:
+            - /url: ./marketplace/app/hubspot_app_for_google_meet/717327351646?flow_type=74
+            - img "App Icon" [ref=e147]
+            - generic [ref=e148]: HubSpot app for Google Meet™
+          - link "App Icon Zapier for Google Chat" [ref=e151]:
+            - /url: ./marketplace/app/zapier_for_google_chat/905224480607?flow_type=74
+            - img "App Icon" [ref=e152]
+            - generic [ref=e153]: Zapier for Google Chat
+        - generic [ref=e154]:
+          - link "App Icon Read AI" [ref=e157]:
+            - /url: ./marketplace/app/read_ai/766098389391?flow_type=74
+            - img "App Icon" [ref=e158]
+            - generic [ref=e159]: Read AI
+          - link "App Icon Tableau" [ref=e162]:
+            - /url: ./marketplace/app/tableau/1044537977580?flow_type=74
+            - img "App Icon" [ref=e163]
+            - generic [ref=e164]: Tableau
+          - link "App Icon Confluence" [ref=e167]:
+            - /url: ./marketplace/app/confluence/118174936708?flow_type=74
+            - img "App Icon" [ref=e168]
+            - generic [ref=e169]: Confluence
+    - toolbar "Search refinement" [ref=e172]:
+      - button "All filters" [ref=e177]:
+        - generic [ref=e180]: tune
+        - generic [ref=e181]: All filters
+      - generic [ref=e182]:
+        - button "Works with" [ref=e187]:
+          - generic [ref=e190]: Works with
+          - generic [ref=e191]: arrow_drop_down
+        - button "Price" [ref=e196]:
+          - generic [ref=e199]: Price
+          - generic [ref=e200]: arrow_drop_down
+    - generic [ref=e201]:
+      - generic [ref=e203]:
+        - generic [ref=e204]:
+          - generic [ref=e205]:
+            - heading "Recommended for Google Workspace" [level=1] [ref=e206]
+            - generic [ref=e209]:
+              - button "More details about user reviews" [ref=e210] [cursor=pointer]:
+                - generic [ref=e211]: info
+              - tooltip [ref=e212]: More details about user reviews
+          - generic [ref=e213]:
+            - text: These apps are sponsored as part of a Google partner program.
+            - link "Learn more about featured apps" [ref=e214] [cursor=pointer]:
+              - /url: https://support.google.com/a?p=featured-apps&hl=en_US
+              - text: Learn more
+              - generic [ref=e215]: open_in_new
+            - text: .
+          - link "View more Recommended for Google Workspace apps" [ref=e216] [cursor=pointer]:
+            - /url: "#"
+            - text: View more
+        - generic [ref=e217]:
+          - generic [ref=e219]:
+            - link "Sheetgo , DeveloperSheetgo , DescriptionConnect Google Sheets™, Excel, and CSV files. Transfer, filter, split, and merge data. Sheetgo is an importrange alternative that integrates with Google Docs™ and Gmail™ to automate your data streams. , Rating 4.2 , Number of users5M+" [ref=e220] [cursor=pointer]:
+              - /url: ./marketplace/app/sheetgo/94172092257?flow_type=40
+              - img [ref=e222]
+              - generic [ref=e223]:
+                - generic [ref=e224]: Sheetgo
+                - generic [ref=e225]:
+                  - generic ", Developer"
+                  - text: Sheetgo
+                - generic [ref=e226]:
+                  - generic ", Description"
+                  - text: Connect Google Sheets™, Excel, and CSV files. Transfer, filter, split, and merge data. Sheetgo is an importrange alternative that integrates with Google Docs™ and Gmail™ to automate your data streams.
+              - generic [ref=e227]:
+                - generic [ref=e228]:
+                  - img [ref=e229]
+                  - generic ", Rating"
+                  - generic [ref=e233]: "4.2"
+                - generic [ref=e234]:
+                  - img [ref=e235]
+                  - generic [ref=e238]:
+                    - generic ", Number of users"
+                    - text: 5M+
+            - button "More info about independent security assessment" [ref=e241] [cursor=pointer]:
+              - generic [ref=e243]: verified_user
+            - button "Install" [ref=e246] [cursor=pointer]:
+              - generic [ref=e248]: Install
+          - generic [ref=e250]:
+            - link "Copper CRM for Google Sheets™ , Developercopper.com , DescriptionYou work out of Google Workspace™. So should your CRM. , Rating 4.5 , Number of users710K+" [ref=e251] [cursor=pointer]:
+              - /url: ./marketplace/app/copper_crm_for_google_sheets/461423560386?flow_type=40
+              - img [ref=e253]
+              - generic [ref=e254]:
+                - generic [ref=e255]: Copper CRM for Google Sheets™
+                - generic [ref=e256]:
+                  - generic ", Developer"
+                  - text: copper.com
+                - generic [ref=e257]:
+                  - generic ", Description"
+                  - text: You work out of Google Workspace™. So should your CRM.
+              - generic [ref=e258]:
+                - generic [ref=e259]:
+                  - img [ref=e260]
+                  - generic ", Rating"
+                  - generic [ref=e264]: "4.5"
+                - generic [ref=e265]:
+                  - img [ref=e266]
+                  - generic [ref=e269]:
+                    - generic ", Number of users"
+                    - text: 710K+
+            - button "More info about independent security assessment" [ref=e272] [cursor=pointer]:
+              - generic [ref=e274]: verified_user
+            - button "Install" [ref=e277] [cursor=pointer]:
+              - generic [ref=e279]: Install
+          - generic [ref=e281]:
+            - link "Dialpad , Developerdialpad.com , DescriptionOne Beautiful Workspace for calling, messaging, meetings and contact center integrated with Google Workspace™ , Rating 4.2 , Number of users612K+" [ref=e282] [cursor=pointer]:
+              - /url: ./marketplace/app/dialpad/640049980484?flow_type=40
+              - img [ref=e284]
+              - generic [ref=e285]:
+                - generic [ref=e286]: Dialpad
+                - generic [ref=e287]:
+                  - generic ", Developer"
+                  - text: dialpad.com
+                - generic [ref=e288]:
+                  - generic ", Description"
+                  - text: One Beautiful Workspace for calling, messaging, meetings and contact center integrated with Google Workspace™
+              - generic [ref=e289]:
+                - generic [ref=e290]:
+                  - img [ref=e291]
+                  - generic ", Rating"
+                  - generic [ref=e295]: "4.2"
+                - generic [ref=e296]:
+                  - img [ref=e297]
+                  - generic [ref=e300]:
+                    - generic ", Number of users"
+                    - text: 612K+
+            - button "More info about independent security assessment" [ref=e303] [cursor=pointer]:
+              - generic [ref=e305]: verified_user
+            - button "Install" [ref=e308] [cursor=pointer]:
+              - generic [ref=e310]: Install
+          - generic [ref=e312]:
+            - link "LumApps Publish in Google Workspace™ , DeveloperLumApps , DescriptionCreate contents in LumApps from Google Workspace™ documents. , Rating 4.6 , Number of users213K+" [ref=e313] [cursor=pointer]:
+              - /url: ./marketplace/app/lumapps_publish_in_google_workspace/721757337035?flow_type=40
+              - img [ref=e315]
+              - generic [ref=e316]:
+                - generic [ref=e317]: LumApps Publish in Google Workspace™
+                - generic [ref=e318]:
+                  - generic ", Developer"
+                  - text: LumApps
+                - generic [ref=e319]:
+                  - generic ", Description"
+                  - text: Create contents in LumApps from Google Workspace™ documents.
+              - generic [ref=e320]:
+                - generic [ref=e321]:
+                  - img [ref=e322]
+                  - generic ", Rating"
+                  - generic [ref=e326]: "4.6"
+                - generic [ref=e327]:
+                  - img [ref=e328]
+                  - generic [ref=e331]:
+                    - generic ", Number of users"
+                    - text: 213K+
+            - button "More info about independent security assessment" [ref=e334] [cursor=pointer]:
+              - generic [ref=e336]: verified_user
+            - button "Install" [ref=e339] [cursor=pointer]:
+              - generic [ref=e341]: Install
+      - generic [ref=e343]:
+        - generic [ref=e344]:
+          - generic [ref=e345]:
+            - heading "Work from everywhere" [level=1] [ref=e346]
+            - generic [ref=e349]:
+              - button "More details about user reviews" [ref=e350] [cursor=pointer]:
+                - generic [ref=e351]: info
+              - tooltip [ref=e352]: More details about user reviews
+          - generic [ref=e353]:
+            - text: These apps help your organization be more productive.
+            - link "Learn more about Editor's Choice apps" [ref=e354] [cursor=pointer]:
+              - /url: https://support.google.com/a?p=editors-choice&hl=en_US
+              - text: Learn more
+              - generic [ref=e355]: open_in_new
+            - text: .
+          - link "View more Work from everywhere apps" [ref=e356] [cursor=pointer]:
+            - /url: "#"
+            - text: View more
+        - generic [ref=e357]:
+          - generic [ref=e359]:
+            - link "Poll , DeveloperGoogle , DescriptionCreate and vote on polls directly within Google Chat™. , Rating 3.1 , Number of users5M+" [ref=e360] [cursor=pointer]:
+              - /url: ./marketplace/app/poll/330982171253?flow_type=59
+              - img [ref=e362]
+              - generic [ref=e363]:
+                - generic [ref=e364]: Poll
+                - generic [ref=e365]:
+                  - generic ", Developer"
+                  - text: Google
+                - generic [ref=e366]:
+                  - generic ", Description"
+                  - text: Create and vote on polls directly within Google Chat™.
+              - generic [ref=e367]:
+                - generic [ref=e368]:
+                  - img [ref=e369]
+                  - generic ", Rating"
+                  - generic [ref=e373]: "3.1"
+                - generic [ref=e374]:
+                  - img [ref=e375]
+                  - generic [ref=e378]:
+                    - generic ", Number of users"
+                    - text: 5M+
+            - button "Install" [ref=e380] [cursor=pointer]:
+              - generic [ref=e382]: Install
+          - generic [ref=e384]:
+            - link "Atlassian , DeveloperAtlassian , DescriptionIntegrate Jira and Confluence with Google Workspace™ to quickly create, track, and update work. , Rating 3.6 , Number of users1M+" [ref=e385] [cursor=pointer]:
+              - /url: ./marketplace/app/atlassian/331162826608?flow_type=59
+              - img [ref=e387]
+              - generic [ref=e388]:
+                - generic [ref=e389]: Atlassian
+                - generic [ref=e390]:
+                  - generic ", Developer"
+                  - text: Atlassian
+                - generic [ref=e391]:
+                  - generic ", Description"
+                  - text: Integrate Jira and Confluence with Google Workspace™ to quickly create, track, and update work.
+              - generic [ref=e392]:
+                - generic [ref=e393]:
+                  - img [ref=e394]
+                  - generic ", Rating"
+                  - generic [ref=e398]: "3.6"
+                - generic [ref=e399]:
+                  - img [ref=e400]
+                  - generic [ref=e403]:
+                    - generic ", Number of users"
+                    - text: 1M+
+            - button "Install" [ref=e405] [cursor=pointer]:
+              - generic [ref=e407]: Install
+          - generic [ref=e409]:
+            - link "Giphy for Google Chat , DeveloperGoogle , DescriptionPost GIFs from GIPHY directly into Google Chat. , Rating 4.6 , Number of users1M+" [ref=e410] [cursor=pointer]:
+              - /url: ./marketplace/app/giphy_for_google_chat/1088857497057?flow_type=59
+              - img [ref=e412]
+              - generic [ref=e413]:
+                - generic [ref=e414]: Giphy for Google Chat
+                - generic [ref=e415]:
+                  - generic ", Developer"
+                  - text: Google
+                - generic [ref=e416]:
+                  - generic ", Description"
+                  - text: Post GIFs from GIPHY directly into Google Chat.
+              - generic [ref=e417]:
+                - generic [ref=e418]:
+                  - img [ref=e419]
+                  - generic ", Rating"
+                  - generic [ref=e423]: "4.6"
+                - generic [ref=e424]:
+                  - img [ref=e425]
+                  - generic [ref=e428]:
+                    - generic ", Number of users"
+                    - text: 1M+
+            - button "Install" [ref=e430] [cursor=pointer]:
+              - generic [ref=e432]: Install
+          - generic [ref=e434]:
+            - link "Dialpad Meetings for Google Calendar™ , DeveloperDialpad, Inc , DescriptionSchedule calls from Google Calendar™ and easily access your call info. , Rating 4.5 , Number of users787K+" [ref=e435] [cursor=pointer]:
+              - /url: ./marketplace/app/dialpad_meetings_for_google_calendar/255217867751?flow_type=59
+              - img [ref=e437]
+              - generic [ref=e438]:
+                - generic [ref=e439]: Dialpad Meetings for Google Calendar™
+                - generic [ref=e440]:
+                  - generic ", Developer"
+                  - text: Dialpad, Inc
+                - generic [ref=e441]:
+                  - generic ", Description"
+                  - text: Schedule calls from Google Calendar™ and easily access your call info.
+              - generic [ref=e442]:
+                - generic [ref=e443]:
+                  - img [ref=e444]
+                  - generic ", Rating"
+                  - generic [ref=e448]: "4.5"
+                - generic [ref=e449]:
+                  - img [ref=e450]
+                  - generic [ref=e453]:
+                    - generic ", Number of users"
+                    - text: 787K+
+            - button "More info about independent security assessment" [ref=e456] [cursor=pointer]:
+              - generic [ref=e458]: verified_user
+            - button "Install" [ref=e461] [cursor=pointer]:
+              - generic [ref=e463]: Install
+      - generic [ref=e465]:
+        - generic [ref=e466]:
+          - generic [ref=e467]:
+            - heading "Business essentials" [level=1] [ref=e468]
+            - generic [ref=e471]:
+              - button "More details about user reviews" [ref=e472] [cursor=pointer]:
+                - generic [ref=e473]: info
+              - tooltip [ref=e474]: More details about user reviews
+          - generic [ref=e475]:
+            - text: These apps help increase workflow productivity.
+            - link "Learn more about Editor's Choice apps" [ref=e476] [cursor=pointer]:
+              - /url: https://support.google.com/a?p=editors-choice&hl=en_US
+              - text: Learn more
+              - generic [ref=e477]: open_in_new
+            - text: .
+          - link "View more Business essentials apps" [ref=e478] [cursor=pointer]:
+            - /url: "#"
+            - text: View more
+        - generic [ref=e479]:
+          - generic [ref=e481]:
+            - link "Lucidchart , DeveloperLucid Software , DescriptionCollaborate on diagrams, such as flowcharts, wireframes, ERDs, and more. , Rating 4.1 , Number of users47M+" [ref=e482] [cursor=pointer]:
+              - /url: ./marketplace/app/lucidchart/7081045131?flow_type=58
+              - img [ref=e484]
+              - generic [ref=e485]:
+                - generic [ref=e486]: Lucidchart
+                - generic [ref=e487]:
+                  - generic ", Developer"
+                  - text: Lucid Software
+                - generic [ref=e488]:
+                  - generic ", Description"
+                  - text: Collaborate on diagrams, such as flowcharts, wireframes, ERDs, and more.
+              - generic [ref=e489]:
+                - generic [ref=e490]:
+                  - img [ref=e491]
+                  - generic ", Rating"
+                  - generic [ref=e495]: "4.1"
+                - generic [ref=e496]:
+                  - img [ref=e497]
+                  - generic [ref=e500]:
+                    - generic ", Number of users"
+                    - text: 47M+
+            - button "More info about independent security assessment" [ref=e503] [cursor=pointer]:
+              - generic [ref=e505]: verified_user
+            - button "Install" [ref=e508] [cursor=pointer]:
+              - generic [ref=e510]: Install
+          - generic [ref=e512]:
+            - link "Form Publisher , DeveloperTalarian , DescriptionGenerate templated documents with Google Forms™. Generate PDF, Google Docs™, Sheets™, Slides™, Microsoft Word, Excel, Powerpoint customized documents. Get them approved and signed. , Rating 4.6 , Number of users24M+" [ref=e513] [cursor=pointer]:
+              - /url: ./marketplace/app/form_publisher/827172627657?flow_type=58
+              - img [ref=e515]
+              - generic [ref=e516]:
+                - generic [ref=e517]: Form Publisher
+                - generic [ref=e518]:
+                  - generic ", Developer"
+                  - text: Talarian
+                - generic [ref=e519]:
+                  - generic ", Description"
+                  - text: Generate templated documents with Google Forms™. Generate PDF, Google Docs™, Sheets™, Slides™, Microsoft Word, Excel, Powerpoint customized documents. Get them approved and signed.
+              - generic [ref=e520]:
+                - generic [ref=e521]:
+                  - img [ref=e522]
+                  - generic ", Rating"
+                  - generic [ref=e526]: "4.6"
+                - generic [ref=e527]:
+                  - img [ref=e528]
+                  - generic [ref=e531]:
+                    - generic ", Number of users"
+                    - text: 24M+
+            - button "More info about independent security assessment" [ref=e534] [cursor=pointer]:
+              - generic [ref=e536]: verified_user
+            - button "Install" [ref=e539] [cursor=pointer]:
+              - generic [ref=e541]: Install
+          - generic [ref=e543]:
+            - link "Form Builder Plus , DeveloperJivrus Technologies , DescriptionBuild your Google Form from anything - Sheets™, Docs™, Slides™, PDFs, MS Word/Powerpoint, Images, Forms™, Drive™, Gmail™, Calendar™ etc. , Rating 4.7 , Number of users4M+" [ref=e544] [cursor=pointer]:
+              - /url: ./marketplace/app/form_builder_plus/235019714744?flow_type=58
+              - img [ref=e546]
+              - generic [ref=e547]:
+                - generic [ref=e548]: Form Builder Plus
+                - generic [ref=e549]:
+                  - generic ", Developer"
+                  - text: Jivrus Technologies
+                - generic [ref=e550]:
+                  - generic ", Description"
+                  - text: Build your Google Form from anything - Sheets™, Docs™, Slides™, PDFs, MS Word/Powerpoint, Images, Forms™, Drive™, Gmail™, Calendar™ etc.
+              - generic [ref=e551]:
+                - generic [ref=e552]:
+                  - img [ref=e553]
+                  - generic ", Rating"
+                  - generic [ref=e557]: "4.7"
+                - generic [ref=e558]:
+                  - img [ref=e559]
+                  - generic [ref=e562]:
+                    - generic ", Number of users"
+                    - text: 4M+
+            - button "Install" [ref=e564] [cursor=pointer]:
+              - generic [ref=e566]: Install
+          - generic [ref=e568]:
+            - link "Pretty Forms Designer , DeveloperDesign Beautiful Forms , DescriptionCustomize Google Forms™ with styles, Multi-language form, Inline Math Equation Editor, Custom Form's Layout & Designs, Html formatting, Insert custom Button, Table, & more features. , Rating 4.1 , Number of users1M+" [ref=e569] [cursor=pointer]:
+              - /url: ./marketplace/app/pretty_forms_designer/1077249372154?flow_type=58
+              - img [ref=e571]
+              - generic [ref=e572]:
+                - generic [ref=e573]: Pretty Forms Designer
+                - generic [ref=e574]:
+                  - generic ", Developer"
+                  - text: Design Beautiful Forms
+                - generic [ref=e575]:
+                  - generic ", Description"
+                  - text: Customize Google Forms™ with styles, Multi-language form, Inline Math Equation Editor, Custom Form's Layout & Designs, Html formatting, Insert custom Button, Table, & more features.
+              - generic [ref=e576]:
+                - generic [ref=e577]:
+                  - img [ref=e578]
+                  - generic ", Rating"
+                  - generic [ref=e582]: "4.1"
+                - generic [ref=e583]:
+                  - img [ref=e584]
+                  - generic [ref=e587]:
+                    - generic ", Number of users"
+                    - text: 1M+
+            - button "Install" [ref=e589] [cursor=pointer]:
+              - generic [ref=e591]: Install
+      - generic [ref=e593]:
+        - generic [ref=e594]:
+          - generic [ref=e595]:
+            - heading "Apps to discover" [level=1] [ref=e596]
+            - generic [ref=e599]:
+              - button "More details about user reviews" [ref=e600] [cursor=pointer]:
+                - generic [ref=e601]: info
+              - tooltip [ref=e602]: More details about user reviews
+          - generic [ref=e603]:
+            - text: These apps are new and innovative.
+            - link "Learn more about Editor's Choice apps" [ref=e604] [cursor=pointer]:
+              - /url: https://support.google.com/a?p=editors-choice&hl=en_US
+              - text: Learn more
+              - generic [ref=e605]: open_in_new
+            - text: .
+          - link "View more Apps to discover apps" [ref=e606] [cursor=pointer]:
+            - /url: "#"
+            - text: View more
+        - generic [ref=e607]:
+          - generic [ref=e609]:
+            - link "GPT Workspace , DeveloperQualtir , DescriptionA powerful GPT-5.2 Pro AI agent in Google Sheets™, Docs™, Slides™, Gmail™ and Drive™ , Rating 4.8 , Number of users7M+" [ref=e610] [cursor=pointer]:
+              - /url: ./marketplace/app/gpt_workspace/451400884190?flow_type=57
+              - img [ref=e612]
+              - generic [ref=e613]:
+                - generic [ref=e614]: GPT Workspace
+                - generic [ref=e615]:
+                  - generic ", Developer"
+                  - text: Qualtir
+                - generic [ref=e616]:
+                  - generic ", Description"
+                  - text: A powerful GPT-5.2 Pro AI agent in Google Sheets™, Docs™, Slides™, Gmail™ and Drive™
+              - generic [ref=e617]:
+                - generic [ref=e618]:
+                  - img [ref=e619]
+                  - generic ", Rating"
+                  - generic [ref=e623]: "4.8"
+                - generic [ref=e624]:
+                  - img [ref=e625]
+                  - generic [ref=e628]:
+                    - generic ", Number of users"
+                    - text: 7M+
+            - button "Install" [ref=e630] [cursor=pointer]:
+              - generic [ref=e632]: Install
+          - generic [ref=e634]:
+            - link "Voice Notes for Google Docs™ - Beep , DeveloperBeep , DescriptionRecord voice notes within Google Docs™, Sheets™, Slides™, and Forms™. Avoid miscommunication and give more effective feedback faster. , Rating 3.6 , Number of users4M+" [ref=e635] [cursor=pointer]:
+              - /url: ./marketplace/app/voice_notes_for_google_docs_beep/557914975308?flow_type=57
+              - img [ref=e637]
+              - generic [ref=e638]:
+                - generic [ref=e639]: Voice Notes for Google Docs™ - Beep
+                - generic [ref=e640]:
+                  - generic ", Developer"
+                  - text: Beep
+                - generic [ref=e641]:
+                  - generic ", Description"
+                  - text: Record voice notes within Google Docs™, Sheets™, Slides™, and Forms™. Avoid miscommunication and give more effective feedback faster.
+              - generic [ref=e642]:
+                - generic [ref=e643]:
+                  - img [ref=e644]
+                  - generic ", Rating"
+                  - generic [ref=e648]: "3.6"
+                - generic [ref=e649]:
+                  - img [ref=e650]
+                  - generic [ref=e653]:
+                    - generic ", Number of users"
+                    - text: 4M+
+            - button "Install" [ref=e655] [cursor=pointer]:
+              - generic [ref=e657]: Install
+          - generic [ref=e659]:
+            - link "Dropbox for Gmail™ , DeveloperDropbox , DescriptionWith the Dropbox add-on, compatible with Gmail™, you can instantly save attachments to Dropbox, share live file links, and attach Dropbox files directly into your email. , Rating 4.0 , Number of users1M+" [ref=e660] [cursor=pointer]:
+              - /url: ./marketplace/app/dropbox_for_gmail/33761876029?flow_type=57
+              - img [ref=e662]
+              - generic [ref=e663]:
+                - generic [ref=e664]: Dropbox for Gmail™
+                - generic [ref=e665]:
+                  - generic ", Developer"
+                  - text: Dropbox
+                - generic [ref=e666]:
+                  - generic ", Description"
+                  - text: With the Dropbox add-on, compatible with Gmail™, you can instantly save attachments to Dropbox, share live file links, and attach Dropbox files directly into your email.
+              - generic [ref=e667]:
+                - generic [ref=e668]:
+                  - img [ref=e669]
+                  - generic ", Rating"
+                  - generic [ref=e673]: "4.0"
+                - generic [ref=e674]:
+                  - img [ref=e675]
+                  - generic [ref=e678]:
+                    - generic ", Number of users"
+                    - text: 1M+
+            - button "Install" [ref=e680] [cursor=pointer]:
+              - generic [ref=e682]: Install
+          - generic [ref=e684]:
+            - link "Zendesk® Connector , DeveloperGoogle , DescriptionImport tickets, with custom queries or metrics, from Zendesk® into Google Sheetsᵀᴹ, convert Zendesk® URLs to smart chips in Google Docsᵀᴹ. , Rating 4.1 , Number of users293K+" [ref=e685] [cursor=pointer]:
+              - /url: ./marketplace/app/zendesk%C2%AE_connector/30725559692?flow_type=57
+              - img [ref=e687]
+              - generic [ref=e688]:
+                - generic [ref=e689]: Zendesk® Connector
+                - generic [ref=e690]:
+                  - generic ", Developer"
+                  - text: Google
+                - generic [ref=e691]:
+                  - generic ", Description"
+                  - text: Import tickets, with custom queries or metrics, from Zendesk® into Google Sheetsᵀᴹ, convert Zendesk® URLs to smart chips in Google Docsᵀᴹ.
+              - generic [ref=e692]:
+                - generic [ref=e693]:
+                  - img [ref=e694]
+                  - generic ", Rating"
+                  - generic [ref=e698]: "4.1"
+                - generic [ref=e699]:
+                  - img [ref=e700]
+                  - generic [ref=e703]:
+                    - generic ", Number of users"
+                    - text: 293K+
+            - button "Install" [ref=e705] [cursor=pointer]:
+              - generic [ref=e707]: Install
+      - generic [ref=e709]:
+        - generic [ref=e710]:
+          - generic [ref=e711]:
+            - heading "Built by Google" [level=1] [ref=e712]
+            - generic [ref=e715]:
+              - button "More details about user reviews" [ref=e716] [cursor=pointer]:
+                - generic [ref=e717]: info
+              - tooltip [ref=e718]: More details about user reviews
+          - generic [ref=e719]:
+            - text: These apps are built by Google.
+            - link "Learn more about featured apps" [ref=e720] [cursor=pointer]:
+              - /url: https://support.google.com/a?p=featured-apps&hl=en_US
+              - text: Learn more
+              - generic [ref=e721]: open_in_new
+            - text: .
+          - link "View more Built by Google apps" [ref=e722] [cursor=pointer]:
+            - /url: "#"
+            - text: View more
+        - generic [ref=e723]:
+          - link "Google Play Books , DeveloperGoogle LLC , DescriptionDistribute ebooks to students and link books to assignments in Google Classroom , Rating 5.0 , Number of users5M+" [ref=e726] [cursor=pointer]:
+            - /url: ./marketplace/app/google_play_books/866840267307?flow_type=65
+            - img [ref=e728]
+            - generic [ref=e729]:
+              - generic [ref=e730]: Google Play Books
+              - generic [ref=e731]:
+                - generic ", Developer"
+                - text: Google LLC
+              - generic [ref=e732]:
+                - generic ", Description"
+                - text: Distribute ebooks to students and link books to assignments in Google Classroom
+            - generic [ref=e733]:
+              - generic [ref=e734]:
+                - img [ref=e735]
+                - generic ", Rating"
+                - generic [ref=e739]: "5.0"
+              - generic [ref=e740]:
+                - img [ref=e741]
+                - generic [ref=e744]:
+                  - generic ", Number of users"
+                  - text: 5M+
+          - generic [ref=e746]:
+            - link "Bulk Member Manager , DeveloperGoogle , DescriptionEasily add/remove members in bulk to a chat space. , Rating 4.7 , Number of users297K+" [ref=e747] [cursor=pointer]:
+              - /url: ./marketplace/app/bulk_member_manager/927553207499?flow_type=65
+              - img [ref=e749]
+              - generic [ref=e750]:
+                - generic [ref=e751]: Bulk Member Manager
+                - generic [ref=e752]:
+                  - generic ", Developer"
+                  - text: Google
+                - generic [ref=e753]:
+                  - generic ", Description"
+                  - text: Easily add/remove members in bulk to a chat space.
+              - generic [ref=e754]:
+                - generic [ref=e755]:
+                  - img [ref=e756]
+                  - generic ", Rating"
+                  - generic [ref=e760]: "4.7"
+                - generic [ref=e761]:
+                  - img [ref=e762]
+                  - generic [ref=e765]:
+                    - generic ", Number of users"
+                    - text: 297K+
+            - button "Install" [ref=e767] [cursor=pointer]:
+              - generic [ref=e769]: Install
+          - generic [ref=e771]:
+            - link "Salesforce for Google Chat™ , DeveloperGoogle , DescriptionFind and share your Salesforce records in Google Chat™. , Rating 5.0 , Number of users277K+" [ref=e772] [cursor=pointer]:
+              - /url: ./marketplace/app/salesforce_for_google_chat/869591570258?flow_type=65
+              - img [ref=e774]
+              - generic [ref=e775]:
+                - generic [ref=e776]: Salesforce for Google Chat™
+                - generic [ref=e777]:
+                  - generic ", Developer"
+                  - text: Google
+                - generic [ref=e778]:
+                  - generic ", Description"
+                  - text: Find and share your Salesforce records in Google Chat™.
+              - generic [ref=e779]:
+                - generic [ref=e780]:
+                  - img [ref=e781]
+                  - generic ", Rating"
+                  - generic [ref=e785]: "5.0"
+                - generic [ref=e786]:
+                  - img [ref=e787]
+                  - generic [ref=e790]:
+                    - generic ", Number of users"
+                    - text: 277K+
+            - button "Install" [ref=e792] [cursor=pointer]:
+              - generic [ref=e794]: Install
+          - generic [ref=e796]:
+            - link "Workday for Google Chat™ , DeveloperGoogle , DescriptionTake action on your Workday tasks in Google Chat™ , Rating 1.0 , Number of users147K+" [ref=e797] [cursor=pointer]:
+              - /url: ./marketplace/app/workday_for_google_chat/205664636212?flow_type=65
+              - img [ref=e799]
+              - generic [ref=e800]:
+                - generic [ref=e801]: Workday for Google Chat™
+                - generic [ref=e802]:
+                  - generic ", Developer"
+                  - text: Google
+                - generic [ref=e803]:
+                  - generic ", Description"
+                  - text: Take action on your Workday tasks in Google Chat™
+              - generic [ref=e804]:
+                - generic [ref=e805]:
+                  - img [ref=e806]
+                  - generic ", Rating"
+                  - generic [ref=e810]: "1.0"
+                - generic [ref=e811]:
+                  - img [ref=e812]
+                  - generic [ref=e815]:
+                    - generic ", Number of users"
+                    - text: 147K+
+            - button "Install" [ref=e817] [cursor=pointer]:
+              - generic [ref=e819]: Install
+      - generic [ref=e821]:
+        - generic [ref=e822]:
+          - generic [ref=e823]:
+            - heading "Most popular" [level=1] [ref=e824]
+            - generic [ref=e827]:
+              - button "More details about user reviews" [ref=e828] [cursor=pointer]:
+                - generic [ref=e829]: info
+              - tooltip [ref=e830]: More details about user reviews
+          - link "View more Most popular apps" [ref=e832] [cursor=pointer]:
+            - /url: "#"
+            - text: View more
+        - generic [ref=e833]:
+          - generic [ref=e835]:
+            - 'link "ZIP Extractor , DeveloperVisware LLC , DescriptionOpen ZIP, RAR, 7z, TAR, and password-protected archives from Google Drive™, Gmail™, or your computer. Fully private: ZIP file processing is done in your browser, not on our servers. , Rating 4.3 , Number of users65M+" [ref=e836] [cursor=pointer]':
+              - /url: ./marketplace/app/zip_extractor/824911851129?flow_type=32
+              - img [ref=e838]
+              - generic [ref=e839]:
+                - generic [ref=e840]: ZIP Extractor
+                - generic [ref=e841]:
+                  - generic ", Developer"
+                  - text: Visware LLC
+                - generic [ref=e842]:
+                  - generic ", Description"
+                  - text: "Open ZIP, RAR, 7z, TAR, and password-protected archives from Google Drive™, Gmail™, or your computer. Fully private: ZIP file processing is done in your browser, not on our servers."
+              - generic [ref=e843]:
+                - generic [ref=e844]:
+                  - img [ref=e845]
+                  - generic ", Rating"
+                  - generic [ref=e849]: "4.3"
+                - generic [ref=e850]:
+                  - img [ref=e851]
+                  - generic [ref=e854]:
+                    - generic ", Number of users"
+                    - text: 65M+
+            - button "Install" [ref=e856] [cursor=pointer]:
+              - generic [ref=e858]: Install
+          - generic [ref=e860]:
+            - link "Zoom for Google Workspace™ , DeveloperZoom Video Communications , DescriptionUse Zoom to easily schedule, join, manage, and customize meetings from Gmail and Google Calendar. , Rating 4.4 , Number of users59M+" [ref=e861] [cursor=pointer]:
+              - /url: ./marketplace/app/zoom_for_google_workspace/364750910244?flow_type=32
+              - img [ref=e863]
+              - generic [ref=e864]:
+                - generic [ref=e865]: Zoom for Google Workspace™
+                - generic [ref=e866]:
+                  - generic ", Developer"
+                  - text: Zoom Video Communications
+                - generic [ref=e867]:
+                  - generic ", Description"
+                  - text: Use Zoom to easily schedule, join, manage, and customize meetings from Gmail and Google Calendar.
+              - generic [ref=e868]:
+                - generic [ref=e869]:
+                  - img [ref=e870]
+                  - generic ", Rating"
+                  - generic [ref=e874]: "4.4"
+                - generic [ref=e875]:
+                  - img [ref=e876]
+                  - generic [ref=e879]:
+                    - generic ", Number of users"
+                    - text: 59M+
+            - button "Install" [ref=e881] [cursor=pointer]:
+              - generic [ref=e883]: Install
+          - generic [ref=e885]:
+            - link "Timer + AI Proctor Limiter for Forms | Quilgo , DeveloperNative Platform Ltd , DescriptionElevate your Google Forms™ into powerful, secure assessments for education, hiring, and business. Effortlessly reduce cheating with automated camera and screen proctoring. , Rating 4.4 , Number of users55M+" [ref=e886] [cursor=pointer]:
+              - /url: ./marketplace/app/timer_+_ai_proctor_limiter_for_forms_qui/992310177365?flow_type=32
+              - img [ref=e888]
+              - generic [ref=e889]:
+                - generic [ref=e890]: Timer + AI Proctor Limiter for Forms | Quilgo
+                - generic [ref=e891]:
+                  - generic ", Developer"
+                  - text: Native Platform Ltd
+                - generic [ref=e892]:
+                  - generic ", Description"
+                  - text: Elevate your Google Forms™ into powerful, secure assessments for education, hiring, and business. Effortlessly reduce cheating with automated camera and screen proctoring.
+              - generic [ref=e893]:
+                - generic [ref=e894]:
+                  - img [ref=e895]
+                  - generic ", Rating"
+                  - generic [ref=e899]: "4.4"
+                - generic [ref=e900]:
+                  - img [ref=e901]
+                  - generic [ref=e904]:
+                    - generic ", Number of users"
+                    - text: 55M+
+            - button "Install" [ref=e906] [cursor=pointer]:
+              - generic [ref=e908]: Install
+          - generic [ref=e910]:
+            - link "MathType , DeveloperWiris , DescriptionMathType is the world's leading equation editor that allows you to write math notation as easily as you write text. Create and edit high-quality math equations in Google Docs™ and Google Slides™. , Rating 3.9 , Number of users51M+" [ref=e911] [cursor=pointer]:
+              - /url: ./marketplace/app/mathtype/742924286153?flow_type=32
+              - img [ref=e913]
+              - generic [ref=e914]:
+                - generic [ref=e915]: MathType
+                - generic [ref=e916]:
+                  - generic ", Developer"
+                  - text: Wiris
+                - generic [ref=e917]:
+                  - generic ", Description"
+                  - text: MathType is the world's leading equation editor that allows you to write math notation as easily as you write text. Create and edit high-quality math equations in Google Docs™ and Google Slides™.
+              - generic [ref=e918]:
+                - generic [ref=e919]:
+                  - img [ref=e920]
+                  - generic ", Rating"
+                  - generic [ref=e924]: "3.9"
+                - generic [ref=e925]:
+                  - img [ref=e926]
+                  - generic [ref=e929]:
+                    - generic ", Number of users"
+                    - text: 51M+
+            - button "Install" [ref=e931] [cursor=pointer]:
+              - generic [ref=e933]: Install
+      - generic [ref=e935]:
+        - generic [ref=e936]:
+          - generic [ref=e937]:
+            - heading "Top rated" [level=1] [ref=e938]
+            - generic [ref=e941]:
+              - button "More details about user reviews" [ref=e942] [cursor=pointer]:
+                - generic [ref=e943]: info
+              - tooltip [ref=e944]: More details about user reviews
+          - link "View more Top rated apps" [ref=e946] [cursor=pointer]:
+            - /url: "#"
+            - text: View more
+        - generic [ref=e947]:
+          - generic [ref=e949]:
+            - 'link "Shared Contacts for Google Drive™ , DeveloperGAPPS Experts , DescriptionNever give access to your documents or Drive™ folders to the wrong people: Know who is in any Google group, or see and update contact details of any document collaborator. Share Google Contacts. , Rating 5.0 , Number of users275K+" [ref=e950] [cursor=pointer]':
+              - /url: ./marketplace/app/shared_contacts_for_google_drive/790612621267?flow_type=33
+              - img [ref=e952]
+              - generic [ref=e953]:
+                - generic [ref=e954]: Shared Contacts for Google Drive™
+                - generic [ref=e955]:
+                  - generic ", Developer"
+                  - text: GAPPS Experts
+                - generic [ref=e956]:
+                  - generic ", Description"
+                  - text: "Never give access to your documents or Drive™ folders to the wrong people: Know who is in any Google group, or see and update contact details of any document collaborator. Share Google Contacts."
+              - generic [ref=e957]:
+                - generic [ref=e958]:
+                  - img [ref=e959]
+                  - generic ", Rating"
+                  - generic [ref=e963]: "5.0"
+                - generic [ref=e964]:
+                  - img [ref=e965]
+                  - generic [ref=e968]:
+                    - generic ", Number of users"
+                    - text: 275K+
+            - button "Install" [ref=e970] [cursor=pointer]:
+              - generic [ref=e972]: Install
+          - generic [ref=e974]:
+            - link "Mail Merge , DeveloperQuicklution , DescriptionEasily personalize emails, letters, envelopes & certificates. Auto send emails on a Google Form ™ submit. , Rating 4.9 , Number of users11M+" [ref=e975] [cursor=pointer]:
+              - /url: ./marketplace/app/mail_merge/218858140171?flow_type=33
+              - img [ref=e977]
+              - generic [ref=e978]:
+                - generic [ref=e979]: Mail Merge
+                - generic [ref=e980]:
+                  - generic ", Developer"
+                  - text: Quicklution
+                - generic [ref=e981]:
+                  - generic ", Description"
+                  - text: Easily personalize emails, letters, envelopes & certificates. Auto send emails on a Google Form ™ submit.
+              - generic [ref=e982]:
+                - generic [ref=e983]:
+                  - img [ref=e984]
+                  - generic ", Rating"
+                  - generic [ref=e988]: "4.9"
+                - generic [ref=e989]:
+                  - img [ref=e990]
+                  - generic [ref=e993]:
+                    - generic ", Number of users"
+                    - text: 11M+
+            - button "Install" [ref=e995] [cursor=pointer]:
+              - generic [ref=e997]: Install
+          - generic [ref=e999]:
+            - link "Walution - Send Personalized WhatsApp Messages , DeveloperQuicklution , DescriptionSend unlimited bulk and personalized WhatsApp messages from your own number. Free customer support. Free to try. , Rating 4.9 , Number of users122K+" [ref=e1000] [cursor=pointer]:
+              - /url: ./marketplace/app/walution_send_personalized_whatsapp_mess/994589936585?flow_type=33
+              - img [ref=e1002]
+              - generic [ref=e1003]:
+                - generic [ref=e1004]: Walution - Send Personalized WhatsApp Messages
+                - generic [ref=e1005]:
+                  - generic ", Developer"
+                  - text: Quicklution
+                - generic [ref=e1006]:
+                  - generic ", Description"
+                  - text: Send unlimited bulk and personalized WhatsApp messages from your own number. Free customer support. Free to try.
+              - generic [ref=e1007]:
+                - generic [ref=e1008]:
+                  - img [ref=e1009]
+                  - generic ", Rating"
+                  - generic [ref=e1013]: "4.9"
+                - generic [ref=e1014]:
+                  - img [ref=e1015]
+                  - generic [ref=e1018]:
+                    - generic ", Number of users"
+                    - text: 122K+
+            - button "Install" [ref=e1020] [cursor=pointer]:
+              - generic [ref=e1022]: Install
+          - generic [ref=e1024]:
+            - link "Bigin for Gmail™ , DeveloperZoho Corporation , DescriptionTake your customer pipelines closer to your inbox. , Rating 4.9 , Number of users19K+" [ref=e1025] [cursor=pointer]:
+              - /url: ./marketplace/app/bigin_for_gmail/696512189870?flow_type=33
+              - img [ref=e1027]
+              - generic [ref=e1028]:
+                - generic [ref=e1029]: Bigin for Gmail™
+                - generic [ref=e1030]:
+                  - generic ", Developer"
+                  - text: Zoho Corporation
+                - generic [ref=e1031]:
+                  - generic ", Description"
+                  - text: Take your customer pipelines closer to your inbox.
+              - generic [ref=e1032]:
+                - generic [ref=e1033]:
+                  - img [ref=e1034]
+                  - generic ", Rating"
+                  - generic [ref=e1038]: "4.9"
+                - generic [ref=e1039]:
+                  - img [ref=e1040]
+                  - generic [ref=e1043]:
+                    - generic ", Number of users"
+                    - text: 19K+
+            - button "Install" [ref=e1045] [cursor=pointer]:
+              - generic [ref=e1047]: Install
+      - generic [ref=e1049]:
+        - generic [ref=e1050]:
+          - generic [ref=e1051]:
+            - heading "Works with Drive" [level=1] [ref=e1052]
+            - generic [ref=e1055]:
+              - button "More details about user reviews" [ref=e1056] [cursor=pointer]:
+                - generic [ref=e1057]: info
+              - tooltip [ref=e1058]: More details about user reviews
+          - generic [ref=e1059]: These apps can be used directly from Google Drive to create or edit files.
+          - link "View more Works with Drive apps" [ref=e1060] [cursor=pointer]:
+            - /url: "#"
+            - text: View more
+        - generic [ref=e1061]:
+          - generic [ref=e1063]:
+            - link "SketchUp for Schools , DeveloperSketchUp , DescriptionSketchUp in a browser for Primary and Secondary Schools signed up with G Suite for Education. , Rating 4.1 , Number of users127M+" [ref=e1064] [cursor=pointer]:
+              - /url: ./marketplace/app/sketchup_for_schools/260457348581?flow_type=35
+              - img [ref=e1066]
+              - generic [ref=e1067]:
+                - generic [ref=e1068]: SketchUp for Schools
+                - generic [ref=e1069]:
+                  - generic ", Developer"
+                  - text: SketchUp
+                - generic [ref=e1070]:
+                  - generic ", Description"
+                  - text: SketchUp in a browser for Primary and Secondary Schools signed up with G Suite for Education.
+              - generic [ref=e1071]:
+                - generic [ref=e1072]:
+                  - img [ref=e1073]
+                  - generic ", Rating"
+                  - generic [ref=e1077]: "4.1"
+                - generic [ref=e1078]:
+                  - img [ref=e1079]
+                  - generic [ref=e1082]:
+                    - generic ", Number of users"
+                    - text: 127M+
+            - button "Install" [ref=e1084] [cursor=pointer]:
+              - generic [ref=e1086]: Install
+          - generic [ref=e1088]:
+            - link "Nearpod , DeveloperNearpod , DescriptionEmbed the magic of Nearpod directly into Google Slides™ , Rating 4.1 , Number of users56M+" [ref=e1089] [cursor=pointer]:
+              - /url: ./marketplace/app/nearpod/501359647293?flow_type=35
+              - img [ref=e1091]
+              - generic [ref=e1092]:
+                - generic [ref=e1093]: Nearpod
+                - generic [ref=e1094]:
+                  - generic ", Developer"
+                  - text: Nearpod
+                - generic [ref=e1095]:
+                  - generic ", Description"
+                  - text: Embed the magic of Nearpod directly into Google Slides™
+              - generic [ref=e1096]:
+                - generic [ref=e1097]:
+                  - img [ref=e1098]
+                  - generic ", Rating"
+                  - generic [ref=e1102]: "4.1"
+                - generic [ref=e1103]:
+                  - img [ref=e1104]
+                  - generic [ref=e1107]:
+                    - generic ", Number of users"
+                    - text: 56M+
+            - button "Install" [ref=e1109] [cursor=pointer]:
+              - generic [ref=e1111]: Install
+          - generic [ref=e1113]:
+            - link "Canva , DeveloperCanva , DescriptionEnable seamless design by integrating tools like Gmail™, Drive™, and Calendar™ with Canva. Built for individuals, teams and entire organizations. , Rating 4.5 , Number of users28M+" [ref=e1114] [cursor=pointer]:
+              - /url: ./marketplace/app/canva/94859032195?flow_type=35
+              - img [ref=e1116]
+              - generic [ref=e1117]:
+                - generic [ref=e1118]: Canva
+                - generic [ref=e1119]:
+                  - generic ", Developer"
+                  - text: Canva
+                - generic [ref=e1120]:
+                  - generic ", Description"
+                  - text: Enable seamless design by integrating tools like Gmail™, Drive™, and Calendar™ with Canva. Built for individuals, teams and entire organizations.
+              - generic [ref=e1121]:
+                - generic [ref=e1122]:
+                  - img [ref=e1123]
+                  - generic ", Rating"
+                  - generic [ref=e1127]: "4.5"
+                - generic [ref=e1128]:
+                  - img [ref=e1129]
+                  - generic [ref=e1132]:
+                    - generic ", Number of users"
+                    - text: 28M+
+            - button "More info about independent security assessment" [ref=e1135] [cursor=pointer]:
+              - generic [ref=e1137]: verified_user
+            - button "Install" [ref=e1140] [cursor=pointer]:
+              - generic [ref=e1142]: Install
+          - generic [ref=e1144]:
+            - link "Video Dictionary with Drive™ , Developervideodictionary.kwebpia.net , DescriptionFind a video and song of whatever you're looking for. Get a video, audio file from Google Drive™, and Play the file directly. , Rating 3.8 , Number of users14M+" [ref=e1145] [cursor=pointer]:
+              - /url: ./marketplace/app/video_dictionary_with_drive/1008750134848?flow_type=35
+              - img [ref=e1147]
+              - generic [ref=e1148]:
+                - generic [ref=e1149]: Video Dictionary with Drive™
+                - generic [ref=e1150]:
+                  - generic ", Developer"
+                  - text: videodictionary.kwebpia.net
+                - generic [ref=e1151]:
+                  - generic ", Description"
+                  - text: Find a video and song of whatever you're looking for. Get a video, audio file from Google Drive™, and Play the file directly.
+              - generic [ref=e1152]:
+                - generic [ref=e1153]:
+                  - img [ref=e1154]
+                  - generic ", Rating"
+                  - generic [ref=e1158]: "3.8"
+                - generic [ref=e1159]:
+                  - img [ref=e1160]
+                  - generic [ref=e1163]:
+                    - generic ", Number of users"
+                    - text: 14M+
+            - button "Install" [ref=e1165] [cursor=pointer]:
+              - generic [ref=e1167]: Install
+      - generic [ref=e1169]:
+        - generic [ref=e1170]:
+          - generic [ref=e1171]:
+            - heading "Works with Gmail" [level=1] [ref=e1172]
+            - generic [ref=e1175]:
+              - button "More details about user reviews" [ref=e1176] [cursor=pointer]:
+                - generic [ref=e1177]: info
+              - tooltip [ref=e1178]: More details about user reviews
+          - generic [ref=e1179]: These apps can be used directly with Gmail to improve your productivity.
+          - link "View more Works with Gmail apps" [ref=e1180] [cursor=pointer]:
+            - /url: "#"
+            - text: View more
+        - generic [ref=e1181]:
+          - generic [ref=e1183]:
+            - 'link "Yet Another Mail Merge: Mail Merge for Gmail , DeveloperTalarian , DescriptionYAMM: Send mass personalized emails with your Gmail™. Track each email in real-time from Sheets™. , Rating 4.7 , Number of users17M+" [ref=e1184] [cursor=pointer]':
+              - /url: ./marketplace/app/yet_another_mail_merge_mail_merge_for_gm/52669349336?flow_type=48
+              - img [ref=e1186]
+              - generic [ref=e1187]:
+                - generic [ref=e1188]: "Yet Another Mail Merge: Mail Merge for Gmail"
+                - generic [ref=e1189]:
+                  - generic ", Developer"
+                  - text: Talarian
+                - generic [ref=e1190]:
+                  - generic ", Description"
+                  - text: "YAMM: Send mass personalized emails with your Gmail™. Track each email in real-time from Sheets™."
+              - generic [ref=e1191]:
+                - generic [ref=e1192]:
+                  - img [ref=e1193]
+                  - generic ", Rating"
+                  - generic [ref=e1197]: "4.7"
+                - generic [ref=e1198]:
+                  - img [ref=e1199]
+                  - generic [ref=e1202]:
+                    - generic ", Number of users"
+                    - text: 17M+
+            - button "More info about independent security assessment" [ref=e1205] [cursor=pointer]:
+              - generic [ref=e1207]: verified_user
+            - button "Install" [ref=e1210] [cursor=pointer]:
+              - generic [ref=e1212]: Install
+          - generic [ref=e1214]:
+            - link "Lucidchart Diagrams for Gmail™ , DeveloperLucid Software , DescriptionEasily attach your Lucidchart diagrams in Gmail™ to streamline collaboration. , Rating 4.3 , Number of users2M+" [ref=e1215] [cursor=pointer]:
+              - /url: ./marketplace/app/lucidchart_diagrams_for_gmail/642736374576?flow_type=48
+              - img [ref=e1217]
+              - generic [ref=e1218]:
+                - generic [ref=e1219]: Lucidchart Diagrams for Gmail™
+                - generic [ref=e1220]:
+                  - generic ", Developer"
+                  - text: Lucid Software
+                - generic [ref=e1221]:
+                  - generic ", Description"
+                  - text: Easily attach your Lucidchart diagrams in Gmail™ to streamline collaboration.
+              - generic [ref=e1222]:
+                - generic [ref=e1223]:
+                  - img [ref=e1224]
+                  - generic ", Rating"
+                  - generic [ref=e1228]: "4.3"
+                - generic [ref=e1229]:
+                  - img [ref=e1230]
+                  - generic [ref=e1233]:
+                    - generic ", Number of users"
+                    - text: 2M+
+            - button "Install" [ref=e1235] [cursor=pointer]:
+              - generic [ref=e1237]: Install
+          - generic [ref=e1239]:
+            - link "ChatGPT for Gmail™ , DeveloperQualtir , DescriptionWrite emails 10x faster with AI. Generate email replies in Gmail™ with ChatGPT. , Rating 4.9 , Number of users1M+" [ref=e1240] [cursor=pointer]:
+              - /url: ./marketplace/app/chatgpt_for_gmail/802100925247?flow_type=48
+              - img [ref=e1242]
+              - generic [ref=e1243]:
+                - generic [ref=e1244]: ChatGPT for Gmail™
+                - generic [ref=e1245]:
+                  - generic ", Developer"
+                  - text: Qualtir
+                - generic [ref=e1246]:
+                  - generic ", Description"
+                  - text: Write emails 10x faster with AI. Generate email replies in Gmail™ with ChatGPT.
+              - generic [ref=e1247]:
+                - generic [ref=e1248]:
+                  - img [ref=e1249]
+                  - generic ", Rating"
+                  - generic [ref=e1253]: "4.9"
+                - generic [ref=e1254]:
+                  - img [ref=e1255]
+                  - generic [ref=e1258]:
+                    - generic ", Number of users"
+                    - text: 1M+
+            - button "Install" [ref=e1260] [cursor=pointer]:
+              - generic [ref=e1262]: Install
+          - generic [ref=e1264]:
+            - link "Signeasy eSignatures for Google Workspace™ , DeveloperSigneasy , DescriptionSign documents, request signatures, and sign agreements directly from Google Drive™, Google Docs™, Google Sheets™, and Gmail™ with Signeasy's unified app for Google Workspace™. , Rating 4.4 , Number of users1M+" [ref=e1265] [cursor=pointer]:
+              - /url: ./marketplace/app/signeasy_esignatures_for_google_workspac/484878786372?flow_type=48
+              - img [ref=e1267]
+              - generic [ref=e1268]:
+                - generic [ref=e1269]: Signeasy eSignatures for Google Workspace™
+                - generic [ref=e1270]:
+                  - generic ", Developer"
+                  - text: Signeasy
+                - generic [ref=e1271]:
+                  - generic ", Description"
+                  - text: Sign documents, request signatures, and sign agreements directly from Google Drive™, Google Docs™, Google Sheets™, and Gmail™ with Signeasy's unified app for Google Workspace™.
+              - generic [ref=e1272]:
+                - generic [ref=e1273]:
+                  - img [ref=e1274]
+                  - generic ", Rating"
+                  - generic [ref=e1278]: "4.4"
+                - generic [ref=e1279]:
+                  - img [ref=e1280]
+                  - generic [ref=e1283]:
+                    - generic ", Number of users"
+                    - text: 1M+
+            - button "Install" [ref=e1285] [cursor=pointer]:
+              - generic [ref=e1287]: Install
+      - generic [ref=e1289]:
+        - generic [ref=e1290]:
+          - generic [ref=e1291]:
+            - heading "Works with Calendar" [level=1] [ref=e1292]
+            - generic [ref=e1295]:
+              - button "More details about user reviews" [ref=e1296] [cursor=pointer]:
+                - generic [ref=e1297]: info
+              - tooltip [ref=e1298]: More details about user reviews
+          - generic [ref=e1299]: These apps can be used directly with Calendar to improve your productivity.
+          - link "View more Works with Calendar apps" [ref=e1300] [cursor=pointer]:
+            - /url: "#"
+            - text: View more
+        - generic [ref=e1301]:
+          - generic [ref=e1303]:
+            - link "Miro , DeveloperMiro , DescriptionMiro is the AI Innovation Workspace that enables organizations of any size to build the next big thing. , Rating 4.3 , Number of users13M+" [ref=e1304] [cursor=pointer]:
+              - /url: ./marketplace/app/miro/1062019541050?flow_type=49
+              - img [ref=e1306]
+              - generic [ref=e1307]:
+                - generic [ref=e1308]: Miro
+                - generic [ref=e1309]:
+                  - generic ", Developer"
+                  - text: Miro
+                - generic [ref=e1310]:
+                  - generic ", Description"
+                  - text: Miro is the AI Innovation Workspace that enables organizations of any size to build the next big thing.
+              - generic [ref=e1311]:
+                - generic [ref=e1312]:
+                  - img [ref=e1313]
+                  - generic ", Rating"
+                  - generic [ref=e1317]: "4.3"
+                - generic [ref=e1318]:
+                  - img [ref=e1319]
+                  - generic [ref=e1322]:
+                    - generic ", Number of users"
+                    - text: 13M+
+            - button "Install" [ref=e1324] [cursor=pointer]:
+              - generic [ref=e1326]: Install
+          - generic [ref=e1328]:
+            - link "Lucidspark , DeveloperLucid Software , DescriptionLucidspark is a virtual whiteboard where teams can collect ideas, collaborate in real time, and pick the best course of action to keep projects moving forward. , Rating 3.7 , Number of users3M+" [ref=e1329] [cursor=pointer]:
+              - /url: ./marketplace/app/lucidspark/447378736656?flow_type=49
+              - img [ref=e1331]
+              - generic [ref=e1332]:
+                - generic [ref=e1333]: Lucidspark
+                - generic [ref=e1334]:
+                  - generic ", Developer"
+                  - text: Lucid Software
+                - generic [ref=e1335]:
+                  - generic ", Description"
+                  - text: Lucidspark is a virtual whiteboard where teams can collect ideas, collaborate in real time, and pick the best course of action to keep projects moving forward.
+              - generic [ref=e1336]:
+                - generic [ref=e1337]:
+                  - img [ref=e1338]
+                  - generic ", Rating"
+                  - generic [ref=e1342]: "3.7"
+                - generic [ref=e1343]:
+                  - img [ref=e1344]
+                  - generic [ref=e1347]:
+                    - generic ", Number of users"
+                    - text: 3M+
+            - button "More info about independent security assessment" [ref=e1350] [cursor=pointer]:
+              - generic [ref=e1352]: verified_user
+            - button "Install" [ref=e1355] [cursor=pointer]:
+              - generic [ref=e1357]: Install
+          - generic [ref=e1359]:
+            - link "Box , DeveloperBox , DescriptionSeamlessly copy your Google files over to Box, attach file links from Box to emails, download email attachments directly to Box, and attach Box file links to meetings. , Rating 4.4 , Number of users1M+" [ref=e1360] [cursor=pointer]:
+              - /url: ./marketplace/app/box/828801433755?flow_type=49
+              - img [ref=e1362]
+              - generic [ref=e1363]:
+                - generic [ref=e1364]: Box
+                - generic [ref=e1365]:
+                  - generic ", Developer"
+                  - text: Box
+                - generic [ref=e1366]:
+                  - generic ", Description"
+                  - text: Seamlessly copy your Google files over to Box, attach file links from Box to emails, download email attachments directly to Box, and attach Box file links to meetings.
+              - generic [ref=e1367]:
+                - generic [ref=e1368]:
+                  - img [ref=e1369]
+                  - generic ", Rating"
+                  - generic [ref=e1373]: "4.4"
+                - generic [ref=e1374]:
+                  - img [ref=e1375]
+                  - generic [ref=e1378]:
+                    - generic ", Number of users"
+                    - text: 1M+
+            - button "Install" [ref=e1380] [cursor=pointer]:
+              - generic [ref=e1382]: Install
+          - generic [ref=e1384]:
+            - 'link "WorkGPT: ChatGPT Gemini GPT for Sheets™ Doc™ Slide , DeveloperProGPT AI , DescriptionBest AI GPT (ChatGPT™/GPT-5™, Gemini™, Claude 4.0, DeepSeek, Llama, Grok) for Docs™ Sheets™ Gmail™ Slides™. Use AI superpower to deliver great work, write, read, improve content with 10x productivity! , Rating 4.1 , Number of users1M+" [ref=e1385] [cursor=pointer]':
+              - /url: ./marketplace/app/workgpt_chatgpt_gemini_gpt_for_sheets_do/368806015202?flow_type=49
+              - img [ref=e1387]
+              - generic [ref=e1388]:
+                - generic [ref=e1389]: "WorkGPT: ChatGPT Gemini GPT for Sheets™ Doc™ Slide"
+                - generic [ref=e1390]:
+                  - generic ", Developer"
+                  - text: ProGPT AI
+                - generic [ref=e1391]:
+                  - generic ", Description"
+                  - text: Best AI GPT (ChatGPT™/GPT-5™, Gemini™, Claude 4.0, DeepSeek, Llama, Grok) for Docs™ Sheets™ Gmail™ Slides™. Use AI superpower to deliver great work, write, read, improve content with 10x productivity!
+              - generic [ref=e1392]:
+                - generic [ref=e1393]:
+                  - img [ref=e1394]
+                  - generic ", Rating"
+                  - generic [ref=e1398]: "4.1"
+                - generic [ref=e1399]:
+                  - img [ref=e1400]
+                  - generic [ref=e1403]:
+                    - generic ", Number of users"
+                    - text: 1M+
+            - button "Install" [ref=e1405] [cursor=pointer]:
+              - generic [ref=e1407]: Install
+      - generic [ref=e1409]:
+        - generic [ref=e1410]:
+          - generic [ref=e1411]:
+            - heading "Works with Docs" [level=1] [ref=e1412]
+            - generic [ref=e1415]:
+              - button "More details about user reviews" [ref=e1416] [cursor=pointer]:
+                - generic [ref=e1417]: info
+              - tooltip [ref=e1418]: More details about user reviews
+          - generic [ref=e1419]: These apps can be used directly with Docs to improve your productivity.
+          - link "View more Works with Docs apps" [ref=e1420] [cursor=pointer]:
+            - /url: "#"
+            - text: View more
+        - generic [ref=e1421]:
+          - link "Turnitin Draft Coach™ , DeveloperTurnitin , DescriptionFormative Writing Tool for Turnitin Customers , Rating 2.5 , Number of users52M+" [ref=e1424] [cursor=pointer]:
+            - /url: ./marketplace/app/turnitin_draft_coach/249033953412?flow_type=38
+            - img [ref=e1426]
+            - generic [ref=e1427]:
+              - generic [ref=e1428]: Turnitin Draft Coach™
+              - generic [ref=e1429]:
+                - generic ", Developer"
+                - text: Turnitin
+              - generic [ref=e1430]:
+                - generic ", Description"
+                - text: Formative Writing Tool for Turnitin Customers
+            - generic [ref=e1431]:
+              - generic [ref=e1432]:
+                - img [ref=e1433]
+                - generic ", Rating"
+                - generic [ref=e1437]: "2.5"
+              - generic [ref=e1438]:
+                - img [ref=e1439]
+                - generic [ref=e1442]:
+                  - generic ", Number of users"
+                  - text: 52M+
+          - generic [ref=e1444]:
+            - link "Easy Accents - Docs , DeveloperDaniel Baker , DescriptionThis Add-on allows users to easily insert accents for different languages directly from a sidebar in their Google Docs. , Rating 3.6 , Number of users32M+" [ref=e1445] [cursor=pointer]:
+              - /url: ./marketplace/app/easy_accents_docs/135570422524?flow_type=38
+              - img [ref=e1447]
+              - generic [ref=e1448]:
+                - generic [ref=e1449]: Easy Accents - Docs
+                - generic [ref=e1450]:
+                  - generic ", Developer"
+                  - text: Daniel Baker
+                - generic [ref=e1451]:
+                  - generic ", Description"
+                  - text: This Add-on allows users to easily insert accents for different languages directly from a sidebar in their Google Docs.
+              - generic [ref=e1452]:
+                - generic [ref=e1453]:
+                  - img [ref=e1454]
+                  - generic ", Rating"
+                  - generic [ref=e1458]: "3.6"
+                - generic [ref=e1459]:
+                  - img [ref=e1460]
+                  - generic [ref=e1463]:
+                    - generic ", Number of users"
+                    - text: 32M+
+            - button "Install" [ref=e1465] [cursor=pointer]:
+              - generic [ref=e1467]: Install
+          - generic [ref=e1469]:
+            - link "CLOZEit , DeveloperSyed Khairi , DescriptionMake any paragraph text into a fill-in-the-blanks worksheet or also known as a cloze exercise - with a single click! , Rating 4.1 , Number of users29M+" [ref=e1470] [cursor=pointer]:
+              - /url: ./marketplace/app/clozeit/679357385347?flow_type=38
+              - img [ref=e1472]
+              - generic [ref=e1473]:
+                - generic [ref=e1474]: CLOZEit
+                - generic [ref=e1475]:
+                  - generic ", Developer"
+                  - text: Syed Khairi
+                - generic [ref=e1476]:
+                  - generic ", Description"
+                  - text: Make any paragraph text into a fill-in-the-blanks worksheet or also known as a cloze exercise - with a single click!
+              - generic [ref=e1477]:
+                - generic [ref=e1478]:
+                  - img [ref=e1479]
+                  - generic ", Rating"
+                  - generic [ref=e1483]: "4.1"
+                - generic [ref=e1484]:
+                  - img [ref=e1485]
+                  - generic [ref=e1488]:
+                    - generic ", Number of users"
+                    - text: 29M+
+            - button "Install" [ref=e1490] [cursor=pointer]:
+              - generic [ref=e1492]: Install
+          - generic [ref=e1494]:
+            - link "Stava Rex , DeveloperOribi AB , DescriptionStava Rex är ett rättstavningsprogram som rättar stavfel och grammatikfel i svensk text. Om du vill installera tillägget på er domän via G Suite Marketplace måste ni ha ett serviceavtal. , Rating 3.0 , Number of users26M+" [ref=e1495] [cursor=pointer]:
+              - /url: ./marketplace/app/stava_rex/342809755787?flow_type=38
+              - img [ref=e1497]
+              - generic [ref=e1498]:
+                - generic [ref=e1499]: Stava Rex
+                - generic [ref=e1500]:
+                  - generic ", Developer"
+                  - text: Oribi AB
+                - generic [ref=e1501]:
+                  - generic ", Description"
+                  - text: Stava Rex är ett rättstavningsprogram som rättar stavfel och grammatikfel i svensk text. Om du vill installera tillägget på er domän via G Suite Marketplace måste ni ha ett serviceavtal.
+              - generic [ref=e1502]:
+                - generic [ref=e1503]:
+                  - img [ref=e1504]
+                  - generic ", Rating"
+                  - generic [ref=e1508]: "3.0"
+                - generic [ref=e1509]:
+                  - img [ref=e1510]
+                  - generic [ref=e1513]:
+                    - generic ", Number of users"
+                    - text: 26M+
+            - button "Install" [ref=e1515] [cursor=pointer]:
+              - generic [ref=e1517]: Install
+      - generic [ref=e1519]:
+        - generic [ref=e1520]:
+          - generic [ref=e1521]:
+            - heading "Works with Sheets" [level=1] [ref=e1522]
+            - generic [ref=e1525]:
+              - button "More details about user reviews" [ref=e1526] [cursor=pointer]:
+                - generic [ref=e1527]: info
+              - tooltip [ref=e1528]: More details about user reviews
+          - generic [ref=e1529]: These apps can be used directly with Sheets to improve your productivity.
+          - link "View more Works with Sheets apps" [ref=e1530] [cursor=pointer]:
+            - /url: "#"
+            - text: View more
+        - generic [ref=e1531]:
+          - generic [ref=e1533]:
+            - link "ClassReporter , DeveloperNova Learn , DescriptionCollect and sync useful data about Google Classroom™ usage in your organisation. Data can be displayed in Data Studio™ and shared with relevant members of staff. , Rating 4.4 , Number of users27M+" [ref=e1534] [cursor=pointer]:
+              - /url: ./marketplace/app/classreporter/492910758197?flow_type=39
+              - img [ref=e1536]
+              - generic [ref=e1537]:
+                - generic [ref=e1538]: ClassReporter
+                - generic [ref=e1539]:
+                  - generic ", Developer"
+                  - text: Nova Learn
+                - generic [ref=e1540]:
+                  - generic ", Description"
+                  - text: Collect and sync useful data about Google Classroom™ usage in your organisation. Data can be displayed in Data Studio™ and shared with relevant members of staff.
+              - generic [ref=e1541]:
+                - generic [ref=e1542]:
+                  - img [ref=e1543]
+                  - generic ", Rating"
+                  - generic [ref=e1547]: "4.4"
+                - generic [ref=e1548]:
+                  - img [ref=e1549]
+                  - generic [ref=e1552]:
+                    - generic ", Number of users"
+                    - text: 27M+
+            - button "Install" [ref=e1554] [cursor=pointer]:
+              - generic [ref=e1556]: Install
+          - generic [ref=e1558]:
+            - link "rosterSync - Teacher Edition , DeveloperNew Visions Cloudlab , DescriptionrosterSync - Teacher Edition allows teachers to sync a Google Classroom course roster with Google Sheets. , Rating 3.2 , Number of users25M+" [ref=e1559] [cursor=pointer]:
+              - /url: ./marketplace/app/rostersync_teacher_edition/732416499148?flow_type=39
+              - img [ref=e1561]
+              - generic [ref=e1562]:
+                - generic [ref=e1563]: rosterSync - Teacher Edition
+                - generic [ref=e1564]:
+                  - generic ", Developer"
+                  - text: New Visions Cloudlab
+                - generic [ref=e1565]:
+                  - generic ", Description"
+                  - text: rosterSync - Teacher Edition allows teachers to sync a Google Classroom course roster with Google Sheets.
+              - generic [ref=e1566]:
+                - generic [ref=e1567]:
+                  - img [ref=e1568]
+                  - generic ", Rating"
+                  - generic [ref=e1572]: "3.2"
+                - generic [ref=e1573]:
+                  - img [ref=e1574]
+                  - generic [ref=e1577]:
+                    - generic ", Number of users"
+                    - text: 25M+
+            - button "Install" [ref=e1579] [cursor=pointer]:
+              - generic [ref=e1581]: Install
+          - generic [ref=e1583]:
+            - link "Awesome Table , DeveloperTalarian , DescriptionExport data from Salesforce, Quickbooks, and many other sources to Google Sheets™. No technical skill required. , Rating 4.6 , Number of users12M+" [ref=e1584] [cursor=pointer]:
+              - /url: ./marketplace/app/awesome_table/56088344336?flow_type=39
+              - img [ref=e1586]
+              - generic [ref=e1587]:
+                - generic [ref=e1588]: Awesome Table
+                - generic [ref=e1589]:
+                  - generic ", Developer"
+                  - text: Talarian
+                - generic [ref=e1590]:
+                  - generic ", Description"
+                  - text: Export data from Salesforce, Quickbooks, and many other sources to Google Sheets™. No technical skill required.
+              - generic [ref=e1591]:
+                - generic [ref=e1592]:
+                  - img [ref=e1593]
+                  - generic ", Rating"
+                  - generic [ref=e1597]: "4.6"
+                - generic [ref=e1598]:
+                  - img [ref=e1599]
+                  - generic [ref=e1602]:
+                    - generic ", Number of users"
+                    - text: 12M+
+            - button "More info about independent security assessment" [ref=e1605] [cursor=pointer]:
+              - generic [ref=e1607]: verified_user
+            - button "Install" [ref=e1610] [cursor=pointer]:
+              - generic [ref=e1612]: Install
+          - generic [ref=e1614]:
+            - link "Icons for Google Slides™ & Google Docs™ , Developerfreepik , DescriptionFlaticon is the largest icon database. With this extension, you will have free access to our icons for your Google Docs™, Google Slides™, Google Spreadsheets™ and Google Forms™. , Rating 3.8 , Number of users10M+" [ref=e1615] [cursor=pointer]:
+              - /url: ./marketplace/app/icons_for_google_slides_google_docs/381578326502?flow_type=39
+              - img [ref=e1617]
+              - generic [ref=e1618]:
+                - generic [ref=e1619]: Icons for Google Slides™ & Google Docs™
+                - generic [ref=e1620]:
+                  - generic ", Developer"
+                  - text: freepik
+                - generic [ref=e1621]:
+                  - generic ", Description"
+                  - text: Flaticon is the largest icon database. With this extension, you will have free access to our icons for your Google Docs™, Google Slides™, Google Spreadsheets™ and Google Forms™.
+              - generic [ref=e1622]:
+                - generic [ref=e1623]:
+                  - img [ref=e1624]
+                  - generic ", Rating"
+                  - generic [ref=e1628]: "3.8"
+                - generic [ref=e1629]:
+                  - img [ref=e1630]
+                  - generic [ref=e1633]:
+                    - generic ", Number of users"
+                    - text: 10M+
+            - button "Install" [ref=e1635] [cursor=pointer]:
+              - generic [ref=e1637]: Install
+      - generic [ref=e1639]:
+        - generic [ref=e1640]:
+          - generic [ref=e1641]:
+            - heading "Works with Slides" [level=1] [ref=e1642]
+            - generic [ref=e1645]:
+              - button "More details about user reviews" [ref=e1646] [cursor=pointer]:
+                - generic [ref=e1647]: info
+              - tooltip [ref=e1648]: More details about user reviews
+          - generic [ref=e1649]: These apps can be used directly with Slides to improve your productivity.
+          - link "View more Works with Slides apps" [ref=e1650] [cursor=pointer]:
+            - /url: "#"
+            - text: View more
+        - generic [ref=e1651]:
+          - generic [ref=e1653]:
+            - link "Slides Translator , DeveloperAutomagical Apps , Description🦄 Translate your Google Slides™ and images to over 100 different languages with a single click! , Rating 3.9 , Number of users33M+" [ref=e1654] [cursor=pointer]:
+              - /url: ./marketplace/app/slides_translator/333911051422?flow_type=72
+              - img [ref=e1656]
+              - generic [ref=e1657]:
+                - generic [ref=e1658]: Slides Translator
+                - generic [ref=e1659]:
+                  - generic ", Developer"
+                  - text: Automagical Apps
+                - generic [ref=e1660]:
+                  - generic ", Description"
+                  - text: 🦄 Translate your Google Slides™ and images to over 100 different languages with a single click!
+              - generic [ref=e1661]:
+                - generic [ref=e1662]:
+                  - img [ref=e1663]
+                  - generic ", Rating"
+                  - generic [ref=e1667]: "3.9"
+                - generic [ref=e1668]:
+                  - img [ref=e1669]
+                  - generic [ref=e1672]:
+                    - generic ", Number of users"
+                    - text: 33M+
+            - button "Install" [ref=e1674] [cursor=pointer]:
+              - generic [ref=e1676]: Install
+          - generic [ref=e1678]:
+            - link "SlidesAI.io - Create Slides With AI , DeveloperSlidesAI.io , DescriptionAI-Powered tool that transforms any text into visually appealing slides, saving you hours of time and effort. Choose from a variety of presentation types and colour presets. , Rating 4.3 , Number of users14M+" [ref=e1679] [cursor=pointer]:
+              - /url: ./marketplace/app/slidesaiio_create_slides_with_ai/904276957168?flow_type=72
+              - img [ref=e1681]
+              - generic [ref=e1682]:
+                - generic [ref=e1683]: SlidesAI.io - Create Slides With AI
+                - generic [ref=e1684]:
+                  - generic ", Developer"
+                  - text: SlidesAI.io
+                - generic [ref=e1685]:
+                  - generic ", Description"
+                  - text: AI-Powered tool that transforms any text into visually appealing slides, saving you hours of time and effort. Choose from a variety of presentation types and colour presets.
+              - generic [ref=e1686]:
+                - generic [ref=e1687]:
+                  - img [ref=e1688]
+                  - generic ", Rating"
+                  - generic [ref=e1692]: "4.3"
+                - generic [ref=e1693]:
+                  - img [ref=e1694]
+                  - generic [ref=e1697]:
+                    - generic ", Number of users"
+                    - text: 14M+
+            - button "Install" [ref=e1699] [cursor=pointer]:
+              - generic [ref=e1701]: Install
+          - generic [ref=e1703]:
+            - link "Equation Editor ++ , Developerabezukor.com , DescriptionPut equations in Google Docs™ or Google Slides™ with the power of LaTeX and the simplicity of a graphical editor. , Rating 3.8 , Number of users9M+" [ref=e1704] [cursor=pointer]:
+              - /url: ./marketplace/app/equation_editor_++/820814187583?flow_type=72
+              - img [ref=e1706]
+              - generic [ref=e1707]:
+                - generic [ref=e1708]: Equation Editor ++
+                - generic [ref=e1709]:
+                  - generic ", Developer"
+                  - text: abezukor.com
+                - generic [ref=e1710]:
+                  - generic ", Description"
+                  - text: Put equations in Google Docs™ or Google Slides™ with the power of LaTeX and the simplicity of a graphical editor.
+              - generic [ref=e1711]:
+                - generic [ref=e1712]:
+                  - img [ref=e1713]
+                  - generic ", Rating"
+                  - generic [ref=e1717]: "3.8"
+                - generic [ref=e1718]:
+                  - img [ref=e1719]
+                  - generic [ref=e1722]:
+                    - generic ", Number of users"
+                    - text: 9M+
+            - button "Install" [ref=e1724] [cursor=pointer]:
+              - generic [ref=e1726]: Install
+          - generic [ref=e1728]:
+            - link "Music Snippet , DeveloperTutteo Limited , Description[Formerly Flat for Docs] Music notation and tablature snippets for your Google Workspace. Create your notation and quickly insert it into your Docs and Slides. , Rating 3.2 , Number of users9M+" [ref=e1729] [cursor=pointer]:
+              - /url: ./marketplace/app/music_snippet/324260072797?flow_type=72
+              - img [ref=e1731]
+              - generic [ref=e1732]:
+                - generic [ref=e1733]: Music Snippet
+                - generic [ref=e1734]:
+                  - generic ", Developer"
+                  - text: Tutteo Limited
+                - generic [ref=e1735]:
+                  - generic ", Description"
+                  - text: "[Formerly Flat for Docs] Music notation and tablature snippets for your Google Workspace. Create your notation and quickly insert it into your Docs and Slides."
+              - generic [ref=e1736]:
+                - generic [ref=e1737]:
+                  - img [ref=e1738]
+                  - generic ", Rating"
+                  - generic [ref=e1742]: "3.2"
+                - generic [ref=e1743]:
+                  - img [ref=e1744]
+                  - generic [ref=e1747]:
+                    - generic ", Number of users"
+                    - text: 9M+
+            - button "Install" [ref=e1749] [cursor=pointer]:
+              - generic [ref=e1751]: Install
+      - generic [ref=e1753]:
+        - generic [ref=e1754]:
+          - generic [ref=e1755]:
+            - heading "Works with Forms" [level=1] [ref=e1756]
+            - generic [ref=e1759]:
+              - button "More details about user reviews" [ref=e1760] [cursor=pointer]:
+                - generic [ref=e1761]: info
+              - tooltip [ref=e1762]: More details about user reviews
+          - generic [ref=e1763]: These apps can be used directly with Forms to improve your productivity.
+          - link "View more Works with Forms apps" [ref=e1764] [cursor=pointer]:
+            - /url: "#"
+            - text: View more
+        - generic [ref=e1765]:
+          - generic [ref=e1767]:
+            - link "Hypatia Create , DeveloperHypatia Systems Inc. , DescriptionMath Editing Made Easy – The Fastest Equation Editor for Google Docs™, Slides™, and Forms™! , Rating 4.3 , Number of users39M+" [ref=e1768] [cursor=pointer]:
+              - /url: ./marketplace/app/hypatia_create/590044986674?flow_type=37
+              - img [ref=e1770]
+              - generic [ref=e1771]:
+                - generic [ref=e1772]: Hypatia Create
+                - generic [ref=e1773]:
+                  - generic ", Developer"
+                  - text: Hypatia Systems Inc.
+                - generic [ref=e1774]:
+                  - generic ", Description"
+                  - text: Math Editing Made Easy – The Fastest Equation Editor for Google Docs™, Slides™, and Forms™!
+              - generic [ref=e1775]:
+                - generic [ref=e1776]:
+                  - img [ref=e1777]
+                  - generic ", Rating"
+                  - generic [ref=e1781]: "4.3"
+                - generic [ref=e1782]:
+                  - img [ref=e1783]
+                  - generic [ref=e1786]:
+                    - generic ", Number of users"
+                    - text: 39M+
+            - button "Install" [ref=e1788] [cursor=pointer]:
+              - generic [ref=e1790]: Install
+          - generic [ref=e1792]:
+            - link "Form Presenter+Timer , DeveloperJivrus Technologies , DescriptionConduct online Assessments, Quiz & Exams with Time, Audience, Action and Presentation Controls on your Google Forms , Rating 4.2 , Number of users34M+" [ref=e1793] [cursor=pointer]:
+              - /url: ./marketplace/app/form_presenter+timer/93519377337?flow_type=37
+              - img [ref=e1795]
+              - generic [ref=e1796]:
+                - generic [ref=e1797]: Form Presenter+Timer
+                - generic [ref=e1798]:
+                  - generic ", Developer"
+                  - text: Jivrus Technologies
+                - generic [ref=e1799]:
+                  - generic ", Description"
+                  - text: Conduct online Assessments, Quiz & Exams with Time, Audience, Action and Presentation Controls on your Google Forms
+              - generic [ref=e1800]:
+                - generic [ref=e1801]:
+                  - img [ref=e1802]
+                  - generic ", Rating"
+                  - generic [ref=e1806]: "4.2"
+                - generic [ref=e1807]:
+                  - img [ref=e1808]
+                  - generic [ref=e1811]:
+                    - generic ", Number of users"
+                    - text: 34M+
+            - button "Install" [ref=e1813] [cursor=pointer]:
+              - generic [ref=e1815]: Install
+          - generic [ref=e1817]:
+            - link "Problem-Attic Import , DeveloperProblem-Attic , DescriptionThis add-on allows users of Problem-Attic to export questions to a Google Quiz Form. You will not only save time, your questions will be beautifully formatted and ready to deliver to your students. , Rating 4.4 , Number of users25M+" [ref=e1818] [cursor=pointer]:
+              - /url: ./marketplace/app/problemattic_import/99463315756?flow_type=37
+              - img [ref=e1820]
+              - generic [ref=e1821]:
+                - generic [ref=e1822]: Problem-Attic Import
+                - generic [ref=e1823]:
+                  - generic ", Developer"
+                  - text: Problem-Attic
+                - generic [ref=e1824]:
+                  - generic ", Description"
+                  - text: This add-on allows users of Problem-Attic to export questions to a Google Quiz Form. You will not only save time, your questions will be beautifully formatted and ready to deliver to your students.
+              - generic [ref=e1825]:
+                - generic [ref=e1826]:
+                  - img [ref=e1827]
+                  - generic ", Rating"
+                  - generic [ref=e1831]: "4.4"
+                - generic [ref=e1832]:
+                  - img [ref=e1833]
+                  - generic [ref=e1836]:
+                    - generic ", Number of users"
+                    - text: 25M+
+            - button "Install" [ref=e1838] [cursor=pointer]:
+              - generic [ref=e1840]: Install
+          - generic [ref=e1842]:
+            - link "AI Assist for Gemini™ in Sheets™, Docs™ and Forms™ , DeveloperGW Add-ons , DescriptionGemini™ AI magic in Sheets™, Docs™ and Forms™ for data enrichment, categorization, translation, and seamless content creation. Elevate your workflow! , Rating 4.6 , Number of users6M+" [ref=e1843] [cursor=pointer]:
+              - /url: ./marketplace/app/ai_assist_for_gemini_in_sheets_docs_and/985356259375?flow_type=37
+              - img [ref=e1845]
+              - generic [ref=e1846]:
+                - generic [ref=e1847]: AI Assist for Gemini™ in Sheets™, Docs™ and Forms™
+                - generic [ref=e1848]:
+                  - generic ", Developer"
+                  - text: GW Add-ons
+                - generic [ref=e1849]:
+                  - generic ", Description"
+                  - text: Gemini™ AI magic in Sheets™, Docs™ and Forms™ for data enrichment, categorization, translation, and seamless content creation. Elevate your workflow!
+              - generic [ref=e1850]:
+                - generic [ref=e1851]:
+                  - img [ref=e1852]
+                  - generic ", Rating"
+                  - generic [ref=e1856]: "4.6"
+                - generic [ref=e1857]:
+                  - img [ref=e1858]
+                  - generic [ref=e1861]:
+                    - generic ", Number of users"
+                    - text: 6M+
+            - button "Install" [ref=e1863] [cursor=pointer]:
+              - generic [ref=e1865]: Install
+      - generic [ref=e1867]:
+        - generic [ref=e1868]:
+          - generic [ref=e1869]:
+            - heading "Works with Classroom" [level=1] [ref=e1870]
+            - generic [ref=e1873]:
+              - button "More details about user reviews" [ref=e1874] [cursor=pointer]:
+                - generic [ref=e1875]: info
+              - tooltip [ref=e1876]: More details about user reviews
+          - generic [ref=e1877]: These apps can be used directly with Classroom to improve your productivity.
+          - link "View more Works with Classroom apps" [ref=e1878] [cursor=pointer]:
+            - /url: "#"
+            - text: View more
+        - generic [ref=e1879]:
+          - link "Google Arts & Culture , DeveloperGoogle Arts & Culture , DescriptionArtworks, Stories, Games and more from the collections of leading museums, art galleries and other cultural institutions , Rating 4.2 , Number of users17M+" [ref=e1882] [cursor=pointer]:
+            - /url: ./marketplace/app/google_arts_culture/629054125733?flow_type=70
+            - img [ref=e1884]
+            - generic [ref=e1885]:
+              - generic [ref=e1886]: Google Arts & Culture
+              - generic [ref=e1887]:
+                - generic ", Developer"
+                - text: Google Arts & Culture
+              - generic [ref=e1888]:
+                - generic ", Description"
+                - text: Artworks, Stories, Games and more from the collections of leading museums, art galleries and other cultural institutions
+            - generic [ref=e1889]:
+              - generic [ref=e1890]:
+                - img [ref=e1891]
+                - generic ", Rating"
+                - generic [ref=e1895]: "4.2"
+              - generic [ref=e1896]:
+                - img [ref=e1897]
+                - generic [ref=e1900]:
+                  - generic ", Number of users"
+                  - text: 17M+
+          - link "Nearpod for Google Classroom™ , DeveloperNearpod , DescriptionGet more out of teaching with Google Classroom™ by adding in the power of Nearpod. Streamline tools, drive engagement, and create better learning experiences. , Number of users15M+" [ref=e1903] [cursor=pointer]:
+            - /url: ./marketplace/app/nearpod_for_google_classroom/28288372596?flow_type=70
+            - img [ref=e1905]
+            - generic [ref=e1906]:
+              - generic [ref=e1907]: Nearpod for Google Classroom™
+              - generic [ref=e1908]:
+                - generic ", Developer"
+                - text: Nearpod
+              - generic [ref=e1909]:
+                - generic ", Description"
+                - text: Get more out of teaching with Google Classroom™ by adding in the power of Nearpod. Streamline tools, drive engagement, and create better learning experiences.
+            - generic [ref=e1911]:
+              - img [ref=e1912]
+              - generic [ref=e1915]:
+                - generic ", Number of users"
+                - text: 15M+
+          - link "IXL Learning , DeveloperIXL Learning , DescriptionSign in to IXL, create and launch assignments for IXL activities, and review student practice data, all from Google Classroom. , Number of users5M+" [ref=e1918] [cursor=pointer]:
+            - /url: ./marketplace/app/ixl_learning/850510713245?flow_type=70
+            - img [ref=e1920]
+            - generic [ref=e1921]:
+              - generic [ref=e1922]: IXL Learning
+              - generic [ref=e1923]:
+                - generic ", Developer"
+                - text: IXL Learning
+              - generic [ref=e1924]:
+                - generic ", Description"
+                - text: Sign in to IXL, create and launch assignments for IXL activities, and review student practice data, all from Google Classroom.
+            - generic [ref=e1926]:
+              - img [ref=e1927]
+              - generic [ref=e1930]:
+                - generic ", Number of users"
+                - text: 5M+
+          - link "Educaplay , DeveloperEducaplay , DescriptionMotivate students with your AI generated games and save the scores in Google Classroom™. , Rating 4.6 , Number of users3M+" [ref=e1933] [cursor=pointer]:
+            - /url: ./marketplace/app/educaplay/943290277704?flow_type=70
+            - img [ref=e1935]
+            - generic [ref=e1936]:
+              - generic [ref=e1937]: Educaplay
+              - generic [ref=e1938]:
+                - generic ", Developer"
+                - text: Educaplay
+              - generic [ref=e1939]:
+                - generic ", Description"
+                - text: Motivate students with your AI generated games and save the scores in Google Classroom™.
+            - generic [ref=e1940]:
+              - generic [ref=e1941]:
+                - img [ref=e1942]
+                - generic ", Rating"
+                - generic [ref=e1946]: "4.6"
+              - generic [ref=e1947]:
+                - img [ref=e1948]
+                - generic [ref=e1951]:
+                  - generic ", Number of users"
+                  - text: 3M+
+      - generic [ref=e1953]:
+        - generic [ref=e1954]:
+          - generic [ref=e1955]:
+            - heading "Works with Chat" [level=1] [ref=e1956]
+            - generic [ref=e1959]:
+              - button "More details about user reviews" [ref=e1960] [cursor=pointer]:
+                - generic [ref=e1961]: info
+              - tooltip [ref=e1962]: More details about user reviews
+          - link "View more Works with Chat apps" [ref=e1964] [cursor=pointer]:
+            - /url: "#"
+            - text: View more
+        - generic [ref=e1965]:
+          - generic [ref=e1967]:
+            - link "Absolute Poll , DeveloperYaskur , DescriptionCreate polls or votes in the chat space , Rating 4.1 , Number of users1M+" [ref=e1968] [cursor=pointer]:
+              - /url: ./marketplace/app/absolute_poll/687007803052?flow_type=69
+              - img [ref=e1970]
+              - generic [ref=e1971]:
+                - generic [ref=e1972]: Absolute Poll
+                - generic [ref=e1973]:
+                  - generic ", Developer"
+                  - text: Yaskur
+                - generic [ref=e1974]:
+                  - generic ", Description"
+                  - text: Create polls or votes in the chat space
+              - generic [ref=e1975]:
+                - generic [ref=e1976]:
+                  - img [ref=e1977]
+                  - generic ", Rating"
+                  - generic [ref=e1981]: "4.1"
+                - generic [ref=e1982]:
+                  - img [ref=e1983]
+                  - generic [ref=e1986]:
+                    - generic ", Number of users"
+                    - text: 1M+
+            - button "Install" [ref=e1988] [cursor=pointer]:
+              - generic [ref=e1990]: Install
+          - generic [ref=e1992]:
+            - link "Folgo for Google Drive™ , DeveloperScriptit , DescriptionAudit, secure, organize and manage Google Drive™ at scale. , Rating 4.2 , Number of users1M+" [ref=e1993] [cursor=pointer]:
+              - /url: ./marketplace/app/folgo_for_google_drive/665800946111?flow_type=69
+              - img [ref=e1995]
+              - generic [ref=e1996]:
+                - generic [ref=e1997]: Folgo for Google Drive™
+                - generic [ref=e1998]:
+                  - generic ", Developer"
+                  - text: Scriptit
+                - generic [ref=e1999]:
+                  - generic ", Description"
+                  - text: Audit, secure, organize and manage Google Drive™ at scale.
+              - generic [ref=e2000]:
+                - generic [ref=e2001]:
+                  - img [ref=e2002]
+                  - generic ", Rating"
+                  - generic [ref=e2006]: "4.2"
+                - generic [ref=e2007]:
+                  - img [ref=e2008]
+                  - generic [ref=e2011]:
+                    - generic ", Number of users"
+                    - text: 1M+
+            - button "More info about independent security assessment" [ref=e2014] [cursor=pointer]:
+              - generic [ref=e2016]: verified_user
+            - button "Install" [ref=e2019] [cursor=pointer]:
+              - generic [ref=e2021]: Install
+          - generic [ref=e2023]:
+            - link "Polly , DeveloperPolly , DescriptionPolly for Google Meet™. Drive meaningful connection with your team in every meeting. Polly makes it simple to engage, empower, and entertain your meeting attendees, instantly , Rating 3.5 , Number of users1M+" [ref=e2024] [cursor=pointer]:
+              - /url: ./marketplace/app/polly/1077762947798?flow_type=69
+              - img [ref=e2026]
+              - generic [ref=e2027]:
+                - generic [ref=e2028]: Polly
+                - generic [ref=e2029]:
+                  - generic ", Developer"
+                  - text: Polly
+                - generic [ref=e2030]:
+                  - generic ", Description"
+                  - text: Polly for Google Meet™. Drive meaningful connection with your team in every meeting. Polly makes it simple to engage, empower, and entertain your meeting attendees, instantly
+              - generic [ref=e2031]:
+                - generic [ref=e2032]:
+                  - img [ref=e2033]
+                  - generic ", Rating"
+                  - generic [ref=e2037]: "3.5"
+                - generic [ref=e2038]:
+                  - img [ref=e2039]
+                  - generic [ref=e2042]:
+                    - generic ", Number of users"
+                    - text: 1M+
+            - button "Install" [ref=e2044] [cursor=pointer]:
+              - generic [ref=e2046]: Install
+          - generic [ref=e2048]:
+            - link "Abang Translator , DeveloperYaskur , DescriptionTranslate chat across 100+ languages. Break language barriers, enhance collaboration, and foster inclusivity effortlessly. , Rating 4.3 , Number of users947K+" [ref=e2049] [cursor=pointer]:
+              - /url: ./marketplace/app/abang_translator/963775668283?flow_type=69
+              - img [ref=e2051]
+              - generic [ref=e2052]:
+                - generic [ref=e2053]: Abang Translator
+                - generic [ref=e2054]:
+                  - generic ", Developer"
+                  - text: Yaskur
+                - generic [ref=e2055]:
+                  - generic ", Description"
+                  - text: Translate chat across 100+ languages. Break language barriers, enhance collaboration, and foster inclusivity effortlessly.
+              - generic [ref=e2056]:
+                - generic [ref=e2057]:
+                  - img [ref=e2058]
+                  - generic ", Rating"
+                  - generic [ref=e2062]: "4.3"
+                - generic [ref=e2063]:
+                  - img [ref=e2064]
+                  - generic [ref=e2067]:
+                    - generic ", Number of users"
+                    - text: 947K+
+            - button "Install" [ref=e2069] [cursor=pointer]:
+              - generic [ref=e2071]: Install
+      - generic [ref=e2073]:
+        - generic [ref=e2074]:
+          - generic [ref=e2075]:
+            - heading "Works with Meet" [level=1] [ref=e2076]
+            - generic [ref=e2079]:
+              - button "More details about user reviews" [ref=e2080] [cursor=pointer]:
+                - generic [ref=e2081]: info
+              - tooltip [ref=e2082]: More details about user reviews
+          - generic [ref=e2083]: These apps can be used directly with Meet to improve your productivity.
+          - link "View more Works with Meet apps" [ref=e2084] [cursor=pointer]:
+            - /url: "#"
+            - text: View more
+        - generic [ref=e2085]:
+          - generic [ref=e2087]:
+            - link "Figma , DeveloperFigma , DescriptionFigma is a platform that helps teams build products together, faster. , Rating 3.2 , Number of users6M+" [ref=e2088] [cursor=pointer]:
+              - /url: ./marketplace/app/figma/1035183305161?flow_type=71
+              - img [ref=e2090]
+              - generic [ref=e2091]:
+                - generic [ref=e2092]: Figma
+                - generic [ref=e2093]:
+                  - generic ", Developer"
+                  - text: Figma
+                - generic [ref=e2094]:
+                  - generic ", Description"
+                  - text: Figma is a platform that helps teams build products together, faster.
+              - generic [ref=e2095]:
+                - generic [ref=e2096]:
+                  - img [ref=e2097]
+                  - generic ", Rating"
+                  - generic [ref=e2101]: "3.2"
+                - generic [ref=e2102]:
+                  - img [ref=e2103]
+                  - generic [ref=e2106]:
+                    - generic ", Number of users"
+                    - text: 6M+
+            - button "Install" [ref=e2108] [cursor=pointer]:
+              - generic [ref=e2110]: Install
+          - generic [ref=e2112]:
+            - link "Read AI , DeveloperRead AI , DescriptionAI-powered meeting notes and analytics, seamlessly integrated into Google Meet™ , Rating 3.9 , Number of users5M+" [ref=e2113] [cursor=pointer]:
+              - /url: ./marketplace/app/read_ai/766098389391?flow_type=71
+              - img [ref=e2115]
+              - generic [ref=e2116]:
+                - generic [ref=e2117]: Read AI
+                - generic [ref=e2118]:
+                  - generic ", Developer"
+                  - text: Read AI
+                - generic [ref=e2119]:
+                  - generic ", Description"
+                  - text: AI-powered meeting notes and analytics, seamlessly integrated into Google Meet™
+              - generic [ref=e2120]:
+                - generic [ref=e2121]:
+                  - img [ref=e2122]
+                  - generic ", Rating"
+                  - generic [ref=e2126]: "3.9"
+                - generic [ref=e2127]:
+                  - img [ref=e2128]
+                  - generic [ref=e2131]:
+                    - generic ", Number of users"
+                    - text: 5M+
+            - button "Install" [ref=e2133] [cursor=pointer]:
+              - generic [ref=e2135]: Install
+          - generic [ref=e2137]:
+            - link "Collaborative Whiteboard , DeveloperDevfortress , DescriptionPresent your drawings, designs and diagrams to your team. , Rating 4.2 , Number of users3M+" [ref=e2138] [cursor=pointer]:
+              - /url: ./marketplace/app/collaborative_whiteboard/657959631782?flow_type=71
+              - img [ref=e2140]
+              - generic [ref=e2141]:
+                - generic [ref=e2142]: Collaborative Whiteboard
+                - generic [ref=e2143]:
+                  - generic ", Developer"
+                  - text: Devfortress
+                - generic [ref=e2144]:
+                  - generic ", Description"
+                  - text: Present your drawings, designs and diagrams to your team.
+              - generic [ref=e2145]:
+                - generic [ref=e2146]:
+                  - img [ref=e2147]
+                  - generic ", Rating"
+                  - generic [ref=e2151]: "4.2"
+                - generic [ref=e2152]:
+                  - img [ref=e2153]
+                  - generic [ref=e2156]:
+                    - generic ", Number of users"
+                    - text: 3M+
+            - button "Install" [ref=e2158] [cursor=pointer]:
+              - generic [ref=e2160]: Install
+          - generic [ref=e2162]:
+            - link "Meeting Notes and Attendance , DeveloperDevfortress , DescriptionEffortlessly take attendance and share meeting notes after your Google Meet™ sessions. , Rating 4.7 , Number of users270K+" [ref=e2163] [cursor=pointer]:
+              - /url: ./marketplace/app/meeting_notes_and_attendance/476541141895?flow_type=71
+              - img [ref=e2165]
+              - generic [ref=e2166]:
+                - generic [ref=e2167]: Meeting Notes and Attendance
+                - generic [ref=e2168]:
+                  - generic ", Developer"
+                  - text: Devfortress
+                - generic [ref=e2169]:
+                  - generic ", Description"
+                  - text: Effortlessly take attendance and share meeting notes after your Google Meet™ sessions.
+              - generic [ref=e2170]:
+                - generic [ref=e2171]:
+                  - img [ref=e2172]
+                  - generic ", Rating"
+                  - generic [ref=e2176]: "4.7"
+                - generic [ref=e2177]:
+                  - img [ref=e2178]
+                  - generic [ref=e2181]:
+                    - generic ", Number of users"
+                    - text: 270K+
+            - button "Install" [ref=e2183] [cursor=pointer]:
+              - generic [ref=e2185]: Install
+      - generic [ref=e2187]:
+        - generic [ref=e2188]:
+          - generic [ref=e2189]:
+            - heading "Works with Gemini" [level=1] [ref=e2190]
+            - generic [ref=e2193]:
+              - button "More details about user reviews" [ref=e2194] [cursor=pointer]:
+                - generic [ref=e2195]: info
+              - tooltip [ref=e2196]: More details about user reviews
+          - generic [ref=e2197]: These apps can be used directly with Gemini to improve your productivity.
+        - generic [ref=e2198]:
+          - link "GitHub Integration , DeveloperGoogle , DescriptionEnhance code management by taking Github actions directly in Gemini Apps , Rating 4.0 , Number of users1M+" [ref=e2201] [cursor=pointer]:
+            - /url: ./marketplace/app/github_integration/556146275714?flow_type=80
+            - img [ref=e2203]
+            - generic [ref=e2204]:
+              - generic [ref=e2205]: GitHub Integration
+              - generic [ref=e2206]:
+                - generic ", Developer"
+                - text: Google
+              - generic [ref=e2207]:
+                - generic ", Description"
+                - text: Enhance code management by taking Github actions directly in Gemini Apps
+            - generic [ref=e2208]:
+              - generic [ref=e2209]:
+                - img [ref=e2210]
+                - generic ", Rating"
+                - generic [ref=e2214]: "4.0"
+              - generic [ref=e2215]:
+                - img [ref=e2216]
+                - generic [ref=e2219]:
+                  - generic ", Number of users"
+                  - text: 1M+
+          - link "Asana Integration , DeveloperGoogle , DescriptionUplevel your project management by taking Asana actions directly in Gemini Apps. , Number of users15K+" [ref=e2222] [cursor=pointer]:
+            - /url: ./marketplace/app/asana_integration/991974521385?flow_type=80
+            - img [ref=e2224]
+            - generic [ref=e2225]:
+              - generic [ref=e2226]: Asana Integration
+              - generic [ref=e2227]:
+                - generic ", Developer"
+                - text: Google
+              - generic [ref=e2228]:
+                - generic ", Description"
+                - text: Uplevel your project management by taking Asana actions directly in Gemini Apps.
+            - generic [ref=e2230]:
+              - img [ref=e2231]
+              - generic [ref=e2234]:
+                - generic ", Number of users"
+                - text: 15K+

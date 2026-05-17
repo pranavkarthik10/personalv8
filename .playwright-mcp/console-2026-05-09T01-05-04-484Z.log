@@ -1,0 +1,24 @@
+[   44145ms] [ERROR] `DialogContent` requires a `DialogTitle` for the component to be accessible for screen reader users.
+
+If you want to hide the `DialogTitle`, you can wrap it with our VisuallyHidden component.
+
+For more information, see https://radix-ui.com/primitives/docs/components/dialog @ https://martinsit.ca/_next/static/chunks/117-12552553bbda6163.js:0
+[   44145ms] [WARNING] Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}. @ https://martinsit.ca/_next/static/chunks/799-44899336d4239f86.js:0
+[   50770ms] [ERROR] `DialogContent` requires a `DialogTitle` for the component to be accessible for screen reader users.
+
+If you want to hide the `DialogTitle`, you can wrap it with our VisuallyHidden component.
+
+For more information, see https://radix-ui.com/primitives/docs/components/dialog @ https://martinsit.ca/_next/static/chunks/117-12552553bbda6163.js:0
+[   50772ms] [WARNING] Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}. @ https://martinsit.ca/_next/static/chunks/799-44899336d4239f86.js:0
+[   52637ms] [ERROR] `DialogContent` requires a `DialogTitle` for the component to be accessible for screen reader users.
+
+If you want to hide the `DialogTitle`, you can wrap it with our VisuallyHidden component.
+
+For more information, see https://radix-ui.com/primitives/docs/components/dialog @ https://martinsit.ca/_next/static/chunks/117-12552553bbda6163.js:0
+[   52637ms] [WARNING] Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}. @ https://martinsit.ca/_next/static/chunks/799-44899336d4239f86.js:0
+[   54109ms] [ERROR] `DialogContent` requires a `DialogTitle` for the component to be accessible for screen reader users.
+
+If you want to hide the `DialogTitle`, you can wrap it with our VisuallyHidden component.
+
+For more information, see https://radix-ui.com/primitives/docs/components/dialog @ https://martinsit.ca/_next/static/chunks/117-12552553bbda6163.js:0
+[   54109ms] [WARNING] Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}. @ https://martinsit.ca/_next/static/chunks/799-44899336d4239f86.js:0

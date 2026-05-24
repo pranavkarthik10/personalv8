@@ -289,6 +289,27 @@ const RESUME = {
 			year: 2024,
 		},
 		{
+			slug: "discord-swiftui",
+			name: "DiscordSwiftUI",
+			description:
+				"A native SwiftUI Discord client experiment recreating chat, servers, channels, and platform UI patterns.",
+			longDescription:
+				"DiscordSwiftUI is a native SwiftUI client experiment for Discord, exploring how a familiar chat product can feel when rebuilt with Apple platform conventions across shared iOS and macOS code.",
+			imagePath: "/discord-swiftui.png",
+			githubUrl: "https://github.com/pranavkarthik10/DiscordSwiftUI",
+			stack: ["SwiftUI", "Swift", "iOS", "macOS"],
+			keyFeatures: [
+				"Native SwiftUI Discord-style interface",
+				"Shared components across iOS and macOS targets",
+				"Server, channel, and chat UI exploration",
+				"Apple-platform take on a familiar messaging product",
+			],
+			challenges:
+				"Recreating a dense, recognizable chat interface in SwiftUI meant translating web-first interaction patterns into native Apple layouts while keeping the UI responsive and familiar.",
+			inProgress: false,
+			year: 2020,
+		},
+		{
 			slug: "travoai",
 			name: "TravoAI",
 			description:

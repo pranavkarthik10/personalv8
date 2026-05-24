@@ -132,7 +132,6 @@ const letters: SignatureLetter[] = [
 export default function AnimatedSignature() {
 	return (
 		<div className="signature-card">
-			{/* <div className="signature-label">signed by,</div> */}
 			<div className="signature-main" aria-label="Pranav Karthik signature">
 				{letters.map((letter, index) => {
 					if (letter.variant === "space") {

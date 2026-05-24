@@ -3,12 +3,11 @@ import RESUME from "@/data/resume";
 
 export default function CvPage() {
 	return (
-		<main className="py-8 sm:py-12">
-			<section className="max-w-2xl py-8">
-				<h1 className="text-3xl font-medium tracking-[-0.03em] sm:text-5xl">
-					CV
-				</h1>
-				<p className="mt-4 text-sm leading-7 text-muted-foreground">
+		<main className="page-frame">
+			<section className="content-measure">
+				<p className="page-kicker">CV</p>
+				<h1 className="page-title">Experience and education.</h1>
+				<p className="page-description">
 					Experience, education, and the usual resume-shaped things.
 				</p>
 			</section>

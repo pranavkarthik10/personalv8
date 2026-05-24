@@ -1,8 +1,4 @@
-"use client";
-
-import { Newspaper, ChevronLeft, ChevronRight } from "lucide-react";
-import { useRef } from "react";
-import { Tweet } from "react-tweet";
+import MentionsCarousel from "@/components/mentions-carousel";
 
 const logoData = [
 	{ name: "OMNI", url: "https://www.omnitv.ca/ab/en/videos/pranav-karthik-coding-prodigy/", logo: "omni-tv.png" },
@@ -16,82 +12,28 @@ const logoData = [
 	{ name: "DailyHive", url: "https://dailyhive.com/vancouver/apple-ceo-tim-cook-shout-out-vancouver-teen", logo: "daily-hive.svg" },
 ];
 
-const tweetIds = [
-	"1135700109931343872", // Tim Cook
-	"1275225681794748416", // Craig Federighi
-	"1997875261669621787", // xAI
-	"1282204149082230784", // Phil Schiller
-];
-
 export default function PressPage() {
-	const scrollContainerRef = useRef<HTMLDivElement>(null);
-
-	const scroll = (direction: "left" | "right") => {
-		if (scrollContainerRef.current) {
-			const scrollAmount = 400;
-			scrollContainerRef.current.scrollBy({
-				left: direction === "left" ? -scrollAmount : scrollAmount,
-				behavior: "smooth",
-			});
-		}
-	};
-
 	return (
-		<main className="px-8 pt-8 border-t border-dashed">
-			<div>
-				<h1 className="text-4xl font-medium tracking-tight flex items-center gap-3">
-					<Newspaper className="w-8 h-8" />
-					Press/Media
-				</h1>
-				<p className="text-muted-foreground mt-2 text-lg">
-					Where I&apos;ve been featured on so far.
+		<main className="page-frame">
+			<section>
+				<p className="page-kicker">Press</p>
+				<h1 className="page-title">Mentions and coverage.</h1>
+				<p className="page-description">
+					A small archive of interviews, coverage, and a few nice shout-outs.
 				</p>
-			</div>
+			</section>
 
-			{/* Notable Mentions - Moved to top */}
 			<div className="mt-12 mb-0">
-				<h2 className="text-2xl font-medium tracking-tight mb-0">Notable Mentions</h2>
-				<div className="relative overflow-hidden">
-					{/* Scroll buttons - commented out since there are only 4 tweets */}
-					{/* <button
-						onClick={() => scroll("left")}
-						className="absolute left-0 top-1/2 -translate-y-1/2 z-10 p-2 rounded-full border border-border bg-background/80 backdrop-blur hover:bg-muted transition-colors shadow-lg"
-						aria-label="Scroll left"
-					>
-						<ChevronLeft size={20} />
-					</button>
-					<button
-						onClick={() => scroll("right")}
-						className="absolute right-0 top-1/2 -translate-y-1/2 z-10 p-2 rounded-full border border-border bg-background/80 backdrop-blur hover:bg-muted transition-colors shadow-lg"
-						aria-label="Scroll right"
-					>
-						<ChevronRight size={20} />
-					</button> */}
-
-					{/* Scrollable container */}
-					<div
-						ref={scrollContainerRef}
-						className="flex gap-4 overflow-x-scroll overflow-y-hidden scrollbar-hide pr-10 py-4"
-						style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
-					>
-						{tweetIds.map((id) => (
-							<div
-								key={id}
-								className="flex-shrink-0 w-[280px] max-w-[280px] [&_.react-tweet-theme]:!bg-white/5 [&_.react-tweet-theme]:!border-border [&_.react-tweet-theme]:rounded-xl [&_.react-tweet-theme]:!text-sm [&_.react-tweet-theme_*]:!text-xs [&_.react-tweet-theme]:!p-3"
-							>
-								<Tweet id={id} />
-							</div>
-						))}
-					</div>
-				</div>
+				<h2 className="text-xl font-medium tracking-[-0.03em] mb-0">Notable mentions</h2>
+				<MentionsCarousel />
 			</div>
 
 			{/* News Section */}
 			<div className="mt-12">
-				<h2 className="text-2xl font-medium tracking-tight mb-6">News</h2>
+				<h2 className="text-xl font-medium tracking-[-0.03em] mb-6">News</h2>
 				
 				{/* Press Logos */}
-				<div className="p-8 rounded-lg border border-border bg-white/20">
+				<div className="rounded-lg border border-border bg-card/70 p-8">
 				<div className="grid grid-cols-2 md:grid-cols-3 gap-8">
 					{logoData.map((item) => (
 						<a

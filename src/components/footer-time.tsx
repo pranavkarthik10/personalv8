@@ -23,9 +23,10 @@ function formatVancouverTime(date: Date) {
 }
 
 export default function FooterTime() {
-	const [time, setTime] = useState(() => formatVancouverTime(new Date()));
+	const [time, setTime] = useState({ clock: "--:--:--", meridiem: "AM" });
 
 	useEffect(() => {
+		setTime(formatVancouverTime(new Date()));
 		const interval = window.setInterval(() => {
 			setTime(formatVancouverTime(new Date()));
 		}, 1000);

@@ -1,7 +1,8 @@
 "use client";
 
 import { Badge } from "@/components/ui/badge";
-import { ExternalLink, Github, Image as ImageIcon } from "lucide-react";
+import { GitHubLogo } from "@/components/github-logo";
+import { ExternalLink, Image as ImageIcon } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -35,7 +36,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
   return (
     <Link
       href={`/projects/${project.slug}`}
-      className="group block cursor-pointer overflow-hidden rounded-md border border-border bg-card transition duration-200 hover:-translate-y-0.5 hover:border-foreground/25 hover:bg-secondary/70"
+      className="project-card group block cursor-pointer overflow-hidden rounded-md border border-border bg-card transition duration-200 hover:-translate-y-0.5 hover:border-foreground/25 hover:bg-secondary/70 active:scale-[0.96]"
     >
       <div className="p-3">
         <div className="mb-4 h-36 w-full overflow-hidden rounded-sm bg-muted sm:h-40">
@@ -45,7 +46,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
               alt={`${project.name} screenshot`}
               width={400}
               height={300}
-              className="h-full w-full object-cover object-top opacity-90 saturate-[0.85] transition duration-300 ease-out group-hover:scale-[1.02] group-hover:opacity-100 group-hover:saturate-100"
+              className="image-outline h-full w-full object-cover object-top opacity-90 saturate-[0.85] transition duration-300 ease-out group-hover:scale-[1.02] group-hover:opacity-100 group-hover:saturate-100"
             />
           ) : (
             <div className="flex h-36 w-full items-center justify-center bg-muted sm:h-40">
@@ -57,7 +58,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
         <div className="flex items-start justify-between gap-4 px-1">
           <div>
             <p className="text-[10px] uppercase tracking-[0.16em] text-muted-foreground">
-              {project.kind ?? "project"} / {project.year}
+              {project.year}
             </p>
             <h3 className="mt-2 text-base font-medium leading-tight">
             {project.name}
@@ -107,7 +108,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
         {/* Tech Stack */}
         {project.awards && project.awards.length > 0 && (
           <p className="mb-4 px-1 text-xs text-[hsl(var(--accent))]">
-            {project.awards.join(", ")}
+            🏆 {project.awards.join(", ")}
           </p>
         )}
 
@@ -137,7 +138,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
                   className="p-1 transition-colors hover:text-[hsl(var(--accent))]"
                   title="View on GitHub"
                 >
-                  <Github className="h-4 w-4" />
+                  <GitHubLogo className="h-4 w-4" />
                 </button>
               )}
               {project.liveUrl && (

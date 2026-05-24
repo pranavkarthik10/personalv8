@@ -1,19 +1,8 @@
 import fs from "fs";
 import path from "path";
-import { cn } from "@/lib/utils";
 import matter from "gray-matter";
-import { NotebookPen } from "lucide-react";
 import Link from "next/link";
 
-// Format date helper function
-function formatDate(dateString: string) {
-	const date = new Date(dateString);
-	return date.toLocaleDateString("en-US", {
-		year: "numeric",
-	});
-}
-
-// Type for blog post metadata
 type PostMetadata = {
 	title: string;
 	publishedAt: string;
@@ -21,20 +10,25 @@ type PostMetadata = {
 	slug: string;
 };
 
-// Function to get all blog posts
+function formatDate(dateString: string) {
+	return new Date(dateString).toLocaleDateString("en-US", {
+		month: "short",
+		day: "numeric",
+		year: "numeric",
+	});
+}
+
 function getBlogPosts(): PostMetadata[] {
-	// Get all files from the blog directory
 	const blogDirectory = path.join(process.cwd(), "content/blog");
 	const filenames = fs.readdirSync(blogDirectory);
 
-	// Get the frontmatter from each file
-	const posts = filenames
+	return filenames
 		.filter((filename) => filename.endsWith(".mdx"))
 		.map((filename) => {
 			const filePath = path.join(blogDirectory, filename);
 			const fileContent = fs.readFileSync(filePath, "utf8");
 			const { data } = matter(fileContent);
-			if (data.private) return undefined;
+			if (data.private || data.published === false) return null;
 			return {
 				title: data.title,
 				publishedAt: data.publishedAt,
@@ -42,82 +36,51 @@ function getBlogPosts(): PostMetadata[] {
 				slug: filename.replace(/\.mdx$/, ""),
 			};
 		})
-		.filter(Boolean) as PostMetadata[];
-
-	return posts.sort(
-		(a, b) =>
-			new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime(),
-	);
+		.filter((post): post is PostMetadata => Boolean(post))
+		.sort(
+			(a, b) =>
+				new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime(),
+		);
 }
 
 export default function BlogPage() {
 	const posts = getBlogPosts();
 
 	return (
-		<main className="p-8 border-t border-dashed">
-			<div>
-				<h1 className="text-3xl tracking-tight">Writings</h1>
-				<p className="text-muted-foreground mt-2 text-lg">
-					Thoughts, ideas, and essays on technology, life, and everything in
-					between.
+		<main className="page-frame">
+			<section>
+				<p className="page-kicker">Writing</p>
+				<h1 className="page-title">Notes on software and interfaces.</h1>
+				<p className="page-description">
+					Short essays and unfinished thoughts on agents, product craft, and the
+					tools I keep thinking about.
 				</p>
-			</div>
-			<table className="mt-8 w-full">
-				<thead>
-					<tr className="border-b border-border">
-						<th className="text-left py-2 px-0 text-sm text-muted-foreground/65 font-normal">
-							date
-						</th>
-						<th className="text-left py-2 px-6 text-sm text-muted-foreground/65 font-normal">
-							title
-						</th>
-						<th className="text-left py-2 px-4 text-sm text-muted-foreground/65 font-normal hidden md:table-cell">
-							summary
-						</th>
-						{/* TODO: add views */}
-						{/* <th className="text-left py-2 px-4 text-sm text-muted-foreground/65 font-normal">
-              views
-            </th> */}
-					</tr>
-				</thead>
-				<tbody className="divide-y divide-border">
-					{posts.map((post) => (
-						<tr
-							key={post.slug}
-							className="hover:bg-muted/50 transition-colors relative group"
-						>
-							<td className="py-3 px-0 text-sm text-muted-foreground whitespace-nowrap font-mono">
-								<Link
-									href={`/blog/${post.slug}`}
-									className="block w-full h-full focus:outline-none focus:underline"
-									aria-label={`Read blog post: ${post.title}`}
-								>
-									{formatDate(post.publishedAt)}
-								</Link>
-							</td>
-							<td className="py-3 px-6">
-								<Link
-									href={`/blog/${post.slug}`}
-									className="block w-full h-full"
-								>
-									<span className="block leading-snug break-words">
-										{post.title}
-									</span>
-								</Link>
-							</td>
-							<td className="py-3 px-4 text-sm text-muted-foreground hidden md:table-cell">
-								<Link
-									href={`/blog/${post.slug}`}
-									className="block w-full h-full"
-								>
-									<span className="line-clamp-1">{post.summary}</span>
-								</Link>
-							</td>
-							{/* <td className="py-3 px-4 text-sm text-muted-foreground">here</td> */}
-						</tr>
-					))}
-				</tbody>
-			</table>
+			</section>
+
+			<section className="mt-10 divide-y divide-border">
+				{posts.map((post) => (
+					<Link
+						key={post.slug}
+						href={`/blog/${post.slug}`}
+						className="group block py-5"
+					>
+						<div className="flex items-baseline justify-between gap-6">
+							<h2 className="text-lg font-medium leading-snug tracking-[-0.025em] transition-colors group-hover:text-foreground">
+								{post.title}
+							</h2>
+							<time
+								dateTime={post.publishedAt}
+								className="shrink-0 font-mono text-xs text-muted-foreground"
+							>
+								{formatDate(post.publishedAt)}
+							</time>
+						</div>
+						<p className="mt-2 text-sm leading-6 text-muted-foreground">
+							{post.summary}
+						</p>
+					</Link>
+				))}
+			</section>
 		</main>
 	);
 }

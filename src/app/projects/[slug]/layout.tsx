@@ -9,8 +9,8 @@ export default function ProjectLayout({
 }) {
 	return (
 		<div>
-			<div className="border-t border-dashed px-4 py-4 flex items-center">
-				<Button asChild variant="ghost" size="sm">
+			<div className="detail-back !max-w-full">
+				<Button asChild variant="ghost" size="sm" className="-ml-3">
 					<Link href="/projects">
 						<ChevronLeft />
 						Back to all projects

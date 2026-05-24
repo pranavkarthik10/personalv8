@@ -4,9 +4,10 @@ import "./globals.css";
 import { Analytics } from "@vercel/analytics/next";
 import Script from "next/script";
 import RESUME from "@/data/resume";
-import Link from "next/link";
 import AnimatedSignature from "@/components/animated-signature";
 import FooterTime from "@/components/footer-time";
+import CommandMenu from "@/components/command-menu";
+import Link from "next/link";
 
 const geist = Geist({
 	variable: "--font-geist",
@@ -29,7 +30,14 @@ export default function RootLayout({
 	children: React.ReactNode;
 }>) {
 	return (
-		<html lang="en">
+		<html lang="en" suppressHydrationWarning>
+			<head>
+				<script
+					dangerouslySetInnerHTML={{
+						__html: `try{if(localStorage.getItem("light-preview")==="true"){document.documentElement.classList.add("light-preview")}}catch(e){}`,
+					}}
+				/>
+			</head>
 			<body
 				suppressHydrationWarning
 				className={`${geist.variable} ${geistMono.variable} antialiased`}
@@ -40,11 +48,11 @@ export default function RootLayout({
 					data-website-id="49a2368b-f573-4184-9dbe-26af0c1b2fdd"
 				/>
 				<div className="site-shell min-h-screen">
-					<header className="mx-auto flex w-full max-w-5xl items-center justify-between px-5 py-5 sm:px-8">
+					<header className="site-container flex flex-col items-start gap-3 py-5 sm:flex-row sm:items-center sm:justify-between">
 						<Link href="/" className="text-sm text-foreground/90 transition hover:text-foreground">
-							pranav karthik
+							home
 						</Link>
-						<nav className="flex items-center gap-4 text-xs text-muted-foreground sm:gap-5">
+						<nav className="flex w-full items-center gap-4 overflow-x-auto text-xs text-muted-foreground sm:w-auto sm:gap-5 sm:overflow-visible">
 							<Link href="/projects" className="nav-link">
 								projects
 							</Link>
@@ -57,12 +65,13 @@ export default function RootLayout({
 							<Link href="/stack" className="nav-link">
 								stack
 							</Link>
+							<CommandMenu />
 						</nav>
 					</header>
-					<div className="mx-auto w-full max-w-5xl px-5 pb-10 sm:px-8">
+					<div className="site-container pb-10">
 						{children}
 					</div>
-					<footer className="mx-auto flex w-full max-w-5xl flex-col gap-4 px-5 pb-10 pt-6 text-xs text-muted-foreground sm:flex-row sm:items-end sm:justify-between sm:px-8">
+					<footer className="site-container mt-8 flex flex-col gap-4 border-t border-border/70 pb-10 pt-8 text-xs text-muted-foreground sm:flex-row sm:items-end sm:justify-between">
 						<div>
 							<AnimatedSignature />
 						</div>

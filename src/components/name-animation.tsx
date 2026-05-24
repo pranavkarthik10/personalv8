@@ -8,8 +8,14 @@ function getRandomChar() {
 	return CHARACTERS[Math.floor(Math.random() * CHARACTERS.length)];
 }
 
-export default function NameAnimation({ text = "Pranav Karthik" }: { text?: string }) {
-	const [displayText, setDisplayText] = useState(text);
+export default function NameAnimation({
+	text = "Pranav Karthik",
+	initialText,
+}: {
+	text?: string;
+	initialText?: string;
+}) {
+	const [displayText, setDisplayText] = useState(initialText ?? text);
 	const [charStyles, setCharStyles] = useState<string[]>([]);
 	const [isAnimating, setIsAnimating] = useState(false);
 

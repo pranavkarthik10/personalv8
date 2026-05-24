@@ -131,7 +131,7 @@ function ProjectCard({
 					{project.description}
 				</p>
 				{project.awards?.length ? (
-					<p className="mt-2 truncate text-xs text-[hsl(var(--accent))]">
+					<p className="mt-2 line-clamp-2 text-xs leading-5 text-[hsl(var(--accent))]">
 						🏆 {project.awards[0]}
 					</p>
 				) : null}
@@ -274,20 +274,29 @@ export default function Home() {
 						))}
 					</div>
 
-					<div className="hybrid-education">
-						<p className="page-kicker">Education</p>
-						<div className="mt-4 flex items-center gap-4">
+					<div className="hybrid-section-heading hybrid-section-heading-spaced">
+						<h2>Education</h2>
+					</div>
+					<div className="hybrid-timeline">
+						<a
+							href="https://www.ubc.ca"
+							target="_blank"
+							rel="noopener noreferrer"
+							className="hybrid-experience-row"
+						>
 							<span className="hybrid-experience-icon">{RESUME.education.icon}</span>
-							<div>
-								<h3>{RESUME.education.institution}</h3>
-								<p>
+							<span className="min-w-0">
+								<span className="hybrid-experience-company">
+									{RESUME.education.institution}
+								</span>
+								<span className="hybrid-experience-role">
 									{RESUME.education.degree}, {RESUME.education.major}
-								</p>
-								<p>
-									{RESUME.education.start_year} — {RESUME.education.end_year} / {RESUME.education.location}
-								</p>
-							</div>
-						</div>
+								</span>
+							</span>
+							<span className="hybrid-experience-meta">
+								{RESUME.education.start_year} — {RESUME.education.end_year}
+							</span>
+						</a>
 					</div>
 				</div>
 

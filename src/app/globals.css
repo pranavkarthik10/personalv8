@@ -392,25 +392,8 @@ body {
   color: hsl(var(--muted-foreground) / 0.75);
 }
 
-.hybrid-education {
+.hybrid-section-heading-spaced {
   margin-top: 2.5rem;
-  border: 1px solid hsl(var(--border));
-  border-radius: 0.85rem;
-  background: hsl(var(--card) / 0.72);
-  padding: 1rem;
-}
-
-.hybrid-education h3 {
-  color: hsl(var(--foreground));
-  font-size: 1rem;
-  font-weight: 650;
-  letter-spacing: -0.025em;
-}
-
-.hybrid-education p:not(.page-kicker) {
-  margin-top: 0.22rem;
-  color: hsl(var(--muted-foreground));
-  font-size: 0.82rem;
 }
 
 .hybrid-project-list {

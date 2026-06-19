@@ -49,7 +49,7 @@ export default function StatsPage() {
 	const cards = stats ? [["tokens processed", compact.format(stats.summary.tokens)], ["API calls", whole.format(stats.summary.apiCalls)], ["active days", whole.format(activeDays)], ["estimated spend", currency.format(stats.summary.estimatedCostUsd)]] : [];
 
 	return <main className="page-frame stats-page">
-		<section className="stats-intro"><div><p className="page-kicker">AI ledger</p><h1 className="page-title">What I&apos;ve spent on thinking.</h1></div><p className="stats-updated">{loading ? "refreshing" : stats?.daily.at(-1)?.date ? <>last synced <time dateTime={stats.daily.at(-1)?.date}>{stats.daily.at(-1)?.date}</time></> : "syncing soon"}</p></section>
+		<section className="stats-intro"><div><p className="page-kicker">Stats</p><h1 className="page-title">Some fun little stats.</h1></div><p className="stats-updated">{loading ? "refreshing" : stats?.daily.at(-1)?.date ? <>last synced <time dateTime={stats.daily.at(-1)?.date}>{stats.daily.at(-1)?.date}</time></> : "syncing soon"}</p></section>
 		<div className="stats-periods" role="tablist" aria-label="Stats time horizon">{periods.map(([value, label]) => <button key={value} role="tab" aria-selected={period === value} className={period === value ? "is-active" : ""} onClick={() => setPeriod(value)}>{label}</button>)}</div>
 		{!stats && !loading ? <p className="page-description">The numbers are taking a breather. Please try again shortly.</p> : <>
 			<section className="stats-summary" aria-label="AI usage for selected period">{cards.map(([label, value]) => <div className="stats-stat" key={label}><p>{label}</p><strong>{value}</strong></div>)}</section>

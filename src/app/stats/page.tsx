@@ -15,13 +15,15 @@ const whole = new Intl.NumberFormat("en-US");
 const currency = new Intl.NumberFormat("en-US", { style: "currency", currency: "USD", maximumFractionDigits: 0 });
 
 function BreakdownTable({ items, usageLabel, usage, sort, onSort }: { items: Breakdown[]; usageLabel: string; usage: (item: Breakdown) => number; sort: { key: SortKey; direction: 1 | -1 }; onSort: (key: SortKey) => void }) {
+	const [expanded, setExpanded] = useState(false);
 	const ordered = useMemo(() => [...items].sort((a, b) => {
 		const left = sort.key === "name" ? a.name : sort.key === "cost" ? Number(a.cost) : usage(a);
 		const right = sort.key === "name" ? b.name : sort.key === "cost" ? Number(b.cost) : usage(b);
 		return (typeof left === "string" ? left.localeCompare(String(right)) : Number(left) - Number(right)) * sort.direction;
 	}), [items, sort, usage]);
 	const arrow = (key: SortKey) => sort.key === key ? (sort.direction === 1 ? " ↑" : " ↓") : "";
-	return <div className="stats-table-wrap"><table className="stats-table"><thead><tr><th><button onClick={() => onSort("name")}>name{arrow("name")}</button></th><th><button onClick={() => onSort("usage")}>{usageLabel}{arrow("usage")}</button></th><th><button onClick={() => onSort("cost")}>spend{arrow("cost")}</button></th></tr></thead><tbody>{ordered.map((item) => <tr key={item.name}><td>{item.name}</td><td>{whole.format(usage(item))}</td><td>{currency.format(Number(item.cost))}</td></tr>)}</tbody></table></div>;
+	const visible = expanded ? ordered : ordered.slice(0, 10);
+	return <div className="stats-table-wrap"><table className="stats-table"><thead><tr><th><button onClick={() => onSort("name")}>name{arrow("name")}</button></th><th><button onClick={() => onSort("usage")}>{usageLabel}{arrow("usage")}</button></th><th><button onClick={() => onSort("cost")}>spend{arrow("cost")}</button></th></tr></thead><tbody>{visible.map((item) => <tr key={item.name}><td>{item.name}</td><td>{whole.format(usage(item))}</td><td>{currency.format(Number(item.cost))}</td></tr>)}</tbody></table>{ordered.length > 10 && <button className="stats-show-more" onClick={() => setExpanded((value) => !value)}>{expanded ? "show less" : `show ${ordered.length - 10} more`}</button>}</div>;
 }
 
 export default function StatsPage() {

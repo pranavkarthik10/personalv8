@@ -683,6 +683,8 @@ body {
 .stats-table th button:hover { color: hsl(var(--foreground)); }
 .stats-table td { padding: 0.65rem 0; border-top: 1px solid hsl(var(--border)); color: hsl(var(--muted-foreground)); text-align: right; white-space: nowrap; }
 .stats-table td:first-child { max-width: 11rem; overflow: hidden; color: hsl(var(--foreground)); text-align: left; text-overflow: ellipsis; }
+.stats-show-more { margin-top: 0.9rem; color: hsl(var(--muted-foreground)); font-size: 0.75rem; text-decoration: underline; text-decoration-color: transparent; text-underline-offset: 0.25em; transition: color 160ms ease, text-decoration-color 160ms ease; }
+.stats-show-more:hover { color: hsl(var(--foreground)); text-decoration-color: currentColor; }
 .stats-privacy { margin-top: 5rem; }
 
 @media (max-width: 640px) {

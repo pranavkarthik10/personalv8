@@ -65,9 +65,6 @@ export default function RootLayout({
 							<Link href="/stack" className="nav-link">
 								stack
 							</Link>
-							<Link href="/stats" className="nav-link">
-								stats
-							</Link>
 							<CommandMenu />
 						</nav>
 					</header>

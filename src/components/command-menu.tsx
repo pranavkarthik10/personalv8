@@ -6,6 +6,7 @@ import {
 	Home,
 	Layers,
 	Lightbulb,
+	ChartNoAxesCombined,
 	Linkedin,
 	Mail,
 	Moon,
@@ -73,6 +74,15 @@ const actions: CommandAction[] = [
 		shortcut: "S",
 		icon: <Layers />,
 		href: "/stack",
+		section: "Navigation",
+	},
+	{
+		key: "stats",
+		title: "Go to AI Stats",
+		hint: "Public aggregate AI usage",
+		shortcut: "A",
+		icon: <ChartNoAxesCombined />,
+		href: "/stats",
 		section: "Navigation",
 	},
 	{

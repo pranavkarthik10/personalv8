@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
 	title: "Limits Privacy Policy | Pranav Karthik",
 	description:
-		"Privacy policy for Limits, the iOS app for viewing your AI coding rate limits. No personal data is collected and nothing leaves your device except your own sign-in traffic.",
+		"Privacy policy for Limits, the iOS app for viewing your AI coding rate limits. No personal data is collected; nothing leaves your device except your own sign-in traffic and, if you buy Limits Pro, purchase validation.",
 	robots: { index: false, follow: false },
 };
 
@@ -27,9 +27,11 @@ export default function LimitsPrivacyPage() {
 				<h2>The short version</h2>
 				<p>
 					Limits has no backend, no account of its own, and no analytics or
-					tracking. It does not send your information to me or to anyone else. It
-					reads your AI coding usage from the providers you connect and shows it
-					to you on your iPhone.
+					tracking. It does not send your usage, credentials, or personal
+					information to me or to anyone else. It reads your AI coding usage from
+					the providers you connect and shows it to you on your iPhone. The one
+					exception is the optional Limits Pro purchase, which is processed by
+					Apple and validated through a payment provider, as described below.
 				</p>
 
 				<h2>Information the developer collects</h2>
@@ -65,10 +67,36 @@ export default function LimitsPrivacyPage() {
 					policy. Limits does not route this traffic through any service of mine.
 				</p>
 
-				<h2>No tracking, no ads, no purchases</h2>
+				<h2>No tracking, no ads</h2>
 				<p>
 					Limits contains no advertising, no third-party analytics, and no
-					tracking technologies. It is a free app with no in-app purchases.
+					tracking technologies. Nothing you do in the app is used to build a
+					profile of you or shared with data brokers.
+				</p>
+
+				<h2>In-app purchases</h2>
+				<p>
+					Limits is free to use. It also offers an optional one-time purchase,
+					Limits Pro, that unlocks additional features. The payment itself is
+					handled entirely by Apple through the App Store; I never see your card
+					details or billing information.
+				</p>
+				<p>
+					To unlock, validate, and restore that purchase, the app uses RevenueCat,
+					a purchase-management service. When you buy or restore Limits Pro,
+					RevenueCat receives the transaction record and a randomly generated
+					app-user identifier used only to remember that the purchase belongs to
+					this install. It does not receive your name, email address, sign-in
+					tokens, or your AI usage data. RevenueCat acts as a data processor on my
+					behalf; its handling of this data is governed by its own{" "}
+					<a
+						href="https://www.revenuecat.com/privacy/"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						privacy policy
+					</a>
+					. If you never purchase Limits Pro, no purchase data is sent.
 				</p>
 
 				<h2>Children&apos;s privacy</h2>

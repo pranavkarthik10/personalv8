@@ -54,8 +54,62 @@ export default function PressPage() {
 				</div>
 			</div>
 
-			{/* 2021 */}
+			{/* 2025 */}
 			<div className="mt-12">
+				<h2 className="text-2xl font-medium tracking-tight mb-4">2025</h2>
+				<ul className="space-y-2">
+					<li>
+						<a
+							href="https://vercel.com/changelog/vercel-ts"
+							target="_blank"
+							rel="noopener noreferrer"
+							className="hover:underline text-foreground hover:text-foreground/80 transition-colors"
+						>
+							Vercel Changelog: Programmatic project configuration with vercel.ts
+						</a>
+					</li>
+					<li>
+						<a
+							href="https://x.com/xai/status/1997875261669621787"
+							target="_blank"
+							rel="noopener noreferrer"
+							className="hover:underline text-foreground hover:text-foreground/80 transition-colors"
+						>
+							xAI on X: GrokHunt featured after the xAI Hackathon
+						</a>
+					</li>
+					<li>
+						<a
+							href="https://devpost.com/software/grokhunt"
+							target="_blank"
+							rel="noopener noreferrer"
+							className="hover:underline text-foreground hover:text-foreground/80 transition-colors"
+						>
+							Devpost: GrokHunt (xAI Hackathon)
+						</a>
+					</li>
+				</ul>
+			</div>
+
+			{/* 2024 */}
+			<div className="mt-8">
+				<h2 className="text-2xl font-medium tracking-tight mb-4">2024</h2>
+				<ul className="space-y-2">
+					<li>
+						<a
+							href="https://workspaceupdates.googleblog.com/2024/10/google-workspace-marketplace-featured-partner-apps.html"
+							target="_blank"
+							rel="noopener noreferrer"
+							className="hover:underline text-foreground hover:text-foreground/80 transition-colors"
+						>
+							Google Workspace Updates: Featured partner apps on the Marketplace homepage
+						</a>
+					</li>
+				</ul>
+			</div>
+
+			{/* 2021 */}
+			<div className="mt-8">
 				<h2 className="text-2xl font-medium tracking-tight mb-4">2021</h2>
 				<ul className="space-y-2">
 					<li>

@@ -78,16 +78,6 @@ export default function PressPage() {
 							xAI on X: GrokHunt featured after the xAI Hackathon
 						</a>
 					</li>
-					<li>
-						<a
-							href="https://devpost.com/software/grokhunt"
-							target="_blank"
-							rel="noopener noreferrer"
-							className="hover:underline text-foreground hover:text-foreground/80 transition-colors"
-						>
-							Devpost: GrokHunt (xAI Hackathon)
-						</a>
-					</li>
 				</ul>
 			</div>
 

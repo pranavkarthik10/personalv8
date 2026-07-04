@@ -1,0 +1,28 @@
+{
+	"frameW": 166,
+	"frameH": 124,
+	"animations": {
+		"front": 12,
+		"back": 12,
+		"left": 12,
+		"right": 12,
+		"frontLeft": 12,
+		"frontRight": 12,
+		"backLeft": 12,
+		"backRight": 12,
+		"spawn": 21,
+		"dupe": 17,
+		"fall": 14,
+		"celebrateFront": 14,
+		"ponderingFront": 10,
+		"resting": 12,
+		"cursorHighFiveJump": 18,
+		"cursorHover": 1,
+		"cursorGrab": 13,
+		"exprFront": 7,
+		"exprFrontLeft": 7,
+		"exprFrontRight": 7,
+		"excitedFront": 24,
+		"eyesTriangleFront": 17
+	}
+}

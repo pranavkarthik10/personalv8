@@ -60,24 +60,34 @@ export default function NameAnimation({
 		}
 	};
 
+	const visibleCharacters = displayText.padEnd(text.length, " ").slice(0, text.length);
+
 	return (
-		<span className="inline-block leading-none">
+		<span className="relative inline-grid leading-none">
+			<span className="invisible whitespace-nowrap" aria-hidden="true">
+				{text}
+			</span>
 			<span
-				className="group relative inline-block cursor-pointer whitespace-nowrap"
+				className="group absolute inset-0 cursor-pointer whitespace-nowrap"
 				onMouseEnter={handleMouseEnter}
 				onFocus={handleMouseEnter}
 				tabIndex={0}
 				aria-label={text}
 			>
 				<span className="absolute -inset-x-1 bottom-1 h-2 origin-left scale-x-0 bg-[hsl(var(--accent)/0.18)] transition-transform duration-300 ease-out group-hover:scale-x-100" />
-				{displayText.split("").map((char, i) => (
+				{visibleCharacters.split("").map((char, i) => (
 					<span
 						key={i}
 						className={`relative inline-block transition-colors duration-150 ${
-							char === " " ? "w-[0.28em]" : ""
-						} ${charStyles[i] ?? ""}`}
+							charStyles[i] ?? ""
+						}`}
 					>
-						{char === " " ? "\u00A0" : char}
+						<span className="invisible" aria-hidden="true">
+							{text[i] === " " ? "\u00A0" : text[i]}
+						</span>
+						<span className="absolute inset-0 text-center">
+							{char === " " ? "\u00A0" : char}
+						</span>
 					</span>
 				))}
 			</span>

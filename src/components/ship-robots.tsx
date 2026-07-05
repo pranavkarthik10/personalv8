@@ -2,14 +2,13 @@
 
 import { useEffect, useRef } from "react";
 
-// Pixel robots inspired by the Vercel Ship '26 hero (vercel.com/ship/nyc).
-// Sprites + behavior constants were pulled from the site's public assets/chunks;
-// this is a small canvas reimplementation of their state machine, with robots
-// confined to the gutters beside the main content column.
+// Original pixel robots for the home page gutters. They wander near the content
+// column, step across the column edge, and can be grabbed or high-fived.
 
 const FRAME_W = 166;
 const FRAME_H = 124;
-const SCALE = 1.2;
+const SCALE = 0.82;
+const SPRITE_VERSION = "blockbot-walk-v1";
 
 const ANIM_FRAMES: Record<string, number> = {
 	front: 12,
@@ -49,14 +48,16 @@ const REST_COOLDOWN_MS = 60_000;
 const GRAVITY = 900;
 const DROP_DIST = (3 / 18) * 166;
 const THROW_FACTOR = 18;
-const HIT_HALF_W = 16.6 * SCALE;
-const HIT_HALF_H = 16.12 * SCALE;
+const HIT_HALF_W = 40 * SCALE;
+const HIT_HALF_H = 42 * SCALE;
+const HIT_CENTER_Y = -52 * SCALE;
 const SPRITE_OFF_Y = (4.2 / 18) * 166; // sprite center sits this far above the anchor
 const HAND_OFF_X = (0.3 / 18) * 166;
 const HAND_OFF_Y = (1.747 / 18) * 166;
 const MIN_GUTTER = 120;
+const CONTENT_CLEARANCE = 56;
 const MAX_ROBOTS = 16;
-const ROBOTS_PER_SIDE = 3;
+const ROBOTS_PER_SIDE = 2;
 
 type Behavior =
 	| "spawn"
@@ -179,6 +180,7 @@ export default function ShipRobots() {
 			vxHist: [0, 0, 0],
 			vyHist: [0, 0, 0],
 			skew: 0,
+			holdElapsed: 0,
 			highFiveRobot: null as Robot | null,
 			highFiveElapsed: 0,
 		};
@@ -198,18 +200,38 @@ export default function ShipRobots() {
 			ctx!.setTransform(dpr, 0, 0, dpr, 0, 0);
 			ctx!.imageSmoothingEnabled = false;
 
-			const main = document.querySelector("main");
-			const rect = main?.getBoundingClientRect();
+			const sections = Array.from(
+				document.querySelectorAll<HTMLElement>(".hybrid-hero, .hybrid-grid"),
+			);
+			const rects = sections.map((el) => el.getBoundingClientRect());
+			const rect =
+				rects.length > 0
+					? {
+							left: Math.min(...rects.map((r) => r.left)),
+							right: Math.max(...rects.map((r) => r.right)),
+						}
+					: null;
 			const pad = 24;
-			const top = 90;
-			const bottom = viewH - 60;
+			const spritePad = 82;
+			const top = 150;
+			const bottom = viewH - 80;
 			gutters = [];
 			if (rect) {
 				if (rect.left - pad * 2 >= MIN_GUTTER) {
-					gutters.push({ minX: pad, maxX: rect.left - pad, minY: top, maxY: bottom });
+					gutters.push({
+						minX: pad + spritePad,
+						maxX: rect.left - CONTENT_CLEARANCE,
+						minY: top,
+						maxY: bottom,
+					});
 				}
 				if (viewW - rect.right - pad * 2 >= MIN_GUTTER) {
-					gutters.push({ minX: rect.right + pad, maxX: viewW - pad, minY: top, maxY: bottom });
+					gutters.push({
+						minX: rect.right + CONTENT_CLEARANCE,
+						maxX: viewW - pad - spritePad,
+						minY: top,
+						maxY: bottom,
+					});
 				}
 			}
 		}
@@ -568,7 +590,8 @@ export default function ShipRobots() {
 			for (const r of robots) {
 				if (r.spawnDelay > 0 || r.behavior === "spawn") continue;
 				if (behaviors && !behaviors.includes(r.behavior) && r.behavior !== "interactive") continue;
-				if (Math.abs(x - r.x) < HIT_HALF_W && Math.abs(y - r.y - HIT_HALF_H) < HIT_HALF_H * 1.6) {
+				const hitCenterY = r.y + HIT_CENTER_Y;
+				if (Math.abs(x - r.x) < HIT_HALF_W && Math.abs(y - hitCenterY) < HIT_HALF_H) {
 					return r;
 				}
 			}
@@ -649,6 +672,7 @@ export default function ShipRobots() {
 			grab.handY = e.clientY;
 			grab.frameIndex = 0;
 			grab.frameTimer = 0;
+			grab.holdElapsed = 0;
 			grab.catchFramesDone = 0;
 			grab.hovering = false;
 			hit.x = e.clientX;
@@ -740,6 +764,8 @@ export default function ShipRobots() {
 			// hand skew (bottom of the sprite lags behind fast movement)
 			const held =
 				grab.phase === "catching" || grab.phase === "holding" || grab.phase === "stopmoving";
+			if (held) grab.holdElapsed += dt;
+			else grab.holdElapsed = 0;
 			const skewTarget = held ? Math.max(-30, Math.min(30, -5 * avg(grab.vxHist))) : 0;
 			grab.skew += (skewTarget - grab.skew) * (1 - Math.pow(0.8, 60 * dt));
 			if (held) {
@@ -793,6 +819,10 @@ export default function ShipRobots() {
 			const frame = hover ? 0 : Math.min(grab.frameIndex, ANIM_FRAMES.cursorGrab - 1);
 			const cx = grab.handX + HAND_OFF_X * SCALE;
 			const cy = grab.handY - HAND_OFF_Y * SCALE;
+			if (held && grab.robot) {
+				const robotFrame = Math.floor(grab.holdElapsed * 10) % ANIM_FRAMES.fall;
+				drawFrame("fall", robotFrame, grab.handX - 4 * SCALE, grab.handY + 24 * SCALE, held ? grab.skew * 0.35 : 0);
+			}
 			drawFrame(name, frame, cx, cy, held ? grab.skew : 0);
 		}
 
@@ -824,7 +854,7 @@ export default function ShipRobots() {
 				const img = new Image();
 				img.onload = done;
 				img.onerror = done;
-				img.src = `/robots/${name}.webp`;
+				img.src = `/robots/${name}.webp?v=${SPRITE_VERSION}`;
 				images.set(name, img);
 				if (img.complete && img.naturalWidth > 0) {
 					// memory-cached images may never fire load

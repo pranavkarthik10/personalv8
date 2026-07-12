@@ -246,7 +246,7 @@ export default function Home() {
 					<a href="https://github.com/pranavkarthik10" target="_blank" rel="noopener noreferrer">github</a>
 					<a href="https://linkedin.com/in/pranav-karthik" target="_blank" rel="noopener noreferrer">linkedin</a>
 					<a href="https://x.com/pranavkarthik__" target="_blank" rel="noopener noreferrer">x</a>
-					<a href="mailto:me@pranavkarthik.com">email</a>
+					<a href="mailto:hi@pranavkarthik.com">email</a>
 				</div>
 			</section>
 

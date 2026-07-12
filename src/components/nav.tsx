@@ -171,7 +171,7 @@ export default function Nav() {
 													asChild
 													className="text-muted-foreground opacity-75 hover:opacity-100 h-9 w-9"
 												>
-													<Link href="mailto:me@pranavkarthik.com">
+													<Link href="mailto:hi@pranavkarthik.com">
 														<Mail />
 													</Link>
 												</Button>

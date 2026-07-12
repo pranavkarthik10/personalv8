@@ -118,10 +118,10 @@ const actions: CommandAction[] = [
 	{
 		key: "email",
 		title: "Email",
-		hint: "me@pranavkarthik.com",
+		hint: "hi@pranavkarthik.com",
 		shortcut: "E",
 		icon: <Mail />,
-		href: "mailto:me@pranavkarthik.com",
+		href: "mailto:hi@pranavkarthik.com",
 		section: "Links",
 	},
 ];

@@ -1,0 +1,91 @@
+---
+title: "Teaching LLMs to Estimate Time Better"
+publishedAt: "2026-07-13"
+summary: "Coding agents can build in hours what software plans still describe in weeks."
+---
+
+We live in pretty amazing times for coding agents.
+
+OpenAI just released GPT-5.6 Sol, and Anthropic still has Claude Fable 5, for now at least. We've come a long way from the first wave of really capable coding models (probably [Claude 3.5 Sonnet](https://www.anthropic.com/news/claude-3-5-sonnet) in 2024). Since then, the models have gotten much better at writing code, using tools, navigating repositories, and running tests.
+
+But one thing LLMs still seem to get wrong all the time is estimating how long a project will take. This has irked me for a while, and based on HN and Twitter, a lot of other people dislike it as well.
+
+When you ask an LLM to plan a reasonably sized greenfield project, it usually estimates somewhere around a few months. If we were starting a completely new project pre-AI, that sounds reasonable. Software engineers at companies would take that long to build a completely new SDK or something similar.
+
+That was true before AI coding tools became this capable. But the actual building part has changed.
+
+Today, you can technically build a v1 of that same SDK in a matter of hours. Not necessarily a perfect or fully hardened SDK. Not something with every provider integration, polished documentation, broad compatibility testing, a launch plan, and years of production maturity. But a real first version, with a working API and enough pieces to test whether the idea works.
+
+LLMs still seem to carry an old intuition about how long this work should take. They can generate code at a high speed, but when asked to make a plan, they often reach for timelines learned from traditional software development. The plan sounds like it was written for a team from a few years ago, even when the work is about to be done with tools from today.
+
+This is not just about moving the estimate down by 20 percent. The entire scale has changed.
+
+Things that used to take months can sometimes take days or weeks. Things that used to take weeks can sometimes take hours. Things that used to take a few days can sometimes be done in under an hour.
+
+## Bun
+
+A good recent example is Bun's rewrite from Zig to Rust. In the [official blog post](https://bun.com/blog/bun-in-rust), Jarred writes that Bun was 535,496 lines of Zig and that doing the rewrite by hand would have taken three engineers with full context about a year.
+
+Instead, the rewrite went from the start of the project to the full test suite passing on all platforms in 11 days. It used about 50 dynamic workflows, and at its peak, 64 Claude instances were running at once. It still involved monitoring, adversarial review, testing, security review, and a lot of work after the initial merge.
+
+This is an extreme example. Most projects are not Bun. It is also not an example of a fully finished product appearing in 11 days. But it is a useful calibration point.
+
+A rewrite that would previously have been rejected because it would consume a team for a year can now be attempted, and in this case merged, in less than two weeks. That changes what “feasible” should mean.
+
+It also changes what a planning answer should sound like. Instead of saying:
+
+> Phase 1: Core, 3-4 weeks
+
+The more useful answer might be:
+
+> The working core should take a couple of hours. The first few integrations could take another day or two. Broader compatibility, polish, and release work could stretch into days or weeks.
+
+The second answer is not pretending that all of the work disappears. It is separating the part that can be built quickly from the part that still takes time.
+
+## Are LLMs really making us faster
+
+This is way tougher to answer, and is a whole topic of its own. There's been a lot of talk recently about whether all of this token spend really has led to significantly better output, not just more output.
+
+In reality, while the specific breakdown of an LLM based plan might be wrong, its total time estimate might end up being correct after all, because as it turns out, writing the code is just one step of the process.
+
+In the end, it depends. Project-level anecdotes are starting to show a different kind of effect. The biggest change may not be that every developer completes every ticket twice as fast. It may be that projects which were previously too expensive to attempt can now be attempted at all.
+
+## Greenfield and brownfield work
+
+This definitely depends on whether you are doing greenfield or brownfield work.
+
+Greenfield projects often get the biggest compression because there is no existing system to preserve. You can make decisions quickly, generate the initial structure, and change direction without worrying about backwards compatibility.
+
+Brownfield work can be slower because of hidden coupling, implicit requirements, old tests, migrations, and compatibility constraints. A full rewrite is also different from building a small new product.
+
+But the Bun rewrite was brownfield work. Obviously, that's just one anecdote. The important distinction is between getting to a working first version and the long tail of hardening, adoption, and maintenance.
+
+## Better Time Estimates
+
+That is why I made [Better Time Estimates](https://github.com/pranavkarthik10/skills/tree/main/better-time-estimates), a small skill for coding agents and other LLM workflows.
+
+It gives models a better intuition for the time scale of modern software work. When a model is planning something, asking whether it is feasible, or breaking a project into phases, it should not automatically say:
+
+- Phase 1: 3-4 weeks
+- Phase 2: 4-6 weeks
+- Phase 3: 4-6 weeks
+
+when those numbers mostly describe how a traditional team would schedule the work.
+
+Instead, it should think in rough ranges like:
+
+- Months or more: days to weeks
+- Weeks: hours to days
+- Days: under an hour to a few hours
+
+This is not a promise. External integrations, human decisions, security review, hardware, data collection, and release processes still take time. The point is to stop quietly importing old timelines into new workflows.
+
+You can install it with:
+
+```bash
+npx skills add pranavkarthik10/better-time-estimates
+```
+
+You can also tune it to your own experience. The right calibration will be different for everyone, depending on the tools they use, the kinds of projects they build, and how much review they expect before calling something done.
+
+I do not think LLMs should always answer with an optimistic number. They should just be a bit more current. If I ask whether something is feasible, I want an answer like “yes, a working first version in a few hours, followed by days or weeks of hardening,” not “Phase 1 will take 3-4 weeks” for every single thing.

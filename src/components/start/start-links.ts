@@ -36,12 +36,12 @@ export const START_CATEGORIES: StartCategory[] = [
 				search: q("https://www.google.com/search?q="),
 			},
 			{
-				id: "perplexity",
-				label: "Perplexity",
-				href: "https://www.perplexity.ai",
-				description: "ask the web",
-				brand: "perplexity",
-				search: q("https://www.perplexity.ai/search?q="),
+				id: "grok",
+				label: "Grok",
+				href: "https://grok.com",
+				description: "xAI chat",
+				brand: "grok",
+				search: q("https://grok.com/?q="),
 			},
 			{
 				id: "chatgpt",
@@ -58,14 +58,6 @@ export const START_CATEGORIES: StartCategory[] = [
 				description: "anthropic chat",
 				brand: "claude",
 				search: q("https://claude.ai/new?q="),
-			},
-			{
-				id: "grok",
-				label: "Grok",
-				href: "https://grok.com",
-				description: "xAI chat",
-				brand: "grok",
-				search: q("https://grok.com/?q="),
 			},
 			{
 				id: "wikipedia",

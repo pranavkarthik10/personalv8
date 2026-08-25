@@ -1,5 +1,6 @@
 "use client";
 
+import BrandIcon from "@/components/start/brand-icon";
 import type { IconKind } from "@/components/start/category-icon";
 import type { StartItem } from "@/components/start/start-links";
 import ScrambleText from "@/components/start/scramble-text";
@@ -22,7 +23,7 @@ export default function LinkCard({
 			<span className="start-badge" aria-hidden="true">
 				<span className="start-badge-glow" />
 				<span className="start-badge-window">
-					<span className="start-monogram">{item.monogram}</span>
+					<BrandIcon slug={item.brand} />
 				</span>
 			</span>
 			<div className="start-card-body" aria-hidden={!active}>

@@ -1,148 +1,26 @@
 "use client";
 
-import type { JSX } from "react";
-
 export type IconKind = "search" | "daily" | "code" | "social" | "media" | "me";
 
-function SearchMark() {
+function Silhouette({ d }: { d: string }) {
 	return (
-		<svg viewBox="0 0 144 144" className="start-cat-mark" aria-hidden="true">
-			<defs>
-				<radialGradient id="search-lens" cx="38%" cy="32%" r="70%">
-					<stop offset="0%" stopColor="#f4fbff" />
-					<stop offset="55%" stopColor="#8ec4ff" />
-					<stop offset="100%" stopColor="#1d4f9c" />
-				</radialGradient>
-				<linearGradient id="search-handle" x1="0" y1="0" x2="1" y2="1">
-					<stop offset="0%" stopColor="#f2f7ff" />
-					<stop offset="50%" stopColor="#9bb6d8" />
-					<stop offset="100%" stopColor="#3a4d6a" />
-				</linearGradient>
-			</defs>
-			<ellipse cx="72" cy="118" rx="34" ry="8" fill="rgba(0,0,0,0.28)" />
-			<rect x="86" y="82" width="18" height="42" rx="9" transform="rotate(-42 95 103)" fill="url(#search-handle)" />
-			<circle cx="62" cy="60" r="28" fill="url(#search-lens)" />
-			<circle cx="62" cy="60" r="18" fill="rgba(12, 28, 58, 0.35)" />
-			<ellipse cx="54" cy="50" rx="10" ry="6" fill="rgba(255,255,255,0.55)" />
+		<svg viewBox="0 0 64 64" className="start-cat-mark" aria-hidden="true">
+			<path fill="currentColor" d={d} />
 		</svg>
 	);
 }
 
-function DailyMark() {
-	return (
-		<svg viewBox="0 0 144 144" className="start-cat-mark" aria-hidden="true">
-			<defs>
-				<linearGradient id="daily-body" x1="0" y1="0" x2="0" y2="1">
-					<stop offset="0%" stopColor="#ffe3b0" />
-					<stop offset="45%" stopColor="#ff9d3d" />
-					<stop offset="100%" stopColor="#c45a12" />
-				</linearGradient>
-				<linearGradient id="daily-top" x1="0" y1="0" x2="0" y2="1">
-					<stop offset="0%" stopColor="#fff3dd" />
-					<stop offset="100%" stopColor="#ffbe6a" />
-				</linearGradient>
-			</defs>
-			<ellipse cx="72" cy="120" rx="36" ry="8" fill="rgba(0,0,0,0.28)" />
-			<rect x="38" y="44" width="68" height="62" rx="10" fill="url(#daily-body)" />
-			<rect x="38" y="44" width="68" height="20" rx="10" fill="url(#daily-top)" />
-			<rect x="38" y="54" width="68" height="10" fill="url(#daily-top)" />
-			<circle cx="56" cy="48" r="4" fill="#fff" />
-			<circle cx="88" cy="48" r="4" fill="#fff" />
-			<rect x="50" y="76" width="12" height="12" rx="2" fill="rgba(255,255,255,0.9)" />
-			<rect x="66" y="76" width="12" height="12" rx="2" fill="rgba(255,255,255,0.55)" />
-			<rect x="82" y="76" width="12" height="12" rx="2" fill="rgba(255,255,255,0.32)" />
-		</svg>
-	);
-}
-
-function CodeMark() {
-	return (
-		<svg viewBox="0 0 144 144" className="start-cat-mark" aria-hidden="true">
-			<defs>
-				<linearGradient id="code-cube" x1="0" y1="0" x2="1" y2="1">
-					<stop offset="0%" stopColor="#d9ffc2" />
-					<stop offset="45%" stopColor="#5adf6a" />
-					<stop offset="100%" stopColor="#1b7a38" />
-				</linearGradient>
-			</defs>
-			<ellipse cx="72" cy="120" rx="34" ry="8" fill="rgba(0,0,0,0.28)" />
-			<path d="M72 30 L112 52 L112 96 L72 118 L32 96 L32 52 Z" fill="url(#code-cube)" />
-			<path d="M72 30 L112 52 L72 74 L32 52 Z" fill="rgba(255,255,255,0.28)" />
-			<path d="M72 74 L112 52 L112 96 L72 118 Z" fill="rgba(0,0,0,0.12)" />
-			<path d="M58 64 L46 74 L58 84" fill="none" stroke="#f4fff0" strokeWidth="5" strokeLinecap="round" strokeLinejoin="round" />
-			<path d="M86 64 L98 74 L86 84" fill="none" stroke="#f4fff0" strokeWidth="5" strokeLinecap="round" strokeLinejoin="round" />
-		</svg>
-	);
-}
-
-function SocialMark() {
-	return (
-		<svg viewBox="0 0 144 144" className="start-cat-mark" aria-hidden="true">
-			<defs>
-				<radialGradient id="social-a" cx="35%" cy="30%" r="70%">
-					<stop offset="0%" stopColor="#ffe1f6" />
-					<stop offset="100%" stopColor="#d13d9b" />
-				</radialGradient>
-				<radialGradient id="social-b" cx="35%" cy="30%" r="70%">
-					<stop offset="0%" stopColor="#ffd0ea" />
-					<stop offset="100%" stopColor="#a81f78" />
-				</radialGradient>
-			</defs>
-			<ellipse cx="72" cy="120" rx="38" ry="8" fill="rgba(0,0,0,0.28)" />
-			<circle cx="50" cy="86" r="18" fill="url(#social-b)" />
-			<circle cx="94" cy="86" r="18" fill="url(#social-b)" />
-			<circle cx="72" cy="58" r="22" fill="url(#social-a)" />
-			<ellipse cx="64" cy="50" rx="7" ry="4" fill="rgba(255,255,255,0.5)" />
-		</svg>
-	);
-}
-
-function MediaMark() {
-	return (
-		<svg viewBox="0 0 144 144" className="start-cat-mark" aria-hidden="true">
-			<defs>
-				<radialGradient id="media-disc" cx="32%" cy="28%" r="75%">
-					<stop offset="0%" stopColor="#d9ecff" />
-					<stop offset="55%" stopColor="#3b8dff" />
-					<stop offset="100%" stopColor="#123a8a" />
-				</radialGradient>
-			</defs>
-			<ellipse cx="72" cy="120" rx="36" ry="8" fill="rgba(0,0,0,0.28)" />
-			<circle cx="72" cy="72" r="38" fill="url(#media-disc)" />
-			<circle cx="72" cy="72" r="12" fill="rgba(8, 18, 48, 0.45)" />
-			<path d="M66 56 L96 72 L66 88 Z" fill="#f4f8ff" />
-		</svg>
-	);
-}
-
-function MeMark() {
-	return (
-		<svg viewBox="0 0 144 144" className="start-cat-mark" aria-hidden="true">
-			<defs>
-				<radialGradient id="me-head" cx="35%" cy="30%" r="70%">
-					<stop offset="0%" stopColor="#e7fbff" />
-					<stop offset="100%" stopColor="#1ea0c4" />
-				</radialGradient>
-				<linearGradient id="me-body" x1="0" y1="0" x2="0" y2="1">
-					<stop offset="0%" stopColor="#b8f3ff" />
-					<stop offset="100%" stopColor="#0b6f8a" />
-				</linearGradient>
-			</defs>
-			<ellipse cx="72" cy="122" rx="36" ry="8" fill="rgba(0,0,0,0.28)" />
-			<path d="M36 118 C40 84 104 84 108 118 Z" fill="url(#me-body)" />
-			<circle cx="72" cy="56" r="22" fill="url(#me-head)" />
-			<ellipse cx="64" cy="48" rx="7" ry="4" fill="rgba(255,255,255,0.5)" />
-		</svg>
-	);
-}
-
-const MARKS: Record<IconKind, () => JSX.Element> = {
-	search: SearchMark,
-	daily: DailyMark,
-	code: CodeMark,
-	social: SocialMark,
-	media: MediaMark,
-	me: MeMark,
+const MARKS: Record<IconKind, string> = {
+	search:
+		"M28 8a18 18 0 1 0 11.4 32.1l9.3 9.3a3.2 3.2 0 0 0 4.5-4.5l-9.3-9.3A18 18 0 0 0 28 8zm0 7a11 11 0 1 1 0 22 11 11 0 0 1 0-22z",
+	daily:
+		"M20 6.5a2.5 2.5 0 0 1 2.5 2.5v2h19V9a2.5 2.5 0 1 1 5 0v2H50a6 6 0 0 1 6 6v33a6 6 0 0 1-6 6H14a6 6 0 0 1-6-6V17a6 6 0 0 1 6-6h3.5V9A2.5 2.5 0 0 1 20 6.5zM14 26h36v24a2 2 0 0 1-2 2H16a2 2 0 0 1-2-2V26zm6 6v8h8v-8h-8zm12 0v8h8v-8h-8z",
+	code: "M22 14 7 32l15 18 5.2-4.4L16.6 32 27.2 18.4 22 14zm20 0-5.2 4.4L41.4 32 30.8 45.6 36 50l15-18-15-18zM35.4 13.2l-7.6 37.6h-5.4l7.6-37.6h5.4z",
+	social:
+		"M24.5 14a9.5 9.5 0 1 1 0 19 9.5 9.5 0 0 1 0-19zM41 18.5a8 8 0 1 1 0 16 8 8 0 0 1 0-16zM8 50.5c.8-10.6 9.3-16.5 16.6-16.5 7.4 0 15.7 5.9 16.5 16.5H8zm27.2-14.2c5.6.9 11.8 5.6 12.8 14.2H56C55.3 40.4 49.4 35 43.4 35c-1.5 0-3 .3-4.4.8a18 18 0 0 1-3.8.5z",
+	media:
+		"M10 12h6v5H10v-5zm0 9h6v5H10v-5zm0 9h6v5H10v-5zm0 9h6v5H10v-5zm38-27h6v5h-6v-5zm0 9h6v5h-6v-5zm0 9h6v5h-6v-5zm0 9h6v5h-6v-5zM18 10h28a4 4 0 0 1 4 4v36a4 4 0 0 1-4 4H18a4 4 0 0 1-4-4V14a4 4 0 0 1 4-4zm8 13.5v17l15-8.5-15-8.5z",
+	me: "M32 10a11 11 0 1 1 0 22 11 11 0 0 1 0-22zM12 54c1.2-12.4 10.6-19 20-19s18.8 6.6 20 19H12z",
 };
 
 export default function CategoryIcon({
@@ -154,10 +32,7 @@ export default function CategoryIcon({
 }) {
 	return (
 		<span className={`start-cat-icon start-cat-icon-${kind}${selected ? " is-selected" : ""}`} aria-hidden="true">
-			<span className="start-orb" />
-			<span className="start-cat-icon-window">
-				{MARKS[kind]()}
-			</span>
+			<Silhouette d={MARKS[kind]} />
 		</span>
 	);
 }

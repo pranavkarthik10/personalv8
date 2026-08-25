@@ -11,20 +11,12 @@
 }
 
 .start-page {
-	--color-black: oklch(0 0 0);
-	--color-white: oklch(1 0 0);
-	--color-gray-100: oklch(0.15 0 0);
-	--color-gray-90: oklch(0.22 0 0);
-	--color-gray-60: oklch(0.48 0 0);
-	--color-gray-40: oklch(0.68 0 0);
-	--color-gray-20: oklch(0.87 0 0);
-	--color-gray-10: oklch(0.95 0 0);
-	--start-bg: var(--color-black);
-	--start-surface: var(--color-gray-100);
-	--start-text: var(--color-white);
-	--start-text-secondary: var(--color-gray-40);
-	--start-border: var(--color-gray-90);
-	--start-border-subdued: var(--color-gray-100);
+	--start-bg: #02040c;
+	--start-surface: #0b1220;
+	--start-text: #f4f7ff;
+	--start-text-secondary: rgba(220, 230, 255, 0.62);
+	--start-border: rgba(160, 190, 255, 0.28);
+	--start-border-subdued: rgba(160, 190, 255, 0.12);
 	--space-2: 0.5rem;
 	--space-3: 0.75rem;
 	--space-4: 1rem;
@@ -41,17 +33,12 @@
 	--items-y: calc(var(--row-y) + 52px);
 	--row-lift: calc(var(--cat-icon-size) + 48px);
 	--badge-size: 144px;
-}
-
-@media (prefers-color-scheme: light) {
-	.start-page {
-		--start-bg: var(--color-white);
-		--start-surface: var(--color-gray-10);
-		--start-text: var(--color-black);
-		--start-text-secondary: var(--color-gray-60);
-		--start-border: var(--color-gray-20);
-		--start-border-subdued: var(--color-gray-10);
-	}
+	--orb-search: 130 190 255;
+	--orb-daily: 255 168 70;
+	--orb-code: 92 224 110;
+	--orb-social: 255 92 186;
+	--orb-media: 70 150 255;
+	--orb-me: 80 220 240;
 }
 
 .start-root {
@@ -61,12 +48,34 @@
 	width: 100%;
 	height: 100dvh;
 	overflow: hidden;
-	background: var(--start-bg);
+	background:
+		radial-gradient(ellipse 80% 60% at 30% 35%, rgba(40, 80, 160, 0.28), transparent 55%),
+		radial-gradient(ellipse 70% 50% at 80% 80%, rgba(70, 30, 120, 0.22), transparent 50%),
+		var(--start-bg);
 	color: var(--start-text);
 	touch-action: none;
 }
 
+.start-waves {
+	position: absolute;
+	inset: 0;
+	z-index: 0;
+	pointer-events: none;
+}
+
+.start-vignette {
+	position: absolute;
+	inset: 0;
+	z-index: 1;
+	pointer-events: none;
+	background:
+		radial-gradient(ellipse at center, transparent 40%, rgba(0, 0, 0, 0.45) 100%),
+		linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, transparent 18%, transparent 82%, rgba(0, 0, 0, 0.35) 100%);
+}
+
 .start-weave {
+	position: relative;
+	z-index: 2;
 	width: 100%;
 	height: 100%;
 	will-change: transform, opacity;
@@ -94,7 +103,7 @@
 	height: 100dvh;
 	width: 100%;
 	overflow: hidden;
-	background: var(--start-bg);
+	background: transparent;
 	color: var(--start-text);
 	font-size: 16px;
 	line-height: 1.4;
@@ -116,19 +125,21 @@
 	height: var(--cat-icon-size);
 	pointer-events: none;
 	z-index: 2;
-	--arm: 14px;
-	--th: 1px;
+	--arm: 18px;
+	--th: 2px;
 	background:
-		linear-gradient(currentColor, currentColor) left 0 top 0 / var(--arm) var(--th),
-		linear-gradient(currentColor, currentColor) left 0 top 0 / var(--th) var(--arm),
-		linear-gradient(currentColor, currentColor) right 0 top 0 / var(--arm) var(--th),
-		linear-gradient(currentColor, currentColor) right 0 top 0 / var(--th) var(--arm),
-		linear-gradient(currentColor, currentColor) left 0 bottom 0 / var(--arm) var(--th),
-		linear-gradient(currentColor, currentColor) left 0 bottom 0 / var(--th) var(--arm),
-		linear-gradient(currentColor, currentColor) right 0 bottom 0 / var(--arm) var(--th),
-		linear-gradient(currentColor, currentColor) right 0 bottom 0 / var(--th) var(--arm);
+		radial-gradient(circle at center, rgba(160, 210, 255, 0.16), transparent 62%),
+		linear-gradient(#eef6ff, #eef6ff) left 0 top 0 / var(--arm) var(--th),
+		linear-gradient(#eef6ff, #eef6ff) left 0 top 0 / var(--th) var(--arm),
+		linear-gradient(#eef6ff, #eef6ff) right 0 top 0 / var(--arm) var(--th),
+		linear-gradient(#eef6ff, #eef6ff) right 0 top 0 / var(--th) var(--arm),
+		linear-gradient(#eef6ff, #eef6ff) left 0 bottom 0 / var(--arm) var(--th),
+		linear-gradient(#eef6ff, #eef6ff) left 0 bottom 0 / var(--th) var(--arm),
+		linear-gradient(#eef6ff, #eef6ff) right 0 bottom 0 / var(--arm) var(--th),
+		linear-gradient(#eef6ff, #eef6ff) right 0 bottom 0 / var(--th) var(--arm);
 	background-repeat: no-repeat;
-	opacity: 0.5;
+	opacity: 0.9;
+	filter: drop-shadow(0 0 10px rgba(140, 200, 255, 0.55));
 }
 
 .start-categories {
@@ -181,6 +192,7 @@
 	display: inline-block;
 	opacity: 0;
 	transition: opacity 0.16s cubic-bezier(0.23, 1, 0.32, 1);
+	text-shadow: 0 2px 12px rgba(0, 0, 0, 0.7);
 }
 
 .start-category.is-active .start-category-label {
@@ -196,34 +208,61 @@
 	width: var(--cat-icon-size);
 	height: var(--cat-icon-size);
 	transform-origin: center bottom;
-	transition: transform 0.16s cubic-bezier(0.23, 1, 0.32, 1);
+	transform-style: preserve-3d;
+	perspective: 420px;
+	transition: transform 0.16s cubic-bezier(0.23, 1, 0.32, 1), filter 0.16s ease;
 	color: inherit;
+	--orb: var(--orb-search);
 }
+
+.start-cat-icon-search { --orb: var(--orb-search); }
+.start-cat-icon-daily { --orb: var(--orb-daily); }
+.start-cat-icon-code { --orb: var(--orb-code); }
+.start-cat-icon-social { --orb: var(--orb-social); }
+.start-cat-icon-media { --orb: var(--orb-media); }
+.start-cat-icon-me { --orb: var(--orb-me); }
 
 .start-category:active .start-cat-icon {
 	transform: scale(0.96);
 }
 
+.start-orb {
+	position: absolute;
+	inset: 18%;
+	border-radius: 50%;
+	background: radial-gradient(circle, rgb(var(--orb) / 0.55) 0%, rgb(var(--orb) / 0.12) 42%, transparent 72%);
+	filter: blur(10px);
+	opacity: 0.7;
+	transform: translateY(10px);
+}
+
 .start-cat-icon-window {
 	position: absolute;
 	inset: 0;
-	overflow: hidden;
+	overflow: visible;
 	display: grid;
 	place-items: center;
+	filter: drop-shadow(0 10px 16px rgb(var(--orb) / 0.35));
 }
 
 .start-cat-mark {
 	width: 100%;
 	height: 100%;
+	overflow: visible;
 }
 
-.start-cat-icon.is-selected .start-cat-orbit {
-	transform-origin: center;
-	animation: start-icon-sway 2.5s steps(60, end) infinite;
+.start-cat-icon.is-selected {
+	animation: xmb-bob 2.6s ease-in-out infinite;
 }
 
-@keyframes start-icon-sway {
-	to { transform: rotate(360deg); }
+.start-cat-icon.is-selected .start-orb {
+	opacity: 1;
+	filter: blur(8px);
+}
+
+@keyframes xmb-bob {
+	0%, 100% { transform: translateY(0) rotateY(-6deg); }
+	50% { transform: translateY(-8px) rotateY(6deg); }
 }
 
 .start-items {
@@ -292,20 +331,59 @@
 	width: var(--badge-size, 144px);
 	height: var(--badge-size, 144px);
 	flex: 0 0 auto;
+	--orb: var(--orb-search);
+}
+
+.start-card-search { --orb: var(--orb-search); }
+.start-card-daily { --orb: var(--orb-daily); }
+.start-card-code { --orb: var(--orb-code); }
+.start-card-social { --orb: var(--orb-social); }
+.start-card-media { --orb: var(--orb-media); }
+.start-card-me { --orb: var(--orb-me); }
+
+.start-badge-glow {
+	position: absolute;
+	inset: 10%;
+	border-radius: 28%;
+	background: radial-gradient(circle, rgb(var(--orb) / 0.55), transparent 70%);
+	filter: blur(12px);
+	opacity: 0.55;
 }
 
 .start-badge-window {
 	position: absolute;
-	inset: 0;
+	inset: 12%;
 	display: grid;
 	place-items: center;
+	border-radius: 28%;
+	background:
+		linear-gradient(160deg, rgba(255, 255, 255, 0.42) 0%, transparent 34%),
+		linear-gradient(180deg, rgb(var(--orb) / 0.95), rgb(var(--orb) / 0.38));
+	box-shadow:
+		0 16px 28px rgba(0, 0, 0, 0.45),
+		inset 0 1px 0 rgba(255, 255, 255, 0.5),
+		inset 0 -10px 18px rgba(0, 0, 0, 0.28);
+}
+
+.start-card.is-active .start-badge-glow {
+	opacity: 1;
+}
+
+.start-card.is-active .start-badge-window {
+	box-shadow:
+		0 18px 32px rgba(0, 0, 0, 0.5),
+		0 0 28px rgb(var(--orb) / 0.45),
+		inset 0 1px 0 rgba(255, 255, 255, 0.55),
+		inset 0 -10px 18px rgba(0, 0, 0, 0.28);
 }
 
 .start-monogram {
-	font-size: 42px;
-	font-weight: 500;
+	font-size: 34px;
+	font-weight: 650;
 	letter-spacing: -0.04em;
 	line-height: 1;
+	color: #fff;
+	text-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
 }
 
 .start-card-body {
@@ -344,14 +422,22 @@
 	text-overflow: ellipsis;
 }
 
+.start-clock,
+.start-help,
+.start-query,
+.start-mute,
+.start-move {
+	z-index: 6;
+	text-shadow: 0 1px 8px rgba(0, 0, 0, 0.55);
+}
+
 .start-clock {
 	position: absolute;
 	top: 28px;
 	right: 32px;
-	z-index: 4;
 	text-align: right;
 	font-variant-numeric: tabular-nums;
-	letter-spacing: 0.04em;
+	letter-spacing: 0.08em;
 	font-size: 12px;
 	color: var(--start-text-secondary);
 	pointer-events: none;
@@ -538,7 +624,7 @@
 @media (prefers-reduced-motion: reduce) {
 	.start-weave,
 	.start-grain-tile,
-	.start-cat-icon.is-selected .start-cat-orbit {
+	.start-cat-icon.is-selected {
 		animation: none;
 	}
 

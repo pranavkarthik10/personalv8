@@ -6,6 +6,7 @@ import LinkCard from "@/components/start/link-card";
 import StartClock from "@/components/start/start-clock";
 import { findStartItem, START_CATEGORIES } from "@/components/start/start-links";
 import XmbNav from "@/components/start/xmb-nav";
+import XmbWaves from "@/components/start/xmb-waves";
 
 function openDestination(href: string) {
 	window.location.href = href;
@@ -151,11 +152,15 @@ export default function StartPage() {
 					: undefined
 			}
 		>
+			<XmbWaves />
+			<div className="start-vignette" />
 			<div className="start-weave">
 				<XmbNav
 					categories={START_CATEGORIES}
 					onSelect={onSelect}
-					renderItem={(item, active) => <LinkCard item={item} active={active} query={query} />}
+					renderItem={(item, active, category) => (
+						<LinkCard item={item} active={active} query={query} kind={category.icon} />
+					)}
 				/>
 			</div>
 			<StartClock />
@@ -189,7 +194,7 @@ export default function StartPage() {
 			>
 				{muted ? "sound off" : "sound on"}
 			</button>
-			<GrainOverlay />
+			<GrainOverlay opacity={0.05} strength={2} fps={12} />
 		</div>
 	);
 }

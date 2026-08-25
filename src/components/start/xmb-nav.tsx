@@ -117,7 +117,7 @@ export default function XmbNav({
 	defaultLayer = "items",
 }: {
 	categories: StartCategory[];
-	renderItem: (item: StartCategory["items"][number], active: boolean) => ReactNode;
+	renderItem: (item: StartCategory["items"][number], active: boolean, category: StartCategory) => ReactNode;
 	onSelect: (categoryId: string, itemId: string) => void;
 	defaultLayer?: Layer;
 }) {
@@ -482,7 +482,7 @@ export default function XmbNav({
 									}
 								}}
 							>
-								<CategoryIcon kind={category.icon} selected={selected && layer === "menu"} />
+								<CategoryIcon kind={category.icon} selected={selected} />
 								<span className="start-category-label">
 									<ScrambleText text={category.label} active={selected} />
 								</span>
@@ -540,7 +540,7 @@ export default function XmbNav({
 								setItemIndex(activeCategory.id, index);
 							}}
 						>
-							{renderItem(item, active)}
+							{renderItem(item, active, activeCategory)}
 						</div>
 					);
 				})}

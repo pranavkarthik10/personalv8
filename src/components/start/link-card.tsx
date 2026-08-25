@@ -1,5 +1,6 @@
 "use client";
 
+import type { IconKind } from "@/components/start/category-icon";
 import type { StartItem } from "@/components/start/start-links";
 import ScrambleText from "@/components/start/scramble-text";
 
@@ -7,16 +8,19 @@ export default function LinkCard({
 	item,
 	active,
 	query,
+	kind,
 }: {
 	item: StartItem;
 	active: boolean;
 	query: string;
+	kind: IconKind;
 }) {
 	const searching = Boolean(query.trim()) && Boolean(item.search);
 
 	return (
-		<article className={`start-card${active ? " is-active" : ""}`} aria-label={item.label}>
+		<article className={`start-card start-card-${kind}${active ? " is-active" : ""}`} aria-label={item.label}>
 			<span className="start-badge" aria-hidden="true">
+				<span className="start-badge-glow" />
 				<span className="start-badge-window">
 					<span className="start-monogram">{item.monogram}</span>
 				</span>

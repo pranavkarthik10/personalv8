@@ -35,11 +35,13 @@ export default function CvPage() {
 										year: "2-digit",
 									})}{" "}
 									-{" "}
-									{new Date(
-										experience.end_date + "T00:00:00",
-									).toLocaleDateString("en-US", {
-										year: "2-digit",
-									})}
+									{experience.end_date
+										? new Date(
+												experience.end_date + "T00:00:00",
+											).toLocaleDateString("en-US", {
+												year: "2-digit",
+											})
+										: "Present"}
 								</p>
 								<p className="col-start-1 mt-1 text-xs text-muted-foreground">
 									{experience.role}

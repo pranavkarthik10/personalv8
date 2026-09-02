@@ -183,6 +183,7 @@ export default function Home() {
 	const visibleExperience = RESUME.experience
 		.filter((experience) => experience.company !== "Apple")
 		.slice(0, 4);
+	const spacexai = RESUME.experience.find((experience) => experience.company === "SpaceXAI");
 	const google = RESUME.experience.find((experience) => experience.company === "Google");
 	const vercel = RESUME.experience.find((experience) => experience.company === "Vercel");
 	const apple = RESUME.experience.find((experience) => experience.company === "Apple");
@@ -199,13 +200,17 @@ export default function Home() {
 						</span>
 					</h1>
 					<div>
-						I'm currently researching browser agents for HCI at{" "}
-						<CompanyLogo
-							icon={RESUME.education.icon}
-							company="UBC"
-							companyWebsite="https://www.ubc.ca"
-						/>{" "} 
-						and I&apos;ve previously done engineering at{" "}
+						I&apos;m currently a Member of Technical Staff at{" "}
+						{spacexai ? (
+							<CompanyLogo
+								icon={spacexai.icon}
+								company="SpaceXAI"
+								companyWebsite={spacexai.company_website}
+							/>
+						) : (
+							"SpaceXAI"
+						)}
+						{" "}and I&apos;ve previously done engineering at{" "}
 						{vercel ? (
 							<CompanyLogo
 								icon={vercel.icon}
@@ -270,7 +275,9 @@ export default function Home() {
 									<span className="hybrid-experience-role">{experience.role}</span>
 								</span>
 								<span className="hybrid-experience-meta">
-									{experience.start_date.slice(0, 4)}
+									{experience.end_date
+										? experience.start_date.slice(0, 4)
+										: "now"}
 								</span>
 							</Link>
 						))}

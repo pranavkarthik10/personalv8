@@ -2,6 +2,7 @@
 
 import { useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState } from "react";
 import Link from "next/link";
+import { SpaceXAILogo } from "@/components/spacexai-logo";
 import { BIRTH_YEAR, TIMELINE, type TimelineMarker } from "@/data/timeline";
 
 const clamp = (v: number, min: number, max: number) => Math.min(max, Math.max(min, v));
@@ -37,6 +38,7 @@ const COMPANY_LOGOS: Record<string, React.ReactNode> = {
 	),
 	DYNE: <img src="/dyne.png" alt="DYNE" className="h-[18px] w-auto object-contain" />,
 	UBC: <img src="/ubc-logo.png" alt="UBC" className="h-5 w-5 rounded-[5px] object-cover" />,
+	SpaceXAI: <SpaceXAILogo variant="wordmark" className="h-[13px] w-auto" />,
 };
 
 /** Parse inline [label](url) links into renderable nodes. */

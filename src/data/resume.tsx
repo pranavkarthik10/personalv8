@@ -1,13 +1,23 @@
 import React from 'react';
+import { SpaceXAILogo } from "@/components/spacexai-logo";
 
 const RESUME = {
 	name: "Pranav Karthik",
 	avatar_path: "/me.jpg",
 	bio: {
-		intro: "Fourth year Computer Science student at UBC, passionate about building agentic experiences on the web, mobile, and spatial interfaces.",
+		intro: "Member of Technical Staff at SpaceXAI. Previously engineering at Vercel and Google.",
 		about: "TODO: move bio here",
 	},
 	experience: [
+		{
+			icon: <SpaceXAILogo variant="mark" />,
+			company: "SpaceXAI",
+			role: "Member of Technical Staff",
+			description: "",
+			start_date: "2026-08-01",
+			location: "Palo Alto, CA",
+			company_website: "https://x.ai",
+		},
 		{
 			icon: (
 				<svg

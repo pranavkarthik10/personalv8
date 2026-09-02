@@ -128,12 +128,14 @@ export default async function Home() {
 											year: "numeric",
 										})}{" "}
 										-{" "}
-										{new Date(
-											experience.end_date + "T00:00:00",
-										).toLocaleDateString("en-US", {
-											month: "short",
-											year: "numeric",
-										})}
+										{experience.end_date
+											? new Date(
+													experience.end_date + "T00:00:00",
+												).toLocaleDateString("en-US", {
+													month: "short",
+													year: "numeric",
+												})
+											: "Present"}
 									</p>
 									<p className="text-muted-foreground mt-0.5">
 										{experience.location}

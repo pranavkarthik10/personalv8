@@ -86,8 +86,14 @@ const EVENTS: Record<number, TimelineYear> = {
 		],
 	},
 	2026: {
-		companies: [{ name: "UBC", href: "https://ubc.ca" }],
-		events: ["Graduating from [UBC](https://ubc.ca) with a BSc in Computer Science."],
+		companies: [
+			{ name: "SpaceXAI", href: "https://x.ai" },
+			{ name: "UBC", href: "https://ubc.ca" },
+		],
+		events: [
+			"Joined [SpaceXAI](https://x.ai) as a Member of Technical Staff.",
+			"Graduating from [UBC](https://ubc.ca) with a BSc in Computer Science.",
+		],
 	},
 };
 

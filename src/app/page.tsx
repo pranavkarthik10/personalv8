@@ -1,6 +1,6 @@
 import CompanyLogo from "@/components/company-logo";
 import NameAnimation from "@/components/name-animation";
-import ShipRobots from "@/components/ship-robots";
+// import ShipRobots from "@/components/ship-robots";
 import RESUME from "@/data/resume";
 import Image from "next/image";
 import Link from "next/link";
@@ -190,7 +190,7 @@ export default function Home() {
 
 	return (
 		<main className="hybrid-home">
-			<ShipRobots />
+			{/* <ShipRobots /> */}
 			<section className="hybrid-hero">
 				<div className="hybrid-intro">
 					<h1>

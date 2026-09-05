@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import { headers } from "next/headers";
 import "./globals.css";
 import { Analytics } from "@vercel/analytics/next";
 import Script from "next/script";
@@ -24,13 +25,16 @@ export const metadata: Metadata = {
 	description: `${RESUME.bio.intro}`,
 };
 
-export default function RootLayout({
+export default async function RootLayout({
 	children,
 }: Readonly<{
 	children: React.ReactNode;
 }>) {
+	const headerStore = await headers();
+	const isStartPage = headerStore.get("x-start-page") === "1";
+
 	return (
-		<html lang="en" suppressHydrationWarning>
+		<html lang="en" suppressHydrationWarning className={isStartPage ? "start-page" : undefined}>
 			<head>
 				<script
 					dangerouslySetInnerHTML={{
@@ -40,13 +44,16 @@ export default function RootLayout({
 			</head>
 			<body
 				suppressHydrationWarning
-				className={`${geist.variable} ${geistMono.variable} antialiased`}
+				className={`${geist.variable} ${geistMono.variable} antialiased${isStartPage ? " theme-auto" : ""}`}
 			>
 				<Script
 					defer
 					src="https://cloud.umami.is/script.js"
 					data-website-id="49a2368b-f573-4184-9dbe-26af0c1b2fdd"
 				/>
+				{isStartPage ? (
+					children
+				) : (
 				<div className="site-shell min-h-screen">
 					<header className="site-container flex flex-col items-start gap-3 py-5 sm:flex-row sm:items-center sm:justify-between">
 						<Link href="/" className="text-sm text-foreground/90 transition hover:text-foreground">
@@ -80,6 +87,7 @@ export default function RootLayout({
 						</div>
 					</footer>
 				</div>
+				)}
 				<Analytics />
 			</body>
 		</html>

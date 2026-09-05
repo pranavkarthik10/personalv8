@@ -1,0 +1,45 @@
+"use client";
+
+import BrandIcon from "@/components/start/brand-icon";
+import type { IconKind } from "@/components/start/category-icon";
+import type { StartItem } from "@/components/start/start-links";
+import ScrambleText from "@/components/start/scramble-text";
+
+export default function LinkCard({
+	item,
+	active,
+	query,
+	kind,
+}: {
+	item: StartItem;
+	active: boolean;
+	query: string;
+	kind: IconKind;
+}) {
+	const searching = Boolean(query.trim()) && Boolean(item.search);
+
+	return (
+		<article className={`start-card start-card-${kind}${active ? " is-active" : ""}`} aria-label={item.label}>
+			<span className="start-badge" aria-hidden="true">
+				<span className="start-badge-glow" />
+				<span className="start-badge-window">
+					<BrandIcon slug={item.brand} />
+				</span>
+			</span>
+			<div className="start-card-body" aria-hidden={!active}>
+				<div className="start-card-heading">
+					<span className="start-card-name">
+						<ScrambleText text={item.label} active={active} />
+					</span>
+					<span className="start-card-title">
+						<ScrambleText
+							text={searching ? `search “${query.trim()}”` : item.description}
+							active={active}
+							duration={460}
+						/>
+					</span>
+				</div>
+			</div>
+		</article>
+	);
+}
